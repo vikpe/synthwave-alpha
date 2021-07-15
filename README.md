@@ -1,1 +1,3 @@
-# synthwave
+# Synthwave palette
+> Sick!
+
