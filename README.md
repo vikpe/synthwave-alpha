@@ -8,7 +8,7 @@
 Scope | Default | HEX | Dim | HEX
 --- | --- | --- | --- | ---
 Parameters | ![](https://via.placeholder.com/35/fded6b/?text=+) | #fded6b | ![](https://via.placeholder.com/35/b0a238/?text=+) | #b0a238
-Numbers | ![](https://via.placeholder.com/35/ed0d94/?text=+) | #ed0d94 | ![](https://via.placeholder.com/35/a10462/?text=+) | #a10462
+Numbers | ![](https://via.placeholder.com/35/f00b7b/?text=+) | #f00b7b | ![](https://via.placeholder.com/35/a30451/?text=+) | #a30451
 Identifiers | ![](https://via.placeholder.com/35/ff00f6/?text=+) | #ff00f6 | ![](https://via.placeholder.com/35/b312ad/?text=+) | #b312ad
 Special | ![](https://via.placeholder.com/35/aa54f8/?text=+) | #aa54f8 | ![](https://via.placeholder.com/35/6c29ab/?text=+) | #6c29ab
 Declarations | ![](https://via.placeholder.com/35/55a7fb/?text=+) | #55a7fb | ![](https://via.placeholder.com/35/2a6cad/?text=+) | #2a6cad
