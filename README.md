@@ -1,9 +1,10 @@
 # Synthwave palette
+
 > Sick colors!
 
 ![palette](https://github.com/vikpe/synthwave/blob/main/palette.png?raw=true)
 
-## Palette 
+## Palette
 
 Scope | Default | HEX | Dim | HEX
 --- | --- | --- | --- | ---
