@@ -9,14 +9,8 @@
 ![](https://via.placeholder.com/32/55a7fb/?text=+)
 ![](https://via.placeholder.com/32/00fbfd/?text=+)
 ![](https://via.placeholder.com/32/0be6a8/?text=+)
-
 ![](https://via.placeholder.com/32/f2f2e3/?text=+)
-![](https://via.placeholder.com/32/b9b1bb/?text=+)
-![](https://via.placeholder.com/32/7f6f92/?text=+)
-![](https://via.placeholder.com/32/2b315e/?text=+)
-![](https://via.placeholder.com/32/2a2447/?text=+)
 ![](https://via.placeholder.com/32/241b30/?text=+)
-![](https://via.placeholder.com/32/1d1627/?text=+)
 
 ### Colors
 
