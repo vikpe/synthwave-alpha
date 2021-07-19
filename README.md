@@ -13,17 +13,17 @@
 ![](https://via.placeholder.com/32/f2f2e3/?text=+)
 ![](https://via.placeholder.com/32/241b30/?text=+)
 
-Name | C | HEX
---- | --- | ---
-Yellow | ![](https://via.placeholder.com/24/fded6b/?text=+) | #fded6b
-Red | ![](https://via.placeholder.com/24/f00b7b/?text=+) | #f00b7b
-Magenta | ![](https://via.placeholder.com/24/ff00f6/?text=+) | #ff00f6
-Purple | ![](https://via.placeholder.com/24/aa54f8/?text=+) | #aa54f8
-Blue | ![](https://via.placeholder.com/24/55a7fb/?text=+) | #55a7fb
-Cyan | ![](https://via.placeholder.com/24/00fbfd/?text=+) | #00fbfd
-Green | ![](https://via.placeholder.com/24/0be6a8/?text=+) | #0be6a8
-White | ![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3
-Black | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30
+Name | C | HEX | RGB
+--- | --- | --- | ---
+Yellow | ![](https://via.placeholder.com/24/fded6b/?text=+) | #fded6b | 253, 237, 107
+Red | ![](https://via.placeholder.com/24/f00b7b/?text=+) | #f00b7b | 240, 11, 123
+Magenta | ![](https://via.placeholder.com/24/ff00f6/?text=+) | #ff00f6 | 255, 0, 246
+Purple | ![](https://via.placeholder.com/24/aa54f8/?text=+) | #aa54f8 | 170, 84, 248
+Blue | ![](https://via.placeholder.com/24/55a7fb/?text=+) | #55a7fb | 85, 167, 251
+Cyan | ![](https://via.placeholder.com/24/00fbfd/?text=+) | #00fbfd | 0, 251, 253
+Green | ![](https://via.placeholder.com/24/0be6a8/?text=+) | #0be6a8 | 11, 230, 168
+White | ![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3 | 242, 242, 227
+Black | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 48
 
 ---
 
