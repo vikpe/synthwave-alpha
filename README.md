@@ -1,4 +1,5 @@
-# Synthwave One
+# Synthwave Alpha
+> Synthwave inspired color palette
 
 > Synthwave inspired palette
 
