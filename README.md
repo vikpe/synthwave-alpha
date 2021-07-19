@@ -14,7 +14,7 @@
 
 ## Default palette
 
-![](https://via.placeholder.com/64/fded6b/?text=+)
+![](https://via.placeholder.com/64/f9f972/?text=+)
 ![](https://via.placeholder.com/64/e80c72/?text=+)
 ![](https://via.placeholder.com/64/ff00f6/?text=+)
 ![](https://via.placeholder.com/64/aa54f8/?text=+)
@@ -26,7 +26,7 @@
 
 Name | C | HEX | RGB
 --- | --- | --- | ---
-Yellow | ![](https://via.placeholder.com/24/fded6b/?text=+) | #fded6b | 253, 237, 107
+Yellow | ![](https://via.placeholder.com/24/f9f972/?text=+) | #f9f972 | 249, 249, 114
 Red | ![](https://via.placeholder.com/24/e80c72/?text=+) | #e80c72 | 232, 12, 114
 Magenta | ![](https://via.placeholder.com/24/ff00f6/?text=+) | #ff00f6 | 255, 0, 246
 Purple | ![](https://via.placeholder.com/24/aa54f8/?text=+) | #aa54f8 | 170, 84, 248
@@ -40,8 +40,7 @@ Black | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 4
 
 ## Extended palette
 
-
-![](https://via.placeholder.com/64/fded6b/?text=+)
+![](https://via.placeholder.com/64/f9f972/?text=+)
 ![](https://via.placeholder.com/64/e80c72/?text=+)
 ![](https://via.placeholder.com/64/ff00f6/?text=+)
 ![](https://via.placeholder.com/64/aa54f8/?text=+)
@@ -49,7 +48,7 @@ Black | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 4
 ![](https://via.placeholder.com/64/00fbfd/?text=+)
 ![](https://via.placeholder.com/64/0be6a8/?text=+)
 
-![](https://via.placeholder.com/64/b0a238/?text=+)
+![](https://via.placeholder.com/64/adad3e/?text=+)
 ![](https://via.placeholder.com/64/9c044b/?text=+)
 ![](https://via.placeholder.com/64/b312ad/?text=+)
 ![](https://via.placeholder.com/64/6c29ab/?text=+)
@@ -66,7 +65,7 @@ Black | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 4
 
 C | Hex | RGB | C | Hex | RGB | C | Hex | RGB
 --- | --- | --- | --- | --- | --- | --- | --- | ---
-![](https://via.placeholder.com/24/fded6b/?text=+) | #fded6b | 253, 237, 107 | ![](https://via.placeholder.com/24/b0a238/?text=+) | #b0a238 | 176, 162, 56
+![](https://via.placeholder.com/24/f9f972/?text=+) | #f9f972 | 249, 249, 114 | ![](https://via.placeholder.com/24/adad3e/?text=+) | #adad3e | 173, 173, 62
 ![](https://via.placeholder.com/24/e80c72/?text=+) | #e80c72 | 232, 12, 114 | ![](https://via.placeholder.com/24/9c044b/?text=+) | #9c044b | 156, 4, 75
 ![](https://via.placeholder.com/24/ff00f6/?text=+) | #ff00f6 | 255, 0, 246 | ![](https://via.placeholder.com/24/b312ad/?text=+) | #b312ad | 179, 18, 173
 ![](https://via.placeholder.com/24/aa54f8/?text=+) | #aa54f8 | 170, 84, 248 | ![](https://via.placeholder.com/24/6c29ab/?text=+) | #6c29ab | 108, 41, 171
