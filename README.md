@@ -15,11 +15,11 @@ Colors
 * Green = analogous(Cyan, D)
 * Red = analogous(Magenta, B)
 * Yellow = between(#ff0, White)
-* Color shades = complementary(COLOR, A)
-* Black shades: shade(Black, +/- 1)
-* White shades:
+* Color variations = complementary(COLOR, A)
+* Black variations: shade(Black, 1), tint(Black, 1)
+* White variations:
     * Dark = complementary(Black, A) -> monochromatic(B)
-    * Light = between(White, White Dark)
+    * Dim = between(White, White Dark)
 
 ## Default palette
 
