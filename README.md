@@ -1,9 +1,7 @@
 # Synthwave Alpha
 > Synthwave inspired color palette
 
-> Synthwave inspired palette
-
-## Default
+## Default palette
 
 ![](https://via.placeholder.com/32/fded6b/?text=+)
 ![](https://via.placeholder.com/32/f00b7b/?text=+)
@@ -29,30 +27,31 @@ Black | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30
 
 ---
 
-## Extended
+## Extended palette
 
-![](https://via.placeholder.com/24/f2f2e3/?text=+)
-![](https://via.placeholder.com/24/2a2447/?text=+)
-![](https://via.placeholder.com/24/fded6b/?text=+)
-![](https://via.placeholder.com/24/f00b7b/?text=+)
-![](https://via.placeholder.com/24/ff00f6/?text=+)
-![](https://via.placeholder.com/24/aa54f8/?text=+)
-![](https://via.placeholder.com/24/55a7fb/?text=+)
-![](https://via.placeholder.com/24/00fbfd/?text=+)
-![](https://via.placeholder.com/24/0be6a8/?text=+)
 
-![](https://via.placeholder.com/24/b9b1bb/?text=+)
-![](https://via.placeholder.com/24/241b30/?text=+)
-![](https://via.placeholder.com/24/b0a238/?text=+)
-![](https://via.placeholder.com/24/a30451/?text=+)
-![](https://via.placeholder.com/24/b312ad/?text=+)
-![](https://via.placeholder.com/24/6c29ab/?text=+)
-![](https://via.placeholder.com/24/2a6cad/?text=+)
-![](https://via.placeholder.com/24/12b0b0/?text=+)
-![](https://via.placeholder.com/24/04996f/?text=+)
+![](https://via.placeholder.com/32/fded6b/?text=+)
+![](https://via.placeholder.com/32/f00b7b/?text=+)
+![](https://via.placeholder.com/32/ff00f6/?text=+)
+![](https://via.placeholder.com/32/aa54f8/?text=+)
+![](https://via.placeholder.com/32/55a7fb/?text=+)
+![](https://via.placeholder.com/32/00fbfd/?text=+)
+![](https://via.placeholder.com/32/0be6a8/?text=+)
 
-![](https://via.placeholder.com/24/7f6f92/?text=+)
-![](https://via.placeholder.com/24/1d1627/?text=+)
+![](https://via.placeholder.com/32/b0a238/?text=+)
+![](https://via.placeholder.com/32/a30451/?text=+)
+![](https://via.placeholder.com/32/b312ad/?text=+)
+![](https://via.placeholder.com/32/6c29ab/?text=+)
+![](https://via.placeholder.com/32/2a6cad/?text=+)
+![](https://via.placeholder.com/32/12b0b0/?text=+)
+![](https://via.placeholder.com/32/04996f/?text=+)
+
+![](https://via.placeholder.com/32/f2f2e3/?text=+)
+![](https://via.placeholder.com/32/b9b1bb/?text=+)
+![](https://via.placeholder.com/32/7f6f92/?text=+)
+![](https://via.placeholder.com/32/2a2447/?text=+)
+![](https://via.placeholder.com/32/241b30/?text=+)
+![](https://via.placeholder.com/32/1d1627/?text=+)
 
 C | Hex | C | Hex | C | Hex
 --- | --- | --- | --- | --- | ---
