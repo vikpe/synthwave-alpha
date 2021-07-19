@@ -10,7 +10,11 @@
 * Green = Cyan analogous towards green
 * Red = Magenta analogous towards red
 * Yellow = color between yellow (#ff0) and White
-* Color complementaries = HSB, -30 on B
+* Color complementaries = Second complementary to the left
+* Black shades: -1, +1 from Black
+* White shades: 
+   * darkest = Black second complementary to the left, monochromatic one to the right
+   * lightest = color between white and darkest white
 
 ## Default palette
 
@@ -58,8 +62,8 @@ Black | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 4
 
 ![](https://via.placeholder.com/64/f2f2e3/?text=+)
 ![](https://via.placeholder.com/64/b9b1bb/?text=+)
-![](https://via.placeholder.com/64/7f6f92/?text=+)
-![](https://via.placeholder.com/64/2a2447/?text=+)
+![](https://via.placeholder.com/64/7f6f93/?text=+)
+![](https://via.placeholder.com/64/312541/?text=+)
 ![](https://via.placeholder.com/64/241b30/?text=+)
 ![](https://via.placeholder.com/64/1d1627/?text=+)
 
@@ -72,5 +76,5 @@ C | Hex | RGB | C | Hex | RGB | C | Hex | RGB
 ![](https://via.placeholder.com/24/55a7fb/?text=+) | #55a7fb | 85, 167, 251 | ![](https://via.placeholder.com/24/2a6cad/?text=+) | #2a6cad | 42, 108, 173
 ![](https://via.placeholder.com/24/00fbfd/?text=+) | #00fbfd | 0, 251, 253 | ![](https://via.placeholder.com/24/12b0b0/?text=+) | #12b0b0 | 18, 176, 176
 ![](https://via.placeholder.com/24/0be6a8/?text=+) | #0be6a8 | 11, 230, 168 | ![](https://via.placeholder.com/24/04996f/?text=+) | #04996f | 4, 153, 111
-![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3 | 242, 242, 227 | ![](https://via.placeholder.com/24/b9b1bb/?text=+) | #b9b1bb | 185, 177, 187 | ![](https://via.placeholder.com/24/7f6f92/?text=+) | #7f6f92 | 127, 111, 146
-![](https://via.placeholder.com/24/2a2447/?text=+) | #2a2447 | 36, 27, 48 | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 48 | ![](https://via.placeholder.com/24/1d1627/?text=+)  | #1d1627 | 29, 22, 39
+![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3 | 242, 242, 227 | ![](https://via.placeholder.com/24/b9b1bb/?text=+) | #b9b1bb | 185, 177, 187 | ![](https://via.placeholder.com/24/7f6f93/?text=+) | #7f6f93 | 127, 111, 147
+![](https://via.placeholder.com/24/312541/?text=+) | #312541 | 49, 37, 65 | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 48 | ![](https://via.placeholder.com/24/1d1627/?text=+)  | #1d1627 | 29, 22, 39
