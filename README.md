@@ -1,12 +1,15 @@
 # Synthwave Alpha
+
 > Synthwave inspired color palette
 
-
 ## Scheme
+
 > https://color.adobe.com/create/color-wheel
-* Base: Gradient from Magenta to Cyan (Magenta, Purple, Blue, Cyan), White, Black 
+
+* Base: Gradient from Magenta to Cyan (Magenta, Purple, Blue, Cyan), White, Black
 * Green = Cyan analogous towards green
 * Red = Magenta analogous towards red
+* Yellow = color between yellow (#ff0) and White
 * Color complementaries = HSB, -30 on B
 
 ## Default palette
