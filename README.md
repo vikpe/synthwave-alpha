@@ -18,7 +18,7 @@ Colors
 * Color shades = complementary(COLOR, A)
 * Black shades: shade(Black, +/- 1)
 * White shades:
-    * Dark = monochromatic(complementary(Black, A), D)
+    * Dark = complementary(Black, A) -> monochromatic(B)
     * Light = between(White, White Dark)
 
 ## Default palette
