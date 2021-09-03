@@ -115,14 +115,6 @@ C | Hex | RGB | C | Hex | RGB | C | Hex | RGB
 ![](https://via.placeholder.com/64/00fbfd/?text=+)
 ![](https://via.placeholder.com/64/b9b1bb/?text=+)
 
-## Charcoal colors
-![](https://via.placeholder.com/64/f6f6ab/?text=+)
-![](https://via.placeholder.com/64/ed7fab/?text=+)
-![](https://via.placeholder.com/64/f979ed/?text=+)
-![](https://via.placeholder.com/64/cea3ee/?text=+)
-![](https://via.placeholder.com/64/a4cdef/?text=+)
-![](https://via.placeholder.com/64/79f7f0/?text=+)
-![](https://via.placeholder.com/64/7fecc6/?text=+)
 
 ## Fish
 ```sh
