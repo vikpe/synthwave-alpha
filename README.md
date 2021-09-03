@@ -49,6 +49,14 @@ Black | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 4
 
 ## Extended palette
 
+![](https://via.placeholder.com/64/adad3e/?text=+)
+![](https://via.placeholder.com/64/9c044b/?text=+)
+![](https://via.placeholder.com/64/b312ad/?text=+)
+![](https://via.placeholder.com/64/6c29ab/?text=+)
+![](https://via.placeholder.com/64/2a6cad/?text=+)
+![](https://via.placeholder.com/64/00b0b0/?text=+)
+![](https://via.placeholder.com/64/04996f/?text=+)
+
 ![](https://via.placeholder.com/64/f9f972/?text=+)
 ![](https://via.placeholder.com/64/e80c72/?text=+)
 ![](https://via.placeholder.com/64/ff00f6/?text=+)
