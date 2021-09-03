@@ -84,6 +84,16 @@ C | Hex | RGB | C | Hex | RGB | C | Hex | RGB
 ![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3 | 242, 242, 227 | ![](https://via.placeholder.com/24/b9b1bb/?text=+) | #b9b1bb | 185, 177, 187 | ![](https://via.placeholder.com/24/7f6f93/?text=+) | #7f6f93 | 127, 111, 147
 ![](https://via.placeholder.com/24/312541/?text=+) | #312541 | 49, 37, 65 | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 48 | ![](https://via.placeholder.com/24/1d1627/?text=+)  | #1d1627 | 29, 22, 39
 
+
+## Charcoal colors
+![](https://via.placeholder.com/64/f6f6ab/?text=+)
+![](https://via.placeholder.com/64/ed7fab/?text=+)
+![](https://via.placeholder.com/64/f979ed/?text=+)
+![](https://via.placeholder.com/64/cea3ee/?text=+)
+![](https://via.placeholder.com/64/a4cdef/?text=+)
+![](https://via.placeholder.com/64/79f7f0/?text=+)
+![](https://via.placeholder.com/64/7fecc6/?text=+)
+
 ## Fish
 ```sh
 # The colors used by fish for syntax highlighting can be configured by changing the values of a various variables.
