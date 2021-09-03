@@ -57,14 +57,6 @@ Black | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 4
 ![](https://via.placeholder.com/64/00fbfd/?text=+)
 ![](https://via.placeholder.com/64/0be6a8/?text=+)
 
-![](https://via.placeholder.com/64/adad3e/?text=+)
-![](https://via.placeholder.com/64/9c044b/?text=+)
-![](https://via.placeholder.com/64/b312ad/?text=+)
-![](https://via.placeholder.com/64/6c29ab/?text=+)
-![](https://via.placeholder.com/64/2a6cad/?text=+)
-![](https://via.placeholder.com/64/00b0b0/?text=+)
-![](https://via.placeholder.com/64/04996f/?text=+)
-
 ![](https://via.placeholder.com/64/f2f2e3/?text=+)
 ![](https://via.placeholder.com/64/b9b1bb/?text=+)
 ![](https://via.placeholder.com/64/7f6f93/?text=+)
@@ -84,6 +76,36 @@ C | Hex | RGB | C | Hex | RGB | C | Hex | RGB
 ![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3 | 242, 242, 227 | ![](https://via.placeholder.com/24/b9b1bb/?text=+) | #b9b1bb | 185, 177, 187 | ![](https://via.placeholder.com/24/7f6f93/?text=+) | #7f6f93 | 127, 111, 147
 ![](https://via.placeholder.com/24/312541/?text=+) | #312541 | 49, 37, 65 | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 48 | ![](https://via.placeholder.com/24/1d1627/?text=+)  | #1d1627 | 29, 22, 39
 
+
+## Terminal
+
+**Text**
+
+![](https://via.placeholder.com/64/f2f2e3/?text=+)
+
+**Background**
+
+![](https://via.placeholder.com/64/241b30/?text=+)
+
+**Palette**
+
+![](https://via.placeholder.com/64/1d1627/?text=+)
+![](https://via.placeholder.com/64/9c044b/?text=+)
+![](https://via.placeholder.com/64/04996f/?text=+)
+![](https://via.placeholder.com/64/adad3e/?text=+)
+![](https://via.placeholder.com/64/2a6cad/?text=+)
+![](https://via.placeholder.com/64/b312ad/?text=+)
+![](https://via.placeholder.com/64/00b0b0/?text=+)
+![](https://via.placeholder.com/64/7f6f93/?text=+)
+
+![](https://via.placeholder.com/64/312541/?text=+)
+![](https://via.placeholder.com/64/e80c72/?text=+)
+![](https://via.placeholder.com/64/0be6a8/?text=+)
+![](https://via.placeholder.com/64/f9f972/?text=+)
+![](https://via.placeholder.com/64/55a7fb/?text=+)
+![](https://via.placeholder.com/64/ff00f6/?text=+)
+![](https://via.placeholder.com/64/00fbfd/?text=+)
+![](https://via.placeholder.com/64/b9b1bb/?text=+)
 
 ## Charcoal colors
 ![](https://via.placeholder.com/64/f6f6ab/?text=+)
