@@ -127,6 +127,8 @@ set -U fish_pager_color_secondary_description 7f6f93 # description of every seco
 
 
 ## Starship
+Using a [Nerd Font](https://www.nerdfonts.com/)
+
 ```toml
 [character]
 success_symbol = "[❯](bold green)"
