@@ -144,6 +144,9 @@ Using a [Nerd Font](https://www.nerdfonts.com/)
 success_symbol = "[❯](bold green)"
 error_symbol = "[❯](bold red)"
 
+[cmd_duration]
+format = "[took $duration](#7f6f93) "
+
 [directory]
 read_only = " "
 style = "#00fbfd bold"
