@@ -87,13 +87,15 @@ C | Hex | RGB | C | Hex | RGB | C | Hex | RGB
 
 ## Terminal
 
-**Text**
+**Default**
 
 ![](https://via.placeholder.com/64/f2f2e3/?text=+)
+![](https://via.placeholder.com/64/241b30/?text=+)
 
-**Background**
+**Highlight**
 
 ![](https://via.placeholder.com/64/241b30/?text=+)
+![](https://via.placeholder.com/64/0be6a8/?text=+)
 
 **Palette**
 
@@ -104,16 +106,16 @@ C | Hex | RGB | C | Hex | RGB | C | Hex | RGB
 ![](https://via.placeholder.com/64/2a6cad/?text=+)
 ![](https://via.placeholder.com/64/b312ad/?text=+)
 ![](https://via.placeholder.com/64/00b0b0/?text=+)
-![](https://via.placeholder.com/64/7f6f93/?text=+)
+![](https://via.placeholder.com/64/b9b1bb/?text=+)
 
-![](https://via.placeholder.com/64/312541/?text=+)
+![](https://via.placeholder.com/64/7f6f93/?text=+)
 ![](https://via.placeholder.com/64/e80c72/?text=+)
 ![](https://via.placeholder.com/64/0be6a8/?text=+)
 ![](https://via.placeholder.com/64/f9f972/?text=+)
 ![](https://via.placeholder.com/64/55a7fb/?text=+)
 ![](https://via.placeholder.com/64/ff00f6/?text=+)
 ![](https://via.placeholder.com/64/00fbfd/?text=+)
-![](https://via.placeholder.com/64/b9b1bb/?text=+)
+![](https://via.placeholder.com/64/f2f2e3/?text=+)
 
 
 ## Fish
