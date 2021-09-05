@@ -35,15 +35,15 @@ Colors
 
 Name | C | HEX | RGB
 --- | --- | --- | ---
-Yellow | ![](https://via.placeholder.com/24/f9f972/?text=+) | #f9f972 | 249, 249, 114
-Red | ![](https://via.placeholder.com/24/e80c72/?text=+) | #e80c72 | 232, 12, 114
-Magenta | ![](https://via.placeholder.com/24/ff00f6/?text=+) | #ff00f6 | 255, 0, 246
-Purple | ![](https://via.placeholder.com/24/aa54f8/?text=+) | #aa54f8 | 170, 84, 248
-Blue | ![](https://via.placeholder.com/24/55a7fb/?text=+) | #55a7fb | 85, 167, 251
-Cyan | ![](https://via.placeholder.com/24/00fbfd/?text=+) | #00fbfd | 0, 251, 253
-Green | ![](https://via.placeholder.com/24/0be6a8/?text=+) | #0be6a8 | 11, 230, 168
-White | ![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3 | 242, 242, 227
-Black | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 48
+Yellow (Laser Lemon) | ![](https://via.placeholder.com/24/f9f972/?text=+) | #f9f972 | 249, 249, 114
+Red (Red Purple) | ![](https://via.placeholder.com/24/e80c72/?text=+) | #e80c72 | 232, 12, 114
+Magenta (Fuchsia) | ![](https://via.placeholder.com/24/ff00f6/?text=+) | #ff00f6 | 255, 0, 246
+Purple (Medium Orchid) | ![](https://via.placeholder.com/24/aa54f8/?text=+) | #aa54f8 | 170, 84, 248
+Blue (Blue Jeans) | ![](https://via.placeholder.com/24/55a7fb/?text=+) | #55a7fb | 85, 167, 251
+Cyan (Aqua) | ![](https://via.placeholder.com/24/00fbfd/?text=+) | #00fbfd | 0, 251, 253
+Green (Medium Aquamarine) | ![](https://via.placeholder.com/24/0be6a8/?text=+) | #0be6a8 | 11, 230, 168
+White (Ivory) | ![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3 | 242, 242, 227
+Black (Dark Purple) | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 48
 
 ---
 
