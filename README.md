@@ -73,8 +73,8 @@ Deleted gutter  | ![](https://via.placeholder.com/24/60103E/?text=+) | #60103E |
 Deleted background | ![](https://via.placeholder.com/24/421637/?text=+) | #421637 | 66, 22, 55
 Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f | 39, 68, 111
 Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050 | 38, 48, 80
-Conflict gutter  | ![](https://via.placeholder.com/24/f9f972/?text=+) | #f9f972 | 249, 249, 114
-Conflict background | ![](https://via.placeholder.com/24/adad3e/?text=+) | #adad3e | 173, 173, 62
+Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437 | 105, 100, 55
+Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034 | 71, 64, 52
 
 ## Terminal
 
