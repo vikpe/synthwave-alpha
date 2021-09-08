@@ -18,4 +18,6 @@
 
 
 ## VCS/Diff
-`between(background, dark color)`
+* Gutter green/blue: `between(background, dark color)`
+* Gutter red: `red dark`
+* Background: `gradient(background, dark color)`
