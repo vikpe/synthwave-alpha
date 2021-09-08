@@ -63,6 +63,18 @@ C | Hex | RGB | C | Hex | RGB | C | Hex | RGB
 ![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3 | 242, 242, 227 | ![](https://via.placeholder.com/24/b9b1bb/?text=+) | #b9b1bb | 185, 177, 187 | ![](https://via.placeholder.com/24/7f6f93/?text=+) | #7f6f93 | 127, 111, 147
 ![](https://via.placeholder.com/24/312541/?text=+) | #312541 | 49, 37, 65 | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | 36, 27, 48 | ![](https://via.placeholder.com/24/1d1627/?text=+)  | #1d1627 | 29, 22, 39
 
+## VCS / Diff
+
+Status | C | Hex | RGB
+--- | --- | --- | ---
+Added gutter  | ![](https://via.placeholder.com/24/145a50/?text=+) | #145a50 | 20, 90, 80
+Added background | ![](https://via.placeholder.com/24/1c3b40/?text=+) | #1c3b40 | 28, 59, 64
+Deleted gutter  | ![](https://via.placeholder.com/24/9b044a/?text=+) | #9b044a | 155, 4, 74
+Deleted background | ![](https://via.placeholder.com/24/60103d/?text=+) | #60103d | 96, 16, 61
+Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f | 39, 68, 111
+Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050 | 38, 48, 80
+Conflict gutter  | ![](https://via.placeholder.com/24/f9f972/?text=+) | #f9f972 | 249, 249, 114
+Conflict background | ![](https://via.placeholder.com/24/adad3e/?text=+) | #adad3e | 173, 173, 62
 
 ## Terminal
 
