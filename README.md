@@ -69,8 +69,8 @@ Status | C | Hex | RGB
 --- | --- | --- | ---
 Added gutter  | ![](https://via.placeholder.com/24/145a50/?text=+) | #145a50 | 20, 90, 80
 Added background | ![](https://via.placeholder.com/24/1c3b40/?text=+) | #1c3b40 | 28, 59, 64
-Deleted gutter  | ![](https://via.placeholder.com/24/9b044a/?text=+) | #9b044a | 155, 4, 74
-Deleted background | ![](https://via.placeholder.com/24/60103d/?text=+) | #60103d | 96, 16, 61
+Deleted gutter  | ![](https://via.placeholder.com/24/60103E/?text=+) | #60103E | 155, 4, 74
+Deleted background | ![](https://via.placeholder.com/24/421637/?text=+) | #421637 | 96, 16, 61
 Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f | 39, 68, 111
 Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050 | 38, 48, 80
 Conflict gutter  | ![](https://via.placeholder.com/24/f9f972/?text=+) | #f9f972 | 249, 249, 114
