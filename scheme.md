@@ -18,6 +18,5 @@
 
 
 ## VCS/Diff
-* Gutter green/blue: `between(background, dark color)`
-* Gutter red: `red dark`
+* Gutter: `between(background, dark color)`
 * Background: `between(background, gutter color)`
