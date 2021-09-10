@@ -150,6 +150,16 @@ set -U fish_pager_color_secondary_completion 7f6f93 # suffix of every second uns
 set -U fish_pager_color_secondary_description 7f6f93 # description of every second unselected completion
 ```
 
+## FZF
+```sh
+export FZF_DEFAULT_OPTS='
+ --color=fg:#7f6f93,bg:#241b30,hl:#b9b1bb
+ --color=fg+:#0be6a8,bg+:#1d1627,hl+:#0be6a8
+ --color=info:#55a7fb,prompt:#0be6a8,pointer:#ff00f6
+ --color=marker:#0be6a8,spinner:#55a7fb,header:#00fbfd
+ '
+```
+
 
 ## Starship
 Using a [Nerd Font](https://www.nerdfonts.com/)
