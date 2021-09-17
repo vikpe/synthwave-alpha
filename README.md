@@ -101,7 +101,7 @@ C | Hex | C | Hex | C | Hex
 ![](https://via.placeholder.com/64/2a6cad/?text=+)
 ![](https://via.placeholder.com/64/b312ad/?text=+)
 ![](https://via.placeholder.com/64/00b0b0/?text=+)
-![](https://via.placeholder.com/64/b9b1bb/?text=+)
+![](https://via.placeholder.com/64/7f6f93/?text=+)
 
 ![](https://via.placeholder.com/64/7f6f93/?text=+)
 ![](https://via.placeholder.com/64/e80c72/?text=+)
@@ -110,7 +110,7 @@ C | Hex | C | Hex | C | Hex
 ![](https://via.placeholder.com/64/55a7fb/?text=+)
 ![](https://via.placeholder.com/64/ff00f6/?text=+)
 ![](https://via.placeholder.com/64/00fbfd/?text=+)
-![](https://via.placeholder.com/64/f2f2e3/?text=+)
+![](https://via.placeholder.com/64/b9b1bb/?text=+)
 
 
 ## Fish
