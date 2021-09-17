@@ -28,6 +28,22 @@ Black (Dark Purple) | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b
 
 ## Extended palette
 
+![](https://via.placeholder.com/64/474034/?text=+)
+![](https://via.placeholder.com/64/421637/?text=+)
+![](https://via.placeholder.com/64/481950/?text=+)
+![](https://via.placeholder.com/64/361F4F/?text=+)
+![](https://via.placeholder.com/64/263050/?text=+)
+![](https://via.placeholder.com/64/1B4150/?text=+)
+![](https://via.placeholder.com/64/1c3b40/?text=+)
+
+![](https://via.placeholder.com/64/696437/?text=+)
+![](https://via.placeholder.com/64/60103E/?text=+)
+![](https://via.placeholder.com/64/6C176F/?text=+)
+![](https://via.placeholder.com/64/48226E/?text=+)
+![](https://via.placeholder.com/64/27446f/?text=+)
+![](https://via.placeholder.com/64/126670/?text=+)
+![](https://via.placeholder.com/64/145a50/?text=+)
+
 ![](https://via.placeholder.com/64/adad3e/?text=+)
 ![](https://via.placeholder.com/64/9c044b/?text=+)
 ![](https://via.placeholder.com/64/b312ad/?text=+)
