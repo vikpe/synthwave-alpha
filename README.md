@@ -79,18 +79,6 @@ C | Hex | C | Hex | C | Hex
 ![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3 | ![](https://via.placeholder.com/24/b9b1bb/?text=+) | #b9b1bb | ![](https://via.placeholder.com/24/7f6f93/?text=+) | #7f6f93
 ![](https://via.placeholder.com/24/312541/?text=+) | #312541 | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | ![](https://via.placeholder.com/24/1d1627/?text=+) | #1d1627
 
-## VCS / Diff
-
-Status | C | Hex
---- | --- | ---
-Added gutter  | ![](https://via.placeholder.com/24/145a50/?text=+) | #145a50
-Added background | ![](https://via.placeholder.com/24/1c3b40/?text=+) | #1c3b40
-Deleted gutter  | ![](https://via.placeholder.com/24/60103E/?text=+) | #60103E
-Deleted background | ![](https://via.placeholder.com/24/421637/?text=+) | #421637
-Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f
-Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050
-Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
-Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
 
 ## Terminal
 
@@ -202,3 +190,16 @@ format = "[is](#7f6f93) [$version](#f2f2e3) "
 [nodejs]
 format = "[<node $version>](#f9f972) "
 ```
+
+## VCS / Diff
+
+Status | C | Hex
+--- | --- | ---
+Added gutter  | ![](https://via.placeholder.com/24/145a50/?text=+) | #145a50
+Added background | ![](https://via.placeholder.com/24/1c3b40/?text=+) | #1c3b40
+Deleted gutter  | ![](https://via.placeholder.com/24/60103E/?text=+) | #60103E
+Deleted background | ![](https://via.placeholder.com/24/421637/?text=+) | #421637
+Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f
+Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050
+Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
+Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
