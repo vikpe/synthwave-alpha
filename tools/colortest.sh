@@ -11,7 +11,7 @@
 # config
 text='test'
 fgs=('m' '1m' '30m' '1;30m' '31m' '1;31m' '32m' '1;32m' '33m' '1;33m' '34m' '1;34m' '35m' '1;35m' '36m' '1;36m' '37m' '1;37m')
-bgs=('40m' '41m' '42m' '43m' '44m' '45m' '46m' '47m')
+bgs=('40m' '0;100m' '41m' '0;101m' '42m' '0;102m' '43m' '0;103m' '44m' '0;104m' '45m' '0;105m' '46m' '0;106m' '47m' '0;107m')
 
 padding_size=1
 separator_size=1
@@ -30,7 +30,7 @@ echo
 printf "%${header_indent_size}s" ""
 
 for bg in "${bgs[@]}"; do
-    printf "%${column_size}s" "$bg$pad_str$sep_str"
+    printf "%${column_size}s" "$bg"
 done
 
 echo
