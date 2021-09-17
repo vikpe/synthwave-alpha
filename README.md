@@ -1,4 +1,4 @@
-# Synthwave Alpha
+![](https://raw.githubusercontent.com/vikpe/synthwave/main/assets/synthwave_alpha_logo.png)
 > Synthwave inspired color palette
 
 ## Base palette
