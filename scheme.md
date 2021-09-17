@@ -9,7 +9,7 @@
 * Base: White, Black + `gradient(Cyan, Magenta)`
 * Green = `analogous(Cyan, D)`
 * Red = `analogous(Magenta, B)`
-* Yellow = `between(#ff0, White)`
+* Yellow = `between(White, #fff)`
 * Color variations = `complementary(COLOR, A)`
 * Black variations: `shade(Black, 1), tint(Black, 1)`
 * White variations:
