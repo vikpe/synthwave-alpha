@@ -41,21 +41,29 @@ def palette_to_table(pal: Palette, placeholder_size=24):
 
 color_yellow = Color('f9f972', 'Yellow')
 color_yellow_dark = Color('adad3e', 'Yellow Dark')
+
 color_red = Color('e80c72', 'Red')
 color_red_dark = Color('9c044b', 'Red Dark')
+
 color_magenta = Color('ff00f6', 'Magenta')
 color_magenta_dark = Color('b312ad', 'Magenta Dark')
+
 color_purple = Color('aa54f8', 'Purple')
 color_purple_dark = Color('6c29ab', 'Purple Dark')
+
 color_blue = Color('55a7fb', 'Blue')
 color_blue_dark = Color('2a6cad', 'Blue Dark')
+
 color_cyan = Color('00fbfd', 'Cyan')
 color_cyan_dark = Color('00b0b0', 'Cyan Dark')
+
 color_green = Color('0be6a8', 'Green')
 color_green_dark = Color('04996f', 'Green Dark')
+
 color_white = Color('f2f2e3', 'White')
 color_white_dark = Color('b9b1bb', 'White Dark')
 color_white_darker = Color('7f6f93', 'White Darker')
+
 color_black = Color('241b30', 'Black')
 color_black_light = Color('312541', 'Black Light')
 color_black_dark = Color('1d1627', 'Black Dark')
@@ -107,7 +115,7 @@ print()
 
 print(palette_to_table(palette_default))
 
-todo = f'''
+print(f'''
 ## Extended palette
 
 ![](https://via.placeholder.com/64/474034/?text=+)
@@ -175,26 +183,41 @@ C | Hex | C | Hex | C | Hex
 {color_green.placeholder()}
 
 **Palette**
+''')
 
-{color_black_dark.placeholder()}
-{color_red_dark.placeholder()}
-{color_green_dark.placeholder()}
-{color_yellow_dark.placeholder()}
-{color_blue_dark.placeholder()}
-{color_magenta_dark.placeholder()}
-{color_cyan_dark.placeholder()}
-{color_white_darker.placeholder()}
+foo = [
+    color_black_dark,
+    color_red_dark,
+    color_green_dark,
+    color_yellow_dark,
+    color_blue_dark,
+    color_magenta_dark,
+    color_cyan_dark,
+    color_white_darker,
+]
 
-{color_white_darker.placeholder()}
-{color_red.placeholder()}
-{color_green.placeholder()}
-{color_yellow.placeholder()}
-{color_blue.placeholder()}
-{color_magenta.placeholder()}
-{color_cyan.placeholder()}
-{color_white_dark.placeholder()}
+for color in foo:
+    print(color.placeholder())
 
+print()
 
+bar = [
+    color_white_darker,
+    color_red,
+    color_green,
+    color_yellow,
+    color_blue,
+    color_magenta,
+    color_cyan,
+    color_white_dark,
+]
+
+for color in bar:
+    print(color.placeholder())
+
+print()
+
+print(f'''
 ## Fish
 ```sh
 # The colors used by fish for syntax highlighting can be configured by changing the values of a various variables.
@@ -285,5 +308,4 @@ Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f
 Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050
 Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
 Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034'''
-
-print(todo)
+      )
