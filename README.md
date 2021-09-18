@@ -2,114 +2,110 @@
 ![](https://raw.githubusercontent.com/vikpe/synthwave/main/assets/synthwave_alpha_logo.png)
 > Synthwave inspired color palette
 
-## Base palette
-![](https://via.placeholder.com/64/f9f972/?text=+)
-![](https://via.placeholder.com/64/e80c72/?text=+)
-![](https://via.placeholder.com/64/ff00f6/?text=+)
-![](https://via.placeholder.com/64/aa54f8/?text=+)
-![](https://via.placeholder.com/64/55a7fb/?text=+)
-![](https://via.placeholder.com/64/00fbfd/?text=+)
-![](https://via.placeholder.com/64/0be6a8/?text=+)
-![](https://via.placeholder.com/64/f2f2e3/?text=+)
-![](https://via.placeholder.com/64/241b30/?text=+)
+## Palette
+### Base
+![](https://via.placeholder.com/48/f9f972/?text=+)
+![](https://via.placeholder.com/48/ff00f6/?text=+)
+![](https://via.placeholder.com/48/aa54f8/?text=+)
+![](https://via.placeholder.com/48/55a7fb/?text=+)
+![](https://via.placeholder.com/48/00fbfd/?text=+)
+![](https://via.placeholder.com/48/f2f2e3/?text=+)
+![](https://via.placeholder.com/48/241b30/?text=+)
 
-Name | C | HEX
---- | --- | ---
-Yellow | ![](https://via.placeholder.com/24/f9f972/?text=+) | f9f972
-Red | ![](https://via.placeholder.com/24/e80c72/?text=+) | e80c72
-Magenta | ![](https://via.placeholder.com/24/ff00f6/?text=+) | ff00f6
-Purple | ![](https://via.placeholder.com/24/aa54f8/?text=+) | aa54f8
-Blue | ![](https://via.placeholder.com/24/55a7fb/?text=+) | 55a7fb
-Cyan | ![](https://via.placeholder.com/24/00fbfd/?text=+) | 00fbfd
-Green | ![](https://via.placeholder.com/24/0be6a8/?text=+) | 0be6a8
-White | ![](https://via.placeholder.com/24/f2f2e3/?text=+) | f2f2e3
-Black | ![](https://via.placeholder.com/24/241b30/?text=+) | 241b30
+### Extended
+![](https://via.placeholder.com/36/f9f972/?text=+)
+![](https://via.placeholder.com/36/e80c72/?text=+)
+![](https://via.placeholder.com/36/ff00f6/?text=+)
+![](https://via.placeholder.com/36/aa54f8/?text=+)
+![](https://via.placeholder.com/36/55a7fb/?text=+)
+![](https://via.placeholder.com/36/00fbfd/?text=+)
+![](https://via.placeholder.com/36/0be6a8/?text=+)
+![](https://via.placeholder.com/36/f2f2e3/?text=+)
+![](https://via.placeholder.com/36/7f6f93/?text=+)
 
-## Extended palette
+![](https://via.placeholder.com/36/adad3e/?text=+)
+![](https://via.placeholder.com/36/9c044b/?text=+)
+![](https://via.placeholder.com/36/b312ad/?text=+)
+![](https://via.placeholder.com/36/6c29ab/?text=+)
+![](https://via.placeholder.com/36/2a6cad/?text=+)
+![](https://via.placeholder.com/36/00b0b0/?text=+)
+![](https://via.placeholder.com/36/04996f/?text=+)
+![](https://via.placeholder.com/36/b9b1bb/?text=+)
+![](https://via.placeholder.com/36/241b30/?text=+)
 
-![](https://via.placeholder.com/64/474034/?text=+)
-![](https://via.placeholder.com/64/421637/?text=+)
-![](https://via.placeholder.com/64/481950/?text=+)
-![](https://via.placeholder.com/64/361F4F/?text=+)
-![](https://via.placeholder.com/64/263050/?text=+)
-![](https://via.placeholder.com/64/1B4150/?text=+)
-![](https://via.placeholder.com/64/1c3b40/?text=+)
 
-![](https://via.placeholder.com/64/696437/?text=+)
-![](https://via.placeholder.com/64/60103E/?text=+)
-![](https://via.placeholder.com/64/6C176F/?text=+)
-![](https://via.placeholder.com/64/48226E/?text=+)
-![](https://via.placeholder.com/64/27446f/?text=+)
-![](https://via.placeholder.com/64/126670/?text=+)
-![](https://via.placeholder.com/64/145a50/?text=+)
+### Full
+![](https://via.placeholder.com/36/f9f972/?text=+)
+![](https://via.placeholder.com/36/e80c72/?text=+)
+![](https://via.placeholder.com/36/ff00f6/?text=+)
+![](https://via.placeholder.com/36/aa54f8/?text=+)
+![](https://via.placeholder.com/36/55a7fb/?text=+)
+![](https://via.placeholder.com/36/00fbfd/?text=+)
+![](https://via.placeholder.com/36/0be6a8/?text=+)
+![](https://via.placeholder.com/36/f2f2e3/?text=+)
+![](https://via.placeholder.com/36/312541/?text=+)
 
-![](https://via.placeholder.com/64/adad3e/?text=+)
-![](https://via.placeholder.com/64/9c044b/?text=+)
-![](https://via.placeholder.com/64/b312ad/?text=+)
-![](https://via.placeholder.com/64/6c29ab/?text=+)
-![](https://via.placeholder.com/64/2a6cad/?text=+)
-![](https://via.placeholder.com/64/00b0b0/?text=+)
-![](https://via.placeholder.com/64/04996f/?text=+)
+![](https://via.placeholder.com/36/adad3e/?text=+)
+![](https://via.placeholder.com/36/9c044b/?text=+)
+![](https://via.placeholder.com/36/b312ad/?text=+)
+![](https://via.placeholder.com/36/6c29ab/?text=+)
+![](https://via.placeholder.com/36/2a6cad/?text=+)
+![](https://via.placeholder.com/36/00b0b0/?text=+)
+![](https://via.placeholder.com/36/04996f/?text=+)
+![](https://via.placeholder.com/36/b9b1bb/?text=+)
+![](https://via.placeholder.com/36/241b30/?text=+)
 
-![](https://via.placeholder.com/64/f9f972/?text=+)
-![](https://via.placeholder.com/64/e80c72/?text=+)
-![](https://via.placeholder.com/64/ff00f6/?text=+)
-![](https://via.placeholder.com/64/aa54f8/?text=+)
-![](https://via.placeholder.com/64/55a7fb/?text=+)
-![](https://via.placeholder.com/64/00fbfd/?text=+)
-![](https://via.placeholder.com/64/0be6a8/?text=+)
+![](https://via.placeholder.com/36/696437/?text=+)
+![](https://via.placeholder.com/36/60103e/?text=+)
+![](https://via.placeholder.com/36/6C176f/?text=+)
+![](https://via.placeholder.com/36/48226e/?text=+)
+![](https://via.placeholder.com/36/27446f/?text=+)
+![](https://via.placeholder.com/36/126670/?text=+)
+![](https://via.placeholder.com/36/145a50/?text=+)
+![](https://via.placeholder.com/36/7f6f93/?text=+)
+![](https://via.placeholder.com/36/1d1627/?text=+)
 
-![](https://via.placeholder.com/64/f2f2e3/?text=+)
-![](https://via.placeholder.com/64/b9b1bb/?text=+)
-![](https://via.placeholder.com/64/7f6f93/?text=+)
-![](https://via.placeholder.com/64/312541/?text=+)
-![](https://via.placeholder.com/64/241b30/?text=+)
-![](https://via.placeholder.com/64/1d1627/?text=+)
+![](https://via.placeholder.com/36/474034/?text=+)
+![](https://via.placeholder.com/36/421637/?text=+)
+![](https://via.placeholder.com/36/481950/?text=+)
+![](https://via.placeholder.com/36/361F4f/?text=+)
+![](https://via.placeholder.com/36/263050/?text=+)
+![](https://via.placeholder.com/36/1B4150/?text=+)
+![](https://via.placeholder.com/36/1c3b40/?text=+)
 
-C | Hex | C | Hex | C | Hex
---- | --- | --- | --- | --- | ---
-![](https://via.placeholder.com/24/f9f972/?text=+) | #f9f972 | ![](https://via.placeholder.com/24/adad3e/?text=+) | #adad3e
-![](https://via.placeholder.com/24/e80c72/?text=+) | #e80c72 | ![](https://via.placeholder.com/24/9c044b/?text=+) | #9c044b
-![](https://via.placeholder.com/24/ff00f6/?text=+) | #ff00f6 | ![](https://via.placeholder.com/24/b312ad/?text=+) | #b312ad
-![](https://via.placeholder.com/24/aa54f8/?text=+) | #aa54f8 | ![](https://via.placeholder.com/24/6c29ab/?text=+) | #6c29ab
-![](https://via.placeholder.com/24/55a7fb/?text=+) | #55a7fb | ![](https://via.placeholder.com/24/2a6cad/?text=+) | #2a6cad
-![](https://via.placeholder.com/24/00fbfd/?text=+) | #00fbfd | ![](https://via.placeholder.com/24/00b0b0/?text=+) | #00b0b0
-![](https://via.placeholder.com/24/0be6a8/?text=+) | #0be6a8 | ![](https://via.placeholder.com/24/04996f/?text=+) | #04996f
-![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3 | ![](https://via.placeholder.com/24/b9b1bb/?text=+) | #b9b1bb | ![](https://via.placeholder.com/24/7f6f93/?text=+) | #7f6f93
-![](https://via.placeholder.com/24/312541/?text=+) | #312541 | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30 | ![](https://via.placeholder.com/24/1d1627/?text=+) | #1d1627
 
 
 ## Terminal
 
 **Default**
 
-![](https://via.placeholder.com/64/f2f2e3/?text=+)
-![](https://via.placeholder.com/64/241b30/?text=+)
+![](https://via.placeholder.com/48/f2f2e3/?text=+)
+![](https://via.placeholder.com/48/241b30/?text=+)
 
 **Highlight**
 
-![](https://via.placeholder.com/64/241b30/?text=+)
-![](https://via.placeholder.com/64/0be6a8/?text=+)
+![](https://via.placeholder.com/48/241b30/?text=+)
+![](https://via.placeholder.com/48/0be6a8/?text=+)
 
 **Palette**
 
-![](https://via.placeholder.com/64/1d1627/?text=+)
-![](https://via.placeholder.com/64/9c044b/?text=+)
-![](https://via.placeholder.com/64/04996f/?text=+)
-![](https://via.placeholder.com/64/adad3e/?text=+)
-![](https://via.placeholder.com/64/2a6cad/?text=+)
-![](https://via.placeholder.com/64/b312ad/?text=+)
-![](https://via.placeholder.com/64/00b0b0/?text=+)
-![](https://via.placeholder.com/64/7f6f93/?text=+)
+![](https://via.placeholder.com/48/1d1627/?text=+)
+![](https://via.placeholder.com/48/9c044b/?text=+)
+![](https://via.placeholder.com/48/04996f/?text=+)
+![](https://via.placeholder.com/48/adad3e/?text=+)
+![](https://via.placeholder.com/48/2a6cad/?text=+)
+![](https://via.placeholder.com/48/b312ad/?text=+)
+![](https://via.placeholder.com/48/00b0b0/?text=+)
+![](https://via.placeholder.com/48/7f6f93/?text=+)
 
-![](https://via.placeholder.com/64/7f6f93/?text=+)
-![](https://via.placeholder.com/64/e80c72/?text=+)
-![](https://via.placeholder.com/64/0be6a8/?text=+)
-![](https://via.placeholder.com/64/f9f972/?text=+)
-![](https://via.placeholder.com/64/55a7fb/?text=+)
-![](https://via.placeholder.com/64/ff00f6/?text=+)
-![](https://via.placeholder.com/64/00fbfd/?text=+)
-![](https://via.placeholder.com/64/b9b1bb/?text=+)
+![](https://via.placeholder.com/48/7f6f93/?text=+)
+![](https://via.placeholder.com/48/e80c72/?text=+)
+![](https://via.placeholder.com/48/0be6a8/?text=+)
+![](https://via.placeholder.com/48/f9f972/?text=+)
+![](https://via.placeholder.com/48/55a7fb/?text=+)
+![](https://via.placeholder.com/48/ff00f6/?text=+)
+![](https://via.placeholder.com/48/00fbfd/?text=+)
+![](https://via.placeholder.com/48/b9b1bb/?text=+)
 
 
 ## Fish
