@@ -11,8 +11,8 @@
 * Yellow = `between(White, #fff)`
 * Color variations
   * Dark: `complementary(COLOR, A)`
-  * Darker: `between(background, DARK_COLOR)`
-  * Darkest: `between(background, DARKER_COLOR)`
+  * Darker: `between(Black, DARK_COLOR)`
+  * Darkest: `between(Black, DARKER_COLOR)`
 * Black variations: `shade(Black, 1), tint(Black, 1)`
 * White variations:
     * Dark = `complementary(Black, A)` -> `monochromatic(B)`
