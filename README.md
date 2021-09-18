@@ -77,6 +77,8 @@
 
 ## Terminal
 
+![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
+
 **Default**
 
 ![](https://via.placeholder.com/48/f2f2e3/?text=+)
@@ -109,10 +111,8 @@
 
 
 ## Fish
+![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
 ```sh
-# The colors used by fish for syntax highlighting can be configured by changing the values of a various variables.
-# The value of these variables can be one of the colors accepted by the set_color command.
-# The modifier switches accepted by set_color like --bold, --dim, --italics, --reverse and --underline are also accepted.
 # https://fishshell.com/docs/current/cmds/set_color.html#cmd-set-color
 
 set -U fish_color_normal b9b1bb # default color
@@ -150,6 +150,7 @@ set -U fish_pager_color_secondary_description 7f6f93 # description of every seco
 ```
 
 ## FZF
+![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
 ```sh
 export FZF_DEFAULT_OPTS='
  --color=fg:#7f6f93,bg:#241b30,hl:#b9b1bb
@@ -162,6 +163,8 @@ export FZF_DEFAULT_OPTS='
 
 ## Starship
 Using a [Nerd Font](https://www.nerdfonts.com/)
+
+![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
 
 ```toml
 [character]
@@ -198,3 +201,4 @@ Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f
 Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050
 Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
 Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
+
