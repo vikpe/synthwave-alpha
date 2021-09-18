@@ -1,3 +1,4 @@
+
 ![](https://raw.githubusercontent.com/vikpe/synthwave/main/assets/synthwave_alpha_logo.png)
 > Synthwave inspired color palette
 
@@ -14,17 +15,15 @@
 
 Name | C | HEX
 --- | --- | ---
-Yellow (Laser Lemon) | ![](https://via.placeholder.com/24/f9f972/?text=+) | #f9f972
-Red (Red Purple) | ![](https://via.placeholder.com/24/e80c72/?text=+) | #e80c72
-Magenta (Fuchsia) | ![](https://via.placeholder.com/24/ff00f6/?text=+) | #ff00f6
-Purple (Medium Orchid) | ![](https://via.placeholder.com/24/aa54f8/?text=+) | #aa54f8
-Blue (Blue Jeans) | ![](https://via.placeholder.com/24/55a7fb/?text=+) | #55a7fb
-Cyan (Aqua) | ![](https://via.placeholder.com/24/00fbfd/?text=+) | #00fbfd
-Green (Medium Aquamarine) | ![](https://via.placeholder.com/24/0be6a8/?text=+) | #0be6a8
-White (Ivory) | ![](https://via.placeholder.com/24/f2f2e3/?text=+) | #f2f2e3
-Black (Dark Purple) | ![](https://via.placeholder.com/24/241b30/?text=+) | #241b30
-
----
+Yellow | ![](https://via.placeholder.com/24/f9f972/?text=+) | f9f972
+Red | ![](https://via.placeholder.com/24/e80c72/?text=+) | e80c72
+Magenta | ![](https://via.placeholder.com/24/ff00f6/?text=+) | ff00f6
+Purple | ![](https://via.placeholder.com/24/aa54f8/?text=+) | aa54f8
+Blue | ![](https://via.placeholder.com/24/55a7fb/?text=+) | 55a7fb
+Cyan | ![](https://via.placeholder.com/24/00fbfd/?text=+) | 00fbfd
+Green | ![](https://via.placeholder.com/24/0be6a8/?text=+) | 0be6a8
+White | ![](https://via.placeholder.com/24/f2f2e3/?text=+) | f2f2e3
+Black | ![](https://via.placeholder.com/24/241b30/?text=+) | 241b30
 
 ## Extended palette
 
