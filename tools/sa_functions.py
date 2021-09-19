@@ -2,9 +2,9 @@ from PIL import Image, ImageDraw
 
 
 # methods
-def from_template(filename, variables: dict) -> str:
+def from_template(filename) -> str:
     with open(f'templates/{filename}') as fp:
-        return fp.read().format(**variables)
+        return fp.read()
 
 
 def placeholder(hex, text='+', size=48):

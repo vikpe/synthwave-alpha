@@ -10,9 +10,6 @@
 ### Extended
 ![](./assets/palette_extended.png)
 
-### Full
-![](./assets/palette_full.png)
-
 ## Terminal
 ![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
 

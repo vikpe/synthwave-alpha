@@ -59,7 +59,6 @@ p_default = [
         C.PURPLE,
         C.BLUE,
         C.CYAN,
-        C.WHITE,
         C.BLACK,
     ]
 ]
@@ -74,7 +73,7 @@ p_extended = [
         C.CYAN,
         C.GREEN,
         C.WHITE,
-        C.WHITE_DARKER
+        C.BLACK_LIGHT,
     ],
     [
         C.YELLOW_DARK,
@@ -85,31 +84,8 @@ p_extended = [
         C.CYAN_DARK,
         C.GREEN_DARK,
         C.WHITE_DARK,
-        C.BLACK
-    ]
-]
-
-p_full = [
-    [
-        C.YELLOW,
-        C.RED,
-        C.MAGENTA,
-        C.PURPLE,
-        C.BLUE,
-        C.CYAN,
-        C.GREEN,
-        C.WHITE,
-        C.BLACK_LIGHT],
-    [
-        C.YELLOW_DARK,
-        C.RED_DARK,
-        C.MAGENTA_DARK,
-        C.PURPLE_DARK,
-        C.BLUE_DARK,
-        C.CYAN_DARK,
-        C.GREEN_DARK,
-        C.WHITE_DARK,
-        C.BLACK],
+        C.BLACK,
+    ],
     [
         C.YELLOW_DARKER,
         C.RED_DARKER,
@@ -119,7 +95,8 @@ p_full = [
         C.CYAN_DARKER,
         C.GREEN_DARKER,
         C.WHITE_DARKER,
-        C.BLACK_DARK],
+        C.BLACK_DARK,
+    ],
     [
         C.YELLOW_DARKEST,
         C.RED_DARKEST,
@@ -127,20 +104,20 @@ p_full = [
         C.PURPLE_DARKEST,
         C.BLUE_DARKEST,
         C.CYAN_DARKEST,
-        C.GREEN_DARKEST
+        C.GREEN_DARKEST,
     ],
 ]
 
 p_terminal = [
     [
-        C.BLACK_DARK,
+        C.BLACK,
         C.RED_DARK,
         C.GREEN_DARK,
         C.YELLOW_DARK,
         C.BLUE_DARK,
         C.MAGENTA_DARK,
         C.CYAN_DARK,
-        C.WHITE_DARKER,
+        C.WHITE_DARK,
     ],
     [
         C.WHITE_DARKER,
@@ -150,20 +127,19 @@ p_terminal = [
         C.BLUE,
         C.MAGENTA,
         C.CYAN,
-        C.WHITE_DARK,
+        C.WHITE,
     ]
 ]
 
 assets_dir = "../assets"
 save_palette_as_image(p_default, f"{assets_dir}/palette_default.png", size=64)
 save_palette_as_image(p_extended, f"{assets_dir}/palette_extended.png")
-save_palette_as_image(p_full, f"{assets_dir}/palette_full.png")
 save_palette_as_image(p_terminal, f"{assets_dir}/palette_terminal.png")
 
 # script
 screenshot_placeholder = placeholder('dddddd', text='screenshot', size='640x240')
 
-print(f'''
+readme = f'''
 ![]({'./assets/synthwave_alpha_logo.png'})
 > {'Synthwave inspired color palette'}
 
@@ -174,9 +150,6 @@ print(f'''
 
 ### Extended
 ![](./assets/palette_extended.png)
-
-### Full
-![](./assets/palette_full.png)
 
 ## Terminal
 {screenshot_placeholder}
@@ -198,13 +171,13 @@ print(f'''
 ## Fish
 {screenshot_placeholder}
 ```sh
-{from_template('fish.sh', C.as_dict())}
+{from_template('fish.sh')}
 ```
 
 ## FZF
 {screenshot_placeholder}
 ```sh
-{from_template('fzf.sh', C.as_dict())}
+{from_template('fzf.sh')}
 ```
 
 ## Starship
@@ -213,7 +186,7 @@ Using a [Nerd Font](https://www.nerdfonts.com/)
 {screenshot_placeholder}
 
 ```toml
-{from_template('starship.toml', C.as_dict())}
+{from_template('starship.toml')}
 ```
 
 ## VCS / Diff
@@ -228,4 +201,6 @@ Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f
 Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050
 Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
 Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
-''')
+'''
+
+print(readme.format(**C.as_dict()))
