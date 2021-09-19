@@ -8,7 +8,7 @@
 * Base: White, Black + `gradient(Cyan, Magenta)`
 * Green = `analogous(Cyan, D)`
 * Red = `analogous(Magenta, B)`
-* Yellow = `between(White, #fff)`
+* Yellow = `between(White, #ff0)`
 * Color variations
   * Dark: `complementary(COLOR, A)`
   * Darker: `between(Black, DARK_COLOR)`
