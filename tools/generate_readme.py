@@ -1,12 +1,11 @@
 from sa_functions import save_palette_as_image, placeholder, from_template
 
+def class_as_dict(cls):
+    return {f'C_{k}': v for k, v in cls.__dict__.items() if not k.startswith('__')}
+
 
 # colors
 class C:
-    @classmethod
-    def as_dict(cls):
-        return {f'C_{k}': v for k, v in cls.__dict__.items() if not k.startswith('__')}
-
     YELLOW = 'f9f972'
     YELLOW_DARK = 'adad3e'
     YELLOW_DARKER = '696437'
@@ -52,7 +51,7 @@ class C:
 
 
 # palettes
-p_default = [
+p_base = [
     [
         C.YELLOW,
         C.MAGENTA,
@@ -132,7 +131,7 @@ p_terminal = [
 ]
 
 assets_dir = "../assets"
-save_palette_as_image(p_default, f"{assets_dir}/palette_default.png", size=64)
+save_palette_as_image(p_base, f"{assets_dir}/palette_base.png", size=64)
 save_palette_as_image(p_extended, f"{assets_dir}/palette_extended.png")
 save_palette_as_image(p_terminal, f"{assets_dir}/palette_terminal.png")
 
@@ -146,12 +145,14 @@ readme = f'''
 ## Palette
 
 ### Base
-![](./assets/palette_default.png)
+![](./assets/palette_base.png)
 
 ### Extended
 ![](./assets/palette_extended.png)
 
-## Terminal
+## Implementations
+
+### Terminal
 {screenshot_placeholder}
 
 **Default**
@@ -203,4 +204,4 @@ Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
 Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
 '''
 
-print(readme.format(**C.as_dict()))
+print(readme.format(**class_as_dict(C)))

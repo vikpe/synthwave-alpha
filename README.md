@@ -5,12 +5,14 @@
 ## Palette
 
 ### Base
-![](./assets/palette_default.png)
+![](./assets/palette_base.png)
 
 ### Extended
 ![](./assets/palette_extended.png)
 
-## Terminal
+## Implementations
+
+### Terminal
 ![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
 
 **Default**
