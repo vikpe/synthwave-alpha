@@ -1,8 +1,8 @@
-from sa_functions import save_palette_as_image, placeholder, from_template
+from sa_functions import save_palette_as_image, placeholder, from_template, palette_to_table, array_transpose
+
 
 def class_as_dict(cls):
     return {f'C_{k}': v for k, v in cls.__dict__.items() if not k.startswith('__')}
-
 
 # colors
 class C:
@@ -41,6 +41,7 @@ class C:
     GREEN_DARKER = '145a50'
     GREEN_DARKEST = '1c3b40'
 
+    WHITE_LIGHT = 'f9f9f1'
     WHITE = 'f2f2e3'
     WHITE_DARK = 'b9b1bb'
     WHITE_DARKER = '7f6f93'
@@ -48,6 +49,7 @@ class C:
     BLACK = '241b30'
     BLACK_LIGHT = '312541'
     BLACK_DARK = '1d1627'
+    BLACK_DARKER = '140f1a'
 
 
 # palettes
@@ -71,7 +73,7 @@ p_extended = [
         C.BLUE,
         C.CYAN,
         C.GREEN,
-        C.WHITE,
+        C.WHITE_LIGHT,
         C.BLACK_LIGHT,
     ],
     [
@@ -82,7 +84,7 @@ p_extended = [
         C.BLUE_DARK,
         C.CYAN_DARK,
         C.GREEN_DARK,
-        C.WHITE_DARK,
+        C.WHITE,
         C.BLACK,
     ],
     [
@@ -93,7 +95,7 @@ p_extended = [
         C.BLUE_DARKER,
         C.CYAN_DARKER,
         C.GREEN_DARKER,
-        C.WHITE_DARKER,
+        C.WHITE_DARK,
         C.BLACK_DARK,
     ],
     [
@@ -104,6 +106,8 @@ p_extended = [
         C.BLUE_DARKEST,
         C.CYAN_DARKEST,
         C.GREEN_DARKEST,
+        C.WHITE_DARKER,
+        C.BLACK_DARKER,
     ],
 ]
 
@@ -149,6 +153,8 @@ readme = f'''
 
 ### Extended
 ![](./assets/palette_extended.png)
+
+{palette_to_table(array_transpose(p_extended))}
 
 ## Implementations
 

@@ -10,6 +10,19 @@
 ### Extended
 ![](./assets/palette_extended.png)
 
+C | HEX | C | HEX | C | HEX | C | HEX
+--- | --- | --- | --- | --- | --- | --- | ---
+![](https://via.placeholder.com/20/f9f972/?text=+) | `f9f972` | ![](https://via.placeholder.com/20/adad3e/?text=+) | `adad3e` | ![](https://via.placeholder.com/20/696437/?text=+) | `696437` | ![](https://via.placeholder.com/20/474034/?text=+) | `474034`
+![](https://via.placeholder.com/20/e80c72/?text=+) | `e80c72` | ![](https://via.placeholder.com/20/9c044b/?text=+) | `9c044b` | ![](https://via.placeholder.com/20/60103e/?text=+) | `60103e` | ![](https://via.placeholder.com/20/421637/?text=+) | `421637`
+![](https://via.placeholder.com/20/ff00f6/?text=+) | `ff00f6` | ![](https://via.placeholder.com/20/b312ad/?text=+) | `b312ad` | ![](https://via.placeholder.com/20/6C176f/?text=+) | `6C176f` | ![](https://via.placeholder.com/20/481950/?text=+) | `481950`
+![](https://via.placeholder.com/20/aa54f8/?text=+) | `aa54f8` | ![](https://via.placeholder.com/20/6c29ab/?text=+) | `6c29ab` | ![](https://via.placeholder.com/20/48226e/?text=+) | `48226e` | ![](https://via.placeholder.com/20/361F4f/?text=+) | `361F4f`
+![](https://via.placeholder.com/20/55a7fb/?text=+) | `55a7fb` | ![](https://via.placeholder.com/20/2a6cad/?text=+) | `2a6cad` | ![](https://via.placeholder.com/20/27446f/?text=+) | `27446f` | ![](https://via.placeholder.com/20/263050/?text=+) | `263050`
+![](https://via.placeholder.com/20/00fbfd/?text=+) | `00fbfd` | ![](https://via.placeholder.com/20/00b0b0/?text=+) | `00b0b0` | ![](https://via.placeholder.com/20/126670/?text=+) | `126670` | ![](https://via.placeholder.com/20/1B4150/?text=+) | `1B4150`
+![](https://via.placeholder.com/20/0be6a8/?text=+) | `0be6a8` | ![](https://via.placeholder.com/20/04996f/?text=+) | `04996f` | ![](https://via.placeholder.com/20/145a50/?text=+) | `145a50` | ![](https://via.placeholder.com/20/1c3b40/?text=+) | `1c3b40`
+![](https://via.placeholder.com/20/f9f9f1/?text=+) | `f9f9f1` | ![](https://via.placeholder.com/20/f2f2e3/?text=+) | `f2f2e3` | ![](https://via.placeholder.com/20/b9b1bb/?text=+) | `b9b1bb` | ![](https://via.placeholder.com/20/7f6f93/?text=+) | `7f6f93`
+![](https://via.placeholder.com/20/312541/?text=+) | `312541` | ![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/1d1627/?text=+) | `1d1627` | ![](https://via.placeholder.com/20/140f1a/?text=+) | `140f1a`
+
+
 ## Implementations
 
 ### Terminal

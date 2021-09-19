@@ -7,6 +7,10 @@ def from_template(filename) -> str:
         return fp.read()
 
 
+def array_transpose(arr: list) -> list:
+    return [*zip(*arr)]
+
+
 def placeholder(hex, text='+', size=48):
     return f'![](https://via.placeholder.com/{size}/{hex}/?text={text})'
 
@@ -54,7 +58,7 @@ def palette_to_table(palette: list, placeholder_size=20):
     for shades in palette:
         row = []
         for color in shades:
-            row += [placeholder(color, placeholder_size), f'`{color}`']
+            row += [placeholder(color, size=placeholder_size), f'`{color}`']
 
         body_rows.append(row)
 

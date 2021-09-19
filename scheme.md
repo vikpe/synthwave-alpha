@@ -13,7 +13,11 @@
   * Dark: `complementary(COLOR, A)`
   * Darker: `between(Black, DARK_COLOR)`
   * Darkest: `between(Black, DARKER_COLOR)`
-* Black variations: `shade(Black, 1), tint(Black, 1)`
+* Black variations: 
+  * Light: `tint(Black, 1)`
+  * Dark: `shade(Black, 1)`
+  * Darker: `shade(Black, 2)`
 * White variations:
-    * Dark = `complementary(Black, A)` -> `monochromatic(B)`
-    * Dim = `between(White, White Dark)`
+  * Darker = `complementary(Black, A)` -> `monochromatic(B)`
+  * Dark = `between(White, White Darker)`
+  * Light = `between(White, #fff)`
