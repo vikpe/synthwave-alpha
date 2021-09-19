@@ -1,194 +1,156 @@
 from sa_functions import save_palette_as_image, placeholder, from_template
 
+
 # colors
-c_yellow = 'f9f972'
-c_yellow_dark = 'adad3e'
-c_yellow_darker = '696437'
-c_yellow_darkest = '474034'
+class C:
+    @classmethod
+    def as_dict(cls):
+        return {f'C_{k}': v for k, v in cls.__dict__.items() if not k.startswith('__')}
 
-c_red = 'e80c72'
-c_red_dark = '9c044b'
-c_red_darker = '60103e'
-c_red_darkest = '421637'
+    YELLOW = 'f9f972'
+    YELLOW_DARK = 'adad3e'
+    YELLOW_DARKER = '696437'
+    YELLOW_DARKEST = '474034'
 
-c_magenta = 'ff00f6'
-c_magenta_dark = 'b312ad'
-c_magenta_darker = '6C176f'
-c_magenta_darkest = '481950'
+    RED = 'e80c72'
+    RED_DARK = '9c044b'
+    RED_DARKER = '60103e'
+    RED_DARKEST = '421637'
 
-c_purple = 'aa54f8'
-c_purple_dark = '6c29ab'
-c_purple_darker = '48226e'
-c_purple_darkest = '361F4f'
+    MAGENTA = 'ff00f6'
+    MAGENTA_DARK = 'b312ad'
+    MAGENTA_DARKER = '6C176f'
+    MAGENTA_DARKEST = '481950'
 
-c_blue = '55a7fb'
-c_blue_dark = '2a6cad'
-c_blue_darker = '27446f'
-c_blue_darkest = '263050'
+    PURPLE = 'aa54f8'
+    PURPLE_DARK = '6c29ab'
+    PURPLE_DARKER = '48226e'
+    PURPLE_DARKEST = '361F4f'
 
-c_cyan = '00fbfd'
-c_cyan_dark = '00b0b0'
-c_cyan_darker = '126670'
-c_cyan_darkest = '1B4150'
+    BLUE = '55a7fb'
+    BLUE_DARK = '2a6cad'
+    BLUE_DARKER = '27446f'
+    BLUE_DARKEST = '263050'
 
-c_green = '0be6a8'
-c_green_dark = '04996f'
-c_green_darker = '145a50'
-c_green_darkest = '1c3b40'
+    CYAN = '00fbfd'
+    CYAN_DARK = '00b0b0'
+    CYAN_DARKER = '126670'
+    CYAN_DARKEST = '1B4150'
 
-c_white = 'f2f2e3'
-c_white_dark = 'b9b1bb'
-c_white_darker = '7f6f93'
+    GREEN = '0be6a8'
+    GREEN_DARK = '04996f'
+    GREEN_DARKER = '145a50'
+    GREEN_DARKEST = '1c3b40'
 
-c_black = '241b30'
-c_black_light = '312541'
-c_black_dark = '1d1627'
+    WHITE = 'f2f2e3'
+    WHITE_DARK = 'b9b1bb'
+    WHITE_DARKER = '7f6f93'
 
-colors = {
-    'c_yellow': 'f9f972',
-    'c_yellow_dark': 'adad3e',
-    'c_yellow_darker': '696437',
-    'c_yellow_darkest': '474034',
+    BLACK = '241b30'
+    BLACK_LIGHT = '312541'
+    BLACK_DARK = '1d1627'
 
-    'c_red': 'e80c72',
-    'c_red_dark': '9c044b',
-    'c_red_darker': '60103e',
-    'c_red_darkest': '421637',
-
-    'c_magenta': 'ff00f6',
-    'c_magenta_dark': 'b312ad',
-    'c_magenta_darker': '6C176f',
-    'c_magenta_darkest': '481950',
-
-    'c_purple': 'aa54f8',
-    'c_purple_dark': '6c29ab',
-    'c_purple_darker': '48226e',
-    'c_purple_darkest': '361F4f',
-
-    'c_blue': '55a7fb',
-    'c_blue_dark': '2a6cad',
-    'c_blue_darker': '27446f',
-    'c_blue_darkest': '263050',
-
-    'c_cyan': '00fbfd',
-    'c_cyan_dark': '00b0b0',
-    'c_cyan_darker': '126670',
-    'c_cyan_darkest': '1B4150',
-
-    'c_green': '0be6a8',
-    'c_green_dark': '04996f',
-    'c_green_darker': '145a50',
-    'c_green_darkest': '1c3b40',
-
-    'c_white': 'f2f2e3',
-    'c_white_dark': 'b9b1bb',
-    'c_white_darker': '7f6f93',
-
-    'c_black': '241b30',
-    'c_black_light': '312541',
-    'c_black_dark': '1d1627',
-}
 
 # palettes
 p_default = [
     [
-        c_yellow,
-        c_magenta,
-        c_purple,
-        c_blue,
-        c_cyan,
-        c_white,
-        c_black,
+        C.YELLOW,
+        C.MAGENTA,
+        C.PURPLE,
+        C.BLUE,
+        C.CYAN,
+        C.WHITE,
+        C.BLACK,
     ]
 ]
 
 p_extended = [
     [
-        c_yellow,
-        c_red,
-        c_magenta,
-        c_purple,
-        c_blue,
-        c_cyan,
-        c_green,
-        c_white,
-        c_white_darker
+        C.YELLOW,
+        C.RED,
+        C.MAGENTA,
+        C.PURPLE,
+        C.BLUE,
+        C.CYAN,
+        C.GREEN,
+        C.WHITE,
+        C.WHITE_DARKER
     ],
     [
-        c_yellow_dark,
-        c_red_dark,
-        c_magenta_dark,
-        c_purple_dark,
-        c_blue_dark,
-        c_cyan_dark,
-        c_green_dark,
-        c_white_dark,
-        c_black
+        C.YELLOW_DARK,
+        C.RED_DARK,
+        C.MAGENTA_DARK,
+        C.PURPLE_DARK,
+        C.BLUE_DARK,
+        C.CYAN_DARK,
+        C.GREEN_DARK,
+        C.WHITE_DARK,
+        C.BLACK
     ]
 ]
 
 p_full = [
     [
-        c_yellow,
-        c_red,
-        c_magenta,
-        c_purple,
-        c_blue,
-        c_cyan,
-        c_green,
-        c_white,
-        c_black_light],
+        C.YELLOW,
+        C.RED,
+        C.MAGENTA,
+        C.PURPLE,
+        C.BLUE,
+        C.CYAN,
+        C.GREEN,
+        C.WHITE,
+        C.BLACK_LIGHT],
     [
-        c_yellow_dark,
-        c_red_dark,
-        c_magenta_dark,
-        c_purple_dark,
-        c_blue_dark,
-        c_cyan_dark,
-        c_green_dark,
-        c_white_dark,
-        c_black],
+        C.YELLOW_DARK,
+        C.RED_DARK,
+        C.MAGENTA_DARK,
+        C.PURPLE_DARK,
+        C.BLUE_DARK,
+        C.CYAN_DARK,
+        C.GREEN_DARK,
+        C.WHITE_DARK,
+        C.BLACK],
     [
-        c_yellow_darker,
-        c_red_darker,
-        c_magenta_darker,
-        c_purple_darker,
-        c_blue_darker,
-        c_cyan_darker,
-        c_green_darker,
-        c_white_darker,
-        c_black_dark],
+        C.YELLOW_DARKER,
+        C.RED_DARKER,
+        C.MAGENTA_DARKER,
+        C.PURPLE_DARKER,
+        C.BLUE_DARKER,
+        C.CYAN_DARKER,
+        C.GREEN_DARKER,
+        C.WHITE_DARKER,
+        C.BLACK_DARK],
     [
-        c_yellow_darkest,
-        c_red_darkest,
-        c_magenta_darkest,
-        c_purple_darkest,
-        c_blue_darkest,
-        c_cyan_darkest,
-        c_green_darkest
+        C.YELLOW_DARKEST,
+        C.RED_DARKEST,
+        C.MAGENTA_DARKEST,
+        C.PURPLE_DARKEST,
+        C.BLUE_DARKEST,
+        C.CYAN_DARKEST,
+        C.GREEN_DARKEST
     ],
 ]
 
 p_terminal = [
     [
-        c_black_dark,
-        c_red_dark,
-        c_green_dark,
-        c_yellow_dark,
-        c_blue_dark,
-        c_magenta_dark,
-        c_cyan_dark,
-        c_white_darker,
+        C.BLACK_DARK,
+        C.RED_DARK,
+        C.GREEN_DARK,
+        C.YELLOW_DARK,
+        C.BLUE_DARK,
+        C.MAGENTA_DARK,
+        C.CYAN_DARK,
+        C.WHITE_DARKER,
     ],
     [
-        c_white_darker,
-        c_red,
-        c_green,
-        c_yellow,
-        c_blue,
-        c_magenta,
-        c_cyan,
-        c_white_dark,
+        C.WHITE_DARKER,
+        C.RED,
+        C.GREEN,
+        C.YELLOW,
+        C.BLUE,
+        C.MAGENTA,
+        C.CYAN,
+        C.WHITE_DARK,
     ]
 ]
 
@@ -223,13 +185,13 @@ print(f'''
 
 **Default**
 
-{placeholder(c_white)}
-{placeholder(c_black)}
+{placeholder(C.WHITE)}
+{placeholder(C.BLACK)}
 
 **Highlight**
 
-{placeholder(c_black)}
-{placeholder(c_green)}
+{placeholder(C.BLACK)}
+{placeholder(C.GREEN)}
 
 **Palette**
 
@@ -238,13 +200,13 @@ print(f'''
 ## Fish
 {screenshot_placeholder}
 ```sh
-{from_template('fish.sh', colors)}
+{from_template('fish.sh', C.as_dict())}
 ```
 
 ## FZF
 {screenshot_placeholder}
 ```sh
-{from_template('fzf.sh', colors)}
+{from_template('fzf.sh', C.as_dict())}
 ```
 
 ## Starship
@@ -253,7 +215,7 @@ Using a [Nerd Font](https://www.nerdfonts.com/)
 {screenshot_placeholder}
 
 ```toml
-{from_template('starship.toml', colors)}
+{from_template('starship.toml', C.as_dict())}
 ```
 
 ## VCS / Diff
