@@ -1,0 +1,20 @@
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[cmd_duration]
+format = "[took $duration](#{c_white_darker}) "
+
+[directory]
+read_only = " "
+style = "#{c_cyan} bold"
+
+[git_branch]
+format = "[on](#{c_white_darker}) [ $branch](#{c_magenta}) "
+
+[package]
+style = ""
+format = "[is](#{c_white_darker}) [$version](#{c_white}) "
+
+[nodejs]
+format = "[<node $version>](#{c_yellow}) "

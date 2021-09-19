@@ -1,82 +1,20 @@
 
-![](https://raw.githubusercontent.com/vikpe/synthwave/main/assets/synthwave_alpha_logo.png)
+![](./assets/synthwave_alpha_logo.png)
 > Synthwave inspired color palette
 
+
 ## Palette
+
 ### Base
-![](https://via.placeholder.com/48/f9f972/?text=+)
-![](https://via.placeholder.com/48/ff00f6/?text=+)
-![](https://via.placeholder.com/48/aa54f8/?text=+)
-![](https://via.placeholder.com/48/55a7fb/?text=+)
-![](https://via.placeholder.com/48/00fbfd/?text=+)
-![](https://via.placeholder.com/48/f2f2e3/?text=+)
-![](https://via.placeholder.com/48/241b30/?text=+)
+![](./assets/palette_default.png)
 
 ### Extended
-![](https://via.placeholder.com/36/f9f972/?text=+)
-![](https://via.placeholder.com/36/e80c72/?text=+)
-![](https://via.placeholder.com/36/ff00f6/?text=+)
-![](https://via.placeholder.com/36/aa54f8/?text=+)
-![](https://via.placeholder.com/36/55a7fb/?text=+)
-![](https://via.placeholder.com/36/00fbfd/?text=+)
-![](https://via.placeholder.com/36/0be6a8/?text=+)
-![](https://via.placeholder.com/36/f2f2e3/?text=+)
-![](https://via.placeholder.com/36/7f6f93/?text=+)
-
-![](https://via.placeholder.com/36/adad3e/?text=+)
-![](https://via.placeholder.com/36/9c044b/?text=+)
-![](https://via.placeholder.com/36/b312ad/?text=+)
-![](https://via.placeholder.com/36/6c29ab/?text=+)
-![](https://via.placeholder.com/36/2a6cad/?text=+)
-![](https://via.placeholder.com/36/00b0b0/?text=+)
-![](https://via.placeholder.com/36/04996f/?text=+)
-![](https://via.placeholder.com/36/b9b1bb/?text=+)
-![](https://via.placeholder.com/36/241b30/?text=+)
-
+![](./assets/palette_extended.png)
 
 ### Full
-![](https://via.placeholder.com/36/f9f972/?text=+)
-![](https://via.placeholder.com/36/e80c72/?text=+)
-![](https://via.placeholder.com/36/ff00f6/?text=+)
-![](https://via.placeholder.com/36/aa54f8/?text=+)
-![](https://via.placeholder.com/36/55a7fb/?text=+)
-![](https://via.placeholder.com/36/00fbfd/?text=+)
-![](https://via.placeholder.com/36/0be6a8/?text=+)
-![](https://via.placeholder.com/36/f2f2e3/?text=+)
-![](https://via.placeholder.com/36/312541/?text=+)
-
-![](https://via.placeholder.com/36/adad3e/?text=+)
-![](https://via.placeholder.com/36/9c044b/?text=+)
-![](https://via.placeholder.com/36/b312ad/?text=+)
-![](https://via.placeholder.com/36/6c29ab/?text=+)
-![](https://via.placeholder.com/36/2a6cad/?text=+)
-![](https://via.placeholder.com/36/00b0b0/?text=+)
-![](https://via.placeholder.com/36/04996f/?text=+)
-![](https://via.placeholder.com/36/b9b1bb/?text=+)
-![](https://via.placeholder.com/36/241b30/?text=+)
-
-![](https://via.placeholder.com/36/696437/?text=+)
-![](https://via.placeholder.com/36/60103e/?text=+)
-![](https://via.placeholder.com/36/6C176f/?text=+)
-![](https://via.placeholder.com/36/48226e/?text=+)
-![](https://via.placeholder.com/36/27446f/?text=+)
-![](https://via.placeholder.com/36/126670/?text=+)
-![](https://via.placeholder.com/36/145a50/?text=+)
-![](https://via.placeholder.com/36/7f6f93/?text=+)
-![](https://via.placeholder.com/36/1d1627/?text=+)
-
-![](https://via.placeholder.com/36/474034/?text=+)
-![](https://via.placeholder.com/36/421637/?text=+)
-![](https://via.placeholder.com/36/481950/?text=+)
-![](https://via.placeholder.com/36/361F4f/?text=+)
-![](https://via.placeholder.com/36/263050/?text=+)
-![](https://via.placeholder.com/36/1B4150/?text=+)
-![](https://via.placeholder.com/36/1c3b40/?text=+)
-
-
+![](./assets/palette_full.png)
 
 ## Terminal
-
 ![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
 
 **Default**
@@ -91,24 +29,7 @@
 
 **Palette**
 
-![](https://via.placeholder.com/48/1d1627/?text=+)
-![](https://via.placeholder.com/48/9c044b/?text=+)
-![](https://via.placeholder.com/48/04996f/?text=+)
-![](https://via.placeholder.com/48/adad3e/?text=+)
-![](https://via.placeholder.com/48/2a6cad/?text=+)
-![](https://via.placeholder.com/48/b312ad/?text=+)
-![](https://via.placeholder.com/48/00b0b0/?text=+)
-![](https://via.placeholder.com/48/7f6f93/?text=+)
-
-![](https://via.placeholder.com/48/7f6f93/?text=+)
-![](https://via.placeholder.com/48/e80c72/?text=+)
-![](https://via.placeholder.com/48/0be6a8/?text=+)
-![](https://via.placeholder.com/48/f9f972/?text=+)
-![](https://via.placeholder.com/48/55a7fb/?text=+)
-![](https://via.placeholder.com/48/ff00f6/?text=+)
-![](https://via.placeholder.com/48/00fbfd/?text=+)
-![](https://via.placeholder.com/48/b9b1bb/?text=+)
-
+![](./assets/palette_terminal.png)
 
 ## Fish
 ![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
@@ -147,19 +68,20 @@ set -U fish_pager_color_secondary_background # background of every second unsele
 set -U fish_pager_color_secondary_prefix b9b1bb --underline # prefix of every second unselected completion
 set -U fish_pager_color_secondary_completion 7f6f93 # suffix of every second unselected completion
 set -U fish_pager_color_secondary_description 7f6f93 # description of every second unselected completion
+
 ```
 
 ## FZF
 ![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
 ```sh
 export FZF_DEFAULT_OPTS='
- --color=fg:#7f6f93,bg:#241b30,hl:#b9b1bb
- --color=fg+:#0be6a8,bg+:#1d1627,hl+:#0be6a8
- --color=info:#55a7fb,prompt:#0be6a8,pointer:#ff00f6
- --color=marker:#0be6a8,spinner:#55a7fb,header:#00fbfd
- '
-```
+--color=fg:#7f6f93,bg:#241b30,hl:#b9b1bb
+--color=fg+:#0be6a8,bg+:#1d1627,hl+:#0be6a8
+--color=info:#55a7fb,prompt:#0be6a8,pointer:#ff00f6
+--color=marker:#0be6a8,spinner:#55a7fb,header:#00fbfd
+'
 
+```
 
 ## Starship
 Using a [Nerd Font](https://www.nerdfonts.com/)
@@ -187,6 +109,7 @@ format = "[is](#7f6f93) [$version](#f2f2e3) "
 
 [nodejs]
 format = "[<node $version>](#f9f972) "
+
 ```
 
 ## VCS / Diff
