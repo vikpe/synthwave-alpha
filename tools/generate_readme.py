@@ -166,9 +166,7 @@ screenshot_placeholder = placeholder('dddddd', text='screenshot', size='640x240'
 print(f'''
 ![]({'./assets/synthwave_alpha_logo.png'})
 > {'Synthwave inspired color palette'}
-''')
 
-print(f'''
 ## Palette
 
 ### Base

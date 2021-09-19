@@ -2,7 +2,6 @@
 ![](./assets/synthwave_alpha_logo.png)
 > Synthwave inspired color palette
 
-
 ## Palette
 
 ### Base
@@ -90,8 +89,8 @@ Using a [Nerd Font](https://www.nerdfonts.com/)
 
 ```toml
 [character]
-success_symbol = "[❯](bold green)"
-error_symbol = "[❯](bold red)"
+success_symbol = "[❯](bold 0be6a8)"
+error_symbol = "[❯](bold e80c72)"
 
 [cmd_duration]
 format = "[took $duration](#7f6f93) "
