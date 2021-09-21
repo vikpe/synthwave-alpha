@@ -1,3 +1,6 @@
+import colorsys
+from collections import namedtuple
+
 from PIL import Image, ImageDraw
 
 
@@ -64,3 +67,69 @@ def palette_to_table(palette: list, placeholder_size=20):
         body_rows.append(row)
 
     return md_table([header_row] + body_rows)
+
+
+def int_to_hex(_int: int) -> str:
+    template = "{:02x}" if _int < 16 else "{:x}"
+    return template.format(_int)
+
+
+def hex_to_int(_hex: str) -> int:
+    return int(_hex, 16)
+
+
+class Color(namedtuple("ColorRGB", ["r", "g", "b"])):
+    @property
+    def rgb(self):
+        return self.r, self.g, self.b
+
+    @property
+    def hex(self):
+        return color_to_hex(self)
+
+    @property
+    def hls(self):
+        return colorsys.rgb_to_hls(*self.rgb)
+
+    @property
+    def hsv(self):
+        return colorsys.rgb_to_hsv(*self.rgb)
+
+
+def color_to_hex(color: Color) -> str:
+    return "".join(map(int_to_hex, color.rgb))
+
+
+def hex_to_color(_hex: str) -> Color:
+    _int = hex_to_int(_hex)
+    r = _int >> 16
+    g = _int >> 8 & 0x00FF
+    b = _int & 0x0000FF
+    return Color(r, g, b)
+
+
+def blend_values(v1: int, v2: int, factor: float) -> int:
+    return round((v2 - v1) * factor) + v1
+
+
+def shade_hex_color(_hex: str, factor: float) -> str:
+    target_color = 0 if factor < 0 else 255
+    abs_factor = abs(factor)
+
+    color = hex_to_color(_hex)
+    r = blend_values(color.r, target_color, abs_factor)
+    g = blend_values(color.g, target_color, abs_factor)
+    b = blend_values(color.b, target_color, abs_factor)
+
+    return Color(r, g, b).hex
+
+
+def blend_color(hex1: str, hex2: str, factor: float = 0.5) -> str:
+    rgb1 = hex_to_color(hex1)
+    rgb2 = hex_to_color(hex2)
+
+    r = blend_values(rgb1.r, rgb2.r, factor)
+    g = blend_values(rgb1.g, rgb2.g, factor)
+    b = blend_values(rgb1.b, rgb2.b, factor)
+
+    return Color(r, g, b).hex
