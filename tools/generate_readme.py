@@ -5,15 +5,15 @@ from sa_functions import (
     palette_to_table,
     array_transpose,
     class_as_dict,
-    blend_color,
+    blend_hex_color,
+    shade_hex_color,
 )
 
-"""
 shades = [x * 0.1 for x in range(0, 11)]
 print(shades)
 p_yellow = [shade_hex_color("e80c72", s) for s in shades]
 p_dark = [shade_hex_color("e80c72", -s) for s in shades]
-p_blend = [blend_color("f9f972", "55a7fb", s) for s in shades]
+p_blend = [blend_hex_color("f9f972", "55a7fb", s) for s in shades]
 
 print(p_yellow)
 save_palette_as_image([p_yellow], "shade_light.png")
@@ -25,8 +25,7 @@ print(p_yellow)
 save_palette_as_image([p_blend], "p_blend.png")
 
 print(shade_hex_color("adad3e", 0.1))
-print(blend_color("ff0000", "00ff00", 1))
-"""
+print(blend_hex_color("ff0000", "00ff00", 1))
 
 
 # colors
@@ -43,38 +42,38 @@ class C:
 
     YELLOW = "f9f972"
     YELLOW_DARK = "adad3e"
-    YELLOW_DARKER = blend_color(YELLOW_DARK, BLACK)
-    YELLOW_DARKEST = blend_color(YELLOW_DARKER, BLACK)
+    YELLOW_DARKER = blend_hex_color(YELLOW_DARK, BLACK)
+    YELLOW_DARKEST = blend_hex_color(YELLOW_DARKER, BLACK)
 
     RED = "e80c72"
     RED_DARK = "9c044b"
-    RED_DARKER = blend_color(RED_DARK, BLACK)
-    RED_DARKEST = blend_color(RED_DARKER, BLACK)
+    RED_DARKER = blend_hex_color(RED_DARK, BLACK)
+    RED_DARKEST = blend_hex_color(RED_DARKER, BLACK)
 
     MAGENTA = "ff00f6"
     MAGENTA_DARK = "b312ad"
-    MAGENTA_DARKER = blend_color(MAGENTA_DARK, BLACK)
-    MAGENTA_DARKEST = blend_color(MAGENTA_DARKER, BLACK)
+    MAGENTA_DARKER = blend_hex_color(MAGENTA_DARK, BLACK)
+    MAGENTA_DARKEST = blend_hex_color(MAGENTA_DARKER, BLACK)
 
     PURPLE = "aa54f8"
     PURPLE_DARK = "6c29ab"
-    PURPLE_DARKER = blend_color(PURPLE_DARK, BLACK)
-    PURPLE_DARKEST = blend_color(PURPLE_DARKER, BLACK)
+    PURPLE_DARKER = blend_hex_color(PURPLE_DARK, BLACK)
+    PURPLE_DARKEST = blend_hex_color(PURPLE_DARKER, BLACK)
 
     BLUE = "55a7fb"
     BLUE_DARK = "2a6cad"
-    BLUE_DARKER = blend_color(BLUE_DARK, BLACK)
-    BLUE_DARKEST = blend_color(BLUE_DARKER, BLACK)
+    BLUE_DARKER = blend_hex_color(BLUE_DARK, BLACK)
+    BLUE_DARKEST = blend_hex_color(BLUE_DARKER, BLACK)
 
     CYAN = "00fbfd"
     CYAN_DARK = "00b0b0"
-    CYAN_DARKER = blend_color(CYAN_DARK, BLACK)
-    CYAN_DARKEST = blend_color(CYAN_DARKER, BLACK)
+    CYAN_DARKER = blend_hex_color(CYAN_DARK, BLACK)
+    CYAN_DARKEST = blend_hex_color(CYAN_DARKER, BLACK)
 
     GREEN = "0be6a8"
     GREEN_DARK = "04996f"
-    GREEN_DARKER = blend_color(GREEN_DARK, BLACK)
-    GREEN_DARKEST = blend_color(GREEN_DARKER, BLACK)
+    GREEN_DARKER = blend_hex_color(GREEN_DARK, BLACK)
+    GREEN_DARKEST = blend_hex_color(GREEN_DARKER, BLACK)
 
 
 # palettes

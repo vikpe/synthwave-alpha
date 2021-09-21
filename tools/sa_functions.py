@@ -112,24 +112,31 @@ def blend_values(v1: int, v2: int, factor: float) -> int:
     return round((v2 - v1) * factor) + v1
 
 
+def shade_color(color: Color, factor: float = 0.5) -> Color:
+    target_level = 0 if factor < 0 else 255
+    target_color = Color(target_level, target_level, target_level)
+
+    return blend_color(
+        color,
+        target_color,
+        factor=abs(factor)
+    )
+
+
 def shade_hex_color(_hex: str, factor: float) -> str:
-    target_color = 0 if factor < 0 else 255
-    abs_factor = abs(factor)
-
     color = hex_to_color(_hex)
-    r = blend_values(color.r, target_color, abs_factor)
-    g = blend_values(color.g, target_color, abs_factor)
-    b = blend_values(color.b, target_color, abs_factor)
-
-    return Color(r, g, b).hex
+    return shade_color(color, factor).hex
 
 
-def blend_color(hex1: str, hex2: str, factor: float = 0.5) -> str:
-    rgb1 = hex_to_color(hex1)
-    rgb2 = hex_to_color(hex2)
+def blend_color(color1: Color, color2: Color, factor: float = 0.5) -> Color:
+    r = blend_values(color1.r, color2.r, factor)
+    g = blend_values(color1.g, color2.g, factor)
+    b = blend_values(color1.b, color2.b, factor)
 
-    r = blend_values(rgb1.r, rgb2.r, factor)
-    g = blend_values(rgb1.g, rgb2.g, factor)
-    b = blend_values(rgb1.b, rgb2.b, factor)
+    return Color(r, g, b)
 
-    return Color(r, g, b).hex
+
+def blend_hex_color(hex1: str, hex2: str, factor: float = 0.5) -> str:
+    color1 = hex_to_color(hex1)
+    color2 = hex_to_color(hex2)
+    return blend_color(color1, color2, factor).hex
