@@ -113,41 +113,43 @@ class C:
 
     YELLOW = "f9f972"
     YELLOW_DARK = "adad3e"
-    YELLOW_DARKER = blend_color(YELLOW_DARK, BLACK)  # "696437"
-    YELLOW_DARKEST = blend_color(YELLOW_DARKER, BLACK)  # "474034"
+    YELLOW_DARKER = blend_color(YELLOW_DARK, BLACK)
+    YELLOW_DARKEST = blend_color(YELLOW_DARKER, BLACK)
 
     RED = "e80c72"
     RED_DARK = "9c044b"
-    RED_DARKER = blend_color(RED_DARK, BLACK)  # "60103e"
-    RED_DARKEST = blend_color(RED_DARKER, BLACK)  # "421637"
+    RED_DARKER = blend_color(RED_DARK, BLACK)
+    RED_DARKEST = blend_color(RED_DARKER, BLACK)
 
     MAGENTA = "ff00f6"
     MAGENTA_DARK = "b312ad"
-    MAGENTA_DARKER = blend_color(MAGENTA_DARK, BLACK)  # "6C176f"
-    MAGENTA_DARKEST = blend_color(MAGENTA_DARKER, BLACK)  # "481950"
+    MAGENTA_DARKER = blend_color(MAGENTA_DARK, BLACK)
+    MAGENTA_DARKEST = blend_color(MAGENTA_DARKER, BLACK)
 
     PURPLE = "aa54f8"
     PURPLE_DARK = "6c29ab"
-    PURPLE_DARKER = blend_color(PURPLE_DARK, BLACK)  # "48226e"
-    PURPLE_DARKEST = blend_color(PURPLE_DARKER, BLACK)  # "361F4f"
+    PURPLE_DARKER = blend_color(PURPLE_DARK, BLACK)
+    PURPLE_DARKEST = blend_color(PURPLE_DARKER, BLACK)
 
     BLUE = "55a7fb"
     BLUE_DARK = "2a6cad"
-    BLUE_DARKER = blend_color(BLUE_DARK, BLACK)  # "27446f"
-    BLUE_DARKEST = blend_color(BLUE_DARKER, BLACK)  # "263050"
+    BLUE_DARKER = blend_color(BLUE_DARK, BLACK)
+    BLUE_DARKEST = blend_color(BLUE_DARKER, BLACK)
 
     CYAN = "00fbfd"
     CYAN_DARK = "00b0b0"
-    CYAN_DARKER = blend_color(CYAN_DARK, BLACK)  # "126670"
-    CYAN_DARKEST = blend_color(CYAN_DARKER, BLACK)  # "1B4150"
+    CYAN_DARKER = blend_color(CYAN_DARK, BLACK)
+    CYAN_DARKEST = blend_color(CYAN_DARKER, BLACK)
 
     GREEN = "0be6a8"
     GREEN_DARK = "04996f"
-    GREEN_DARKER = blend_color(GREEN_DARK, BLACK)  # "145a50"
-    GREEN_DARKEST = blend_color(GREEN_DARKER, BLACK)  # "1c3b40"
+    GREEN_DARKER = blend_color(GREEN_DARK, BLACK)
+    GREEN_DARKEST = blend_color(GREEN_DARKER, BLACK)
 
 
 # palettes
+
+
 p_base = [
     [
         C.YELLOW,
