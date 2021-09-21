@@ -1,8 +1,6 @@
-from sa_functions import save_palette_as_image, placeholder, from_template, palette_to_table, array_transpose
+from sa_functions import save_palette_as_image, placeholder, from_template, palette_to_table, array_transpose, \
+    class_as_dict
 
-
-def class_as_dict(cls):
-    return {f'C_{k}': v for k, v in cls.__dict__.items() if not k.startswith('__')}
 
 # colors
 class C:

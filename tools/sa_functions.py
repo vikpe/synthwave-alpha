@@ -1,7 +1,10 @@
 from PIL import Image, ImageDraw
 
 
-# methods
+def class_as_dict(cls):
+    return {f'C_{k}': v for k, v in cls.__dict__.items() if not k.startswith('__')}
+
+
 def from_template(filename) -> str:
     with open(f'templates/{filename}') as fp:
         return fp.read()
