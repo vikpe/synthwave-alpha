@@ -1,58 +1,155 @@
-from sa_functions import save_palette_as_image, placeholder, from_template, palette_to_table, array_transpose
+from sa_functions import (
+    save_palette_as_image,
+    placeholder,
+    from_template,
+    palette_to_table,
+    array_transpose,
+    class_as_dict,
+)
+
+from collections import namedtuple
+
+import colorsys
 
 
-def class_as_dict(cls):
-    return {f'C_{k}': v for k, v in cls.__dict__.items() if not k.startswith('__')}
+def int_to_hex(_int: int) -> str:
+    template = "{:02x}" if _int < 16 else "{:x}"
+    return template.format(_int)
+
+
+def hex_to_int(_hex: str) -> int:
+    return int(_hex, 16)
+
+
+class Color(namedtuple("ColorRGB", ["r", "g", "b"])):
+    @property
+    def rgb(self):
+        return self.r, self.g, self.b
+
+    @property
+    def hex(self):
+        return color_to_hex(self)
+
+    @property
+    def hls(self):
+        return colorsys.rgb_to_hls(*self.rgb)
+
+    @property
+    def hsv(self):
+        return colorsys.rgb_to_hsv(*self.rgb)
+
+
+def color_to_hex(color: Color) -> str:
+    return "".join(map(int_to_hex, color.rgb))
+
+
+def hex_to_color(_hex: str) -> Color:
+    _int = hex_to_int(_hex)
+    r = _int >> 16
+    g = _int >> 8 & 0x00FF
+    b = _int & 0x0000FF
+    return Color(r, g, b)
+
+
+def blend_values(v1: int, v2: int, factor: float) -> int:
+    return round((v2 - v1) * factor) + v1
+
+
+def shade_hex_color(_hex: str, factor: float) -> str:
+    target_color = 0 if factor < 0 else 255
+    abs_factor = abs(factor)
+
+    color = hex_to_color(_hex)
+    r = blend_values(color.r, target_color, abs_factor)
+    g = blend_values(color.g, target_color, abs_factor)
+    b = blend_values(color.b, target_color, abs_factor)
+
+    return Color(r, g, b).hex
+
+
+def blend_color(hex1: str, hex2: str, factor: float = 0.5) -> str:
+    rgb1 = hex_to_color(hex1)
+    rgb2 = hex_to_color(hex2)
+
+    r = blend_values(rgb1.r, rgb2.r, factor)
+    g = blend_values(rgb1.g, rgb2.g, factor)
+    b = blend_values(rgb1.b, rgb2.b, factor)
+
+    return Color(r, g, b).hex
+
+
+"""
+shades = [x * 0.1 for x in range(0, 11)]
+print(shades)
+p_yellow = [shade_hex_color("e80c72", s) for s in shades]
+p_dark = [shade_hex_color("e80c72", -s) for s in shades]
+p_blend = [blend_color("f9f972", "55a7fb", s) for s in shades]
+
+print(p_yellow)
+save_palette_as_image([p_yellow], "shade_light.png")
+
+print(p_dark)
+save_palette_as_image([p_dark], "shade_dark.png")
+
+print(p_yellow)
+save_palette_as_image([p_blend], "p_blend.png")
+
+print(shade_hex_color("adad3e", 0.1))
+print(blend_color("ff0000", "00ff00", 1))
+"""
+
 
 # colors
 class C:
-    YELLOW = 'f9f972'
-    YELLOW_DARK = 'adad3e'
-    YELLOW_DARKER = '696437'
-    YELLOW_DARKEST = '474034'
+    WHITE_LIGHT = "f9f9f1"
+    WHITE = "f2f2e3"
+    WHITE_DARK = "b9b1bb"
+    WHITE_DARKER = "7f6f93"
 
-    RED = 'e80c72'
-    RED_DARK = '9c044b'
-    RED_DARKER = '60103e'
-    RED_DARKEST = '421637'
+    BLACK = "241b30"
+    BLACK_LIGHT = "312541"
+    BLACK_DARK = "1d1627"
+    BLACK_DARKER = "140f1a"
 
-    MAGENTA = 'ff00f6'
-    MAGENTA_DARK = 'b312ad'
-    MAGENTA_DARKER = '6C176f'
-    MAGENTA_DARKEST = '481950'
+    YELLOW = "f9f972"
+    YELLOW_DARK = "adad3e"
+    YELLOW_DARKER = blend_color(YELLOW_DARK, BLACK)
+    YELLOW_DARKEST = blend_color(YELLOW_DARKER, BLACK)
 
-    PURPLE = 'aa54f8'
-    PURPLE_DARK = '6c29ab'
-    PURPLE_DARKER = '48226e'
-    PURPLE_DARKEST = '361F4f'
+    RED = "e80c72"
+    RED_DARK = "9c044b"
+    RED_DARKER = blend_color(RED_DARK, BLACK)
+    RED_DARKEST = blend_color(RED_DARKER, BLACK)
 
-    BLUE = '55a7fb'
-    BLUE_DARK = '2a6cad'
-    BLUE_DARKER = '27446f'
-    BLUE_DARKEST = '263050'
+    MAGENTA = "ff00f6"
+    MAGENTA_DARK = "b312ad"
+    MAGENTA_DARKER = blend_color(MAGENTA_DARK, BLACK)
+    MAGENTA_DARKEST = blend_color(MAGENTA_DARKER, BLACK)
 
-    CYAN = '00fbfd'
-    CYAN_DARK = '00b0b0'
-    CYAN_DARKER = '126670'
-    CYAN_DARKEST = '1B4150'
+    PURPLE = "aa54f8"
+    PURPLE_DARK = "6c29ab"
+    PURPLE_DARKER = blend_color(PURPLE_DARK, BLACK)
+    PURPLE_DARKEST = blend_color(PURPLE_DARKER, BLACK)
 
-    GREEN = '0be6a8'
-    GREEN_DARK = '04996f'
-    GREEN_DARKER = '145a50'
-    GREEN_DARKEST = '1c3b40'
+    BLUE = "55a7fb"
+    BLUE_DARK = "2a6cad"
+    BLUE_DARKER = blend_color(BLUE_DARK, BLACK)
+    BLUE_DARKEST = blend_color(BLUE_DARKER, BLACK)
 
-    WHITE_LIGHT = 'f9f9f1'
-    WHITE = 'f2f2e3'
-    WHITE_DARK = 'b9b1bb'
-    WHITE_DARKER = '7f6f93'
+    CYAN = "00fbfd"
+    CYAN_DARK = "00b0b0"
+    CYAN_DARKER = blend_color(CYAN_DARK, BLACK)
+    CYAN_DARKEST = blend_color(CYAN_DARKER, BLACK)
 
-    BLACK = '241b30'
-    BLACK_LIGHT = '312541'
-    BLACK_DARK = '1d1627'
-    BLACK_DARKER = '140f1a'
+    GREEN = "0be6a8"
+    GREEN_DARK = "04996f"
+    GREEN_DARKER = blend_color(GREEN_DARK, BLACK)
+    GREEN_DARKEST = blend_color(GREEN_DARKER, BLACK)
 
 
 # palettes
+
+
 p_base = [
     [
         C.YELLOW,
@@ -131,7 +228,7 @@ p_terminal = [
         C.MAGENTA,
         C.CYAN,
         C.WHITE,
-    ]
+    ],
 ]
 
 assets_dir = "../assets"
@@ -140,9 +237,9 @@ save_palette_as_image(p_extended, f"{assets_dir}/palette_extended.png")
 save_palette_as_image(p_terminal, f"{assets_dir}/palette_terminal.png")
 
 # script
-screenshot_placeholder = placeholder('dddddd', text='screenshot', size='640x240')
+screenshot_placeholder = placeholder("dddddd", text="screenshot", size="640x240")
 
-readme = f'''
+readme = f"""
 ![]({'./assets/synthwave_alpha_logo.png'})
 > {'Synthwave inspired color palette'}
 
@@ -208,6 +305,6 @@ Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f
 Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050
 Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
 Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
-'''
+"""
 
 print(readme.format(**class_as_dict(C)))
