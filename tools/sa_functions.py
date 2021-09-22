@@ -1,7 +1,6 @@
-import colorsys
-from collections import namedtuple
-
 from PIL import Image, ImageDraw
+
+from colors import blend_hex_color, shade_hex_color
 
 
 def class_as_dict(cls):
@@ -67,76 +66,3 @@ def palette_to_table(palette: list, placeholder_size=20):
         body_rows.append(row)
 
     return md_table([header_row] + body_rows)
-
-
-def int_to_hex(_int: int) -> str:
-    template = "{:02x}" if _int < 16 else "{:x}"
-    return template.format(_int)
-
-
-def hex_to_int(_hex: str) -> int:
-    return int(_hex, 16)
-
-
-class Color(namedtuple("ColorRGB", ["r", "g", "b"])):
-    @property
-    def rgb(self):
-        return self.r, self.g, self.b
-
-    @property
-    def hex(self):
-        return color_to_hex(self)
-
-    @property
-    def hls(self):
-        return colorsys.rgb_to_hls(*self.rgb)
-
-    @property
-    def hsv(self):
-        return colorsys.rgb_to_hsv(*self.rgb)
-
-
-def color_to_hex(color: Color) -> str:
-    return "".join(map(int_to_hex, color.rgb))
-
-
-def hex_to_color(_hex: str) -> Color:
-    _int = hex_to_int(_hex)
-    r = _int >> 16
-    g = _int >> 8 & 0x00FF
-    b = _int & 0x0000FF
-    return Color(r, g, b)
-
-
-def blend_values(v1: int, v2: int, factor: float) -> int:
-    return round((v2 - v1) * factor) + v1
-
-
-def shade_color(color: Color, factor: float = 0.5) -> Color:
-    target_level = 0 if factor < 0 else 255
-    target_color = Color(target_level, target_level, target_level)
-
-    return blend_color(
-        color,
-        target_color,
-        factor=abs(factor)
-    )
-
-
-def shade_hex_color(_hex: str, factor: float) -> str:
-    color = hex_to_color(_hex)
-    return shade_color(color, factor).hex
-
-
-def blend_color(color1: Color, color2: Color, factor: float = 0.5) -> Color:
-    r = blend_values(color1.r, color2.r, factor)
-    g = blend_values(color1.g, color2.g, factor)
-    b = blend_values(color1.b, color2.b, factor)
-
-    return Color(r, g, b)
-
-
-def blend_hex_color(hex1: str, hex2: str, factor: float = 0.5) -> str:
-    color1 = hex_to_color(hex1)
-    color2 = hex_to_color(hex2)
-    return blend_color(color1, color2, factor).hex
