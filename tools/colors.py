@@ -17,46 +17,73 @@ class Color(RGB):
 
     @property
     def hex(self):
-        return color_to_hex(self)
+        return rgb_to_hex(self.rgb)
 
     @property
     def cmyk(self):
-        return rgb_to_cmyk(self)
+        return rgb_to_cmyk(self.rgb)
 
     @property
     def hls(self):
-        return rgb_to_hls(*self.rgb)
+        return rgb_to_hls(self.rgb)
 
     @property
     def hsv(self):
-        return rgb_to_hsv(*self.rgb)
+        return rgb_to_hsv(self.rgb)
 
     @property
     def yiq(self):
-        return rgb_to_yiq(*self.rgb)
+        return rgb_to_yiq(self.rgb)
+
+
+# parse
+def parse_hex(_hex) -> str:
+    result = _hex.lstrip("#")
+    if 3 == len(result):
+        return "".join(c * 2 for c in result)
+    else:
+        return result
 
 
 # conversion
-rgb_to_yiq = colorsys.rgb_to_yiq
-yiq_to_rgb = colorsys.yiq_to_rgb
-rgb_to_hls = colorsys.rgb_to_hls
-hls_to_rgb = colorsys.hls_to_rgb
-rgb_to_hsv = colorsys.rgb_to_hsv
-hsv_to_rgb = colorsys.hsv_to_rgb
-
-RGB_SCALE = 255
-CMYK_SCALE = 100
+def rgb_to_yiq(rgb):
+    return YIQ(*colorsys.rgb_to_yiq(*rgb))
 
 
-def rgb_to_cmyk(r, g, b):
+def yiq_to_rgb(yiq):
+    return RGB(*colorsys.yiq_to_rgb(*yiq))
+
+
+def rgb_to_hls(rgb):
+    return HLS(*colorsys.rgb_to_hls(*rgb))
+
+
+def hls_to_rgb(hls):
+    return RGB(*colorsys.hls_to_rgb(*hls))
+
+
+def rgb_to_hsv(rgb):
+    return HSV(*colorsys.rgb_to_hsv(*rgb))
+
+
+def hsv_to_rgb(hsv):
+    return RGB(*colorsys.hsv_to_rgb(*hsv))
+
+
+RGB_SCALE = 255.0
+CMYK_SCALE = 100.0
+
+
+def rgb_to_cmyk(rgb: tuple) -> tuple:
+    r, g, b = rgb
+
     if (r == 0) and (g == 0) and (b == 0):
-        # black
-        return 0, 0, 0, CMYK_SCALE
+        return 0, 0, 0, CMYK_SCALE  # black
 
     # rgb [0,255] -> cmy [0,1]
-    c = 1 - r / float(RGB_SCALE)
-    m = 1 - g / float(RGB_SCALE)
-    y = 1 - b / float(RGB_SCALE)
+    c = 1 - r / RGB_SCALE
+    m = 1 - g / RGB_SCALE
+    y = 1 - b / RGB_SCALE
 
     # extract out k [0,1]
     min_cmy = min(c, m, y)
@@ -66,15 +93,15 @@ def rgb_to_cmyk(r, g, b):
     k = min_cmy
 
     # rescale to the range [0,cmyk_scale]
-    return c * CMYK_SCALE, m * CMYK_SCALE, y * CMYK_SCALE, k * CMYK_SCALE
+    return CMYK(*[c * CMYK_SCALE, m * CMYK_SCALE, y * CMYK_SCALE, k * CMYK_SCALE])
 
 
-def cmyk_to_rgb(c, m, y, k):
-    """ """
-    r = RGB_SCALE * (1.0 - (c + k) / float(CMYK_SCALE))
-    g = RGB_SCALE * (1.0 - (m + k) / float(CMYK_SCALE))
-    b = RGB_SCALE * (1.0 - (y + k) / float(CMYK_SCALE))
-    return r, g, b
+def cmyk_to_rgb(cmyk: tuple) -> tuple:
+    c, m, y, k = cmyk
+    r = RGB_SCALE * (1.0 - (c + k) / CMYK_SCALE)
+    g = RGB_SCALE * (1.0 - (m + k) / CMYK_SCALE)
+    b = RGB_SCALE * (1.0 - (y + k) / CMYK_SCALE)
+    return tuple(map(int, [r, g, b]))
 
 
 def int_to_hex(_int: int) -> str:
@@ -87,14 +114,14 @@ def hex_to_int(_hex: str) -> int:
 
 
 def rgb_to_hex(rgb: tuple) -> str:
-    pass
+    return "".join(map(int_to_hex, rgb))
 
 
-def hex_to_rgb(hex):
-    hex = hex.lstrip("#")
-    hlen = len(hex)
+def hex_to_rgb(_hex):
+    result = parse_hex(_hex)
+    hlen = len(result)
     pairs = hlen // 3
-    return RGB(*tuple(hex_to_int(hex[i : i + pairs]) for i in range(0, hlen, pairs)))
+    return tuple(hex_to_int(result[i : i + pairs]) for i in range(0, hlen, pairs))
 
 
 def color_to_hex(color: Color) -> str:
@@ -110,31 +137,39 @@ def hex_to_color(_hex: str) -> Color:
 
 
 # operations
-def blend_values(v1: int, v2: int, factor: float) -> int:
-    return round((v2 - v1) * factor) + v1
+def lerp(v1: float, v2: float, factor: float) -> float:
+    return v1 + ((v2 - v1) * factor)
 
 
-def shade_color(color: Color, factor: float = 0.5) -> Color:
-    target_level = 0 if factor < 0 else 255
-    target_color = Color(target_level, target_level, target_level)
+def blend(color1: Color, color2: Color, factor: float = 0.5) -> Color:
+    r = lerp(color1.r, color2.r, factor)
+    g = lerp(color1.g, color2.g, factor)
+    b = lerp(color1.b, color2.b, factor)
 
-    return blend_color(color, target_color, factor=abs(factor))
-
-
-def shade_hex_color(_hex: str, factor: float) -> str:
-    color = hex_to_color(_hex)
-    return shade_color(color, factor).hex
+    return Color(int(r), int(g), int(b))
 
 
-def blend_color(color1: Color, color2: Color, factor: float = 0.5) -> Color:
-    r = blend_values(color1.r, color2.r, factor)
-    g = blend_values(color1.g, color2.g, factor)
-    b = blend_values(color1.b, color2.b, factor)
-
-    return Color(r, g, b)
+def shade(color: Color, factor: float) -> Color:
+    return blend(color, Color(0, 0, 0), factor=factor)
 
 
-def blend_hex_color(hex1: str, hex2: str, factor: float = 0.5) -> str:
-    color1 = hex_to_color(hex1)
-    color2 = hex_to_color(hex2)
-    return blend_color(color1, color2, factor).hex
+def tone(color: Color, factor: float) -> Color:
+    return blend(color, Color(127, 127, 127), factor=factor)
+
+
+def tint(color: Color, factor: float) -> Color:
+    return blend(color, Color(255, 255, 255), factor=factor)
+
+
+"""
+def hue(color: Color, factor: float) -> Color:
+    pass
+
+
+def saturate(color: Color, factor: float) -> Color:
+    pass
+
+
+def desaturate(color: Color, factor: float) -> Color:
+    pass
+"""
