@@ -5,27 +5,26 @@ from sa_functions import (
     palette_to_table,
     array_transpose,
     class_as_dict,
-    blend_hex_color,
-    shade_hex_color,
 )
+
+from colors import blend, shade, tint, hex_to_color as h2c
 
 shades = [x * 0.1 for x in range(0, 11)]
 print(shades)
-p_yellow = [shade_hex_color("e80c72", s) for s in shades]
-p_dark = [shade_hex_color("e80c72", -s) for s in shades]
-p_blend = [blend_hex_color("f9f972", "55a7fb", s) for s in shades]
+p_tints = [tint(h2c("e80c72"), s).hex for s in shades]
+p_shades = [shade(h2c("e80c72"), s).hex for s in shades]
+p_blend = [blend(h2c("f9f972"), h2c("55a7fb"), s).hex for s in shades]
 
-print(p_yellow)
-save_palette_as_image([p_yellow], "shade_light.png")
+print(p_tints)
+save_palette_as_image([p_tints], "p_tints.png")
 
-print(p_dark)
-save_palette_as_image([p_dark], "shade_dark.png")
+print(p_shades)
+save_palette_as_image([p_shades], "p_shades.png")
 
-print(p_yellow)
+print(p_tints)
 save_palette_as_image([p_blend], "p_blend.png")
 
-print(shade_hex_color("adad3e", 0.1))
-print(blend_hex_color("ff0000", "00ff00", 1))
+C_BLACK = h2c("241b30")
 
 
 # colors
@@ -42,38 +41,38 @@ class C:
 
     YELLOW = "f9f972"
     YELLOW_DARK = "adad3e"
-    YELLOW_DARKER = blend_hex_color(YELLOW_DARK, BLACK)
-    YELLOW_DARKEST = blend_hex_color(YELLOW_DARKER, BLACK)
+    YELLOW_DARKER = blend(h2c(YELLOW_DARK), C_BLACK).hex
+    YELLOW_DARKEST = blend(h2c(YELLOW_DARKER), C_BLACK).hex
 
     RED = "e80c72"
     RED_DARK = "9c044b"
-    RED_DARKER = blend_hex_color(RED_DARK, BLACK)
-    RED_DARKEST = blend_hex_color(RED_DARKER, BLACK)
+    RED_DARKER = blend(h2c(RED_DARK), C_BLACK).hex
+    RED_DARKEST = blend(h2c(RED_DARKER), C_BLACK).hex
 
     MAGENTA = "ff00f6"
     MAGENTA_DARK = "b312ad"
-    MAGENTA_DARKER = blend_hex_color(MAGENTA_DARK, BLACK)
-    MAGENTA_DARKEST = blend_hex_color(MAGENTA_DARKER, BLACK)
+    MAGENTA_DARKER = blend(h2c(MAGENTA_DARK), C_BLACK).hex
+    MAGENTA_DARKEST = blend(h2c(MAGENTA_DARKER), C_BLACK).hex
 
     PURPLE = "aa54f8"
     PURPLE_DARK = "6c29ab"
-    PURPLE_DARKER = blend_hex_color(PURPLE_DARK, BLACK)
-    PURPLE_DARKEST = blend_hex_color(PURPLE_DARKER, BLACK)
+    PURPLE_DARKER = blend(h2c(PURPLE_DARK), C_BLACK).hex
+    PURPLE_DARKEST = blend(h2c(PURPLE_DARKER), C_BLACK).hex
 
     BLUE = "55a7fb"
     BLUE_DARK = "2a6cad"
-    BLUE_DARKER = blend_hex_color(BLUE_DARK, BLACK)
-    BLUE_DARKEST = blend_hex_color(BLUE_DARKER, BLACK)
+    BLUE_DARKER = blend(h2c(BLUE_DARK), C_BLACK).hex
+    BLUE_DARKEST = blend(h2c(BLUE_DARKER), C_BLACK).hex
 
     CYAN = "00fbfd"
     CYAN_DARK = "00b0b0"
-    CYAN_DARKER = blend_hex_color(CYAN_DARK, BLACK)
-    CYAN_DARKEST = blend_hex_color(CYAN_DARKER, BLACK)
+    CYAN_DARKER = blend(h2c(CYAN_DARK), C_BLACK).hex
+    CYAN_DARKEST = blend(h2c(CYAN_DARKER), C_BLACK).hex
 
     GREEN = "0be6a8"
     GREEN_DARK = "04996f"
-    GREEN_DARKER = blend_hex_color(GREEN_DARK, BLACK)
-    GREEN_DARKEST = blend_hex_color(GREEN_DARKER, BLACK)
+    GREEN_DARKER = blend(h2c(GREEN_DARK), C_BLACK).hex
+    GREEN_DARKEST = blend(h2c(GREEN_DARKER), C_BLACK).hex
 
 
 # palettes

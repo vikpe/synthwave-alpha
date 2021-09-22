@@ -1,7 +1,5 @@
 from PIL import Image, ImageDraw
 
-from colors import blend_hex_color, shade_hex_color
-
 
 def class_as_dict(cls):
     return {f"C_{k}": v for k, v in cls.__dict__.items() if not k.startswith("__")}
