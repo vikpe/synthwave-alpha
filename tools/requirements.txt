@@ -1,2 +1,6 @@
 black
 pillow
+pytest
+pytest-cov
+pytest-sugar
+pytest-watch
