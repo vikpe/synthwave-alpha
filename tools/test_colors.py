@@ -22,25 +22,24 @@ CMYK_RED = colors.CMYK(0, 100, 100, 0)
 CMYK_GREEN = colors.CMYK(100, 0, 100, 0)
 CMYK_BLUE = colors.CMYK(100, 100, 0, 0)
 
-COLOR_WHITE = colors.Color(*RGB_WHITE)
-COLOR_GRAY = colors.Color(*RGB_GRAY)
-COLOR_BLACK = colors.Color(*RGB_BLACK)
-COLOR_RED = colors.Color(*RGB_RED)
-COLOR_GREEN = colors.Color(*RGB_GREEN)
-COLOR_BLUE = colors.Color(*RGB_BLUE)
+COLOR_WHITE = colors.Color(RGB_WHITE)
+COLOR_GRAY = colors.Color(RGB_GRAY)
+COLOR_BLACK = colors.Color(RGB_BLACK)
+COLOR_RED = colors.Color(RGB_RED)
+COLOR_GREEN = colors.Color(RGB_GREEN)
+COLOR_BLUE = colors.Color(RGB_BLUE)
 
 
 # classes
 def test_color():
-    color = colors.Color(*RGB_RED)
+    color = colors.Color(RGB_RED)
     assert color == colors.Color.from_hex(HEX_RED)
-    assert color == RGB_RED
     assert color.rgb == RGB_RED
     assert color.hex == HEX_RED
     assert color.cmyk == CMYK_RED
-    assert color.hls == (0, 127.5, -1.007905138339921)
-    assert color.hsv == (0, 1, 255)
-    assert color.yiq == (76.5, 152.745, 54.315)
+    assert color.hls == colors.HLS(0, 127.5, -1.007905138339921)
+    assert color.hsv == colors.HSV(0, 1, 255)
+    assert color.yiq == colors.YIQ(76.5, 152.745, 54.315)
 
 
 # parse
@@ -101,26 +100,26 @@ def test_blend():
     assert colors.blend(COLOR_WHITE, COLOR_BLACK, 0) == COLOR_WHITE
     assert colors.blend(COLOR_WHITE, COLOR_BLACK, 0.5) == COLOR_GRAY
     assert colors.blend(COLOR_WHITE, COLOR_BLACK, 1) == COLOR_BLACK
-    assert colors.blend(COLOR_RED, COLOR_BLACK, 0.5) == colors.Color(127, 0, 0)
-    assert colors.blend(COLOR_RED, COLOR_BLUE) == colors.Color(127, 0, 127)
+    assert colors.blend(COLOR_RED, COLOR_BLACK, 0.5) == colors.Color((127, 0, 0))
+    assert colors.blend(COLOR_RED, COLOR_BLUE) == colors.Color((127, 0, 127))
 
 
 def test_shade():
     assert colors.shade(COLOR_WHITE, 0.5) == COLOR_GRAY
-    assert colors.shade(COLOR_RED, 0.5) == colors.Color(127, 0, 0)
+    assert colors.shade(COLOR_RED, 0.5) == colors.Color((127, 0, 0))
     assert colors.shade(COLOR_RED, 1) == COLOR_BLACK
 
 
 def test_tint():
     assert colors.tint(COLOR_BLACK, 0.5) == COLOR_GRAY
-    assert colors.tint(COLOR_RED, 0.5) == colors.Color(255, 127, 127)
+    assert colors.tint(COLOR_RED, 0.5) == colors.Color((255, 127, 127))
     assert colors.tint(COLOR_RED, 1) == COLOR_WHITE
 
 
 def test_tone():
     assert colors.tone(COLOR_RED, 1) == COLOR_GRAY
-    assert colors.tone(COLOR_RED, 0.5) == colors.Color(191, 63, 63)
+    assert colors.tone(COLOR_RED, 0.5) == colors.Color((191, 63, 63))
     assert colors.tone(COLOR_WHITE, 1) == COLOR_GRAY
-    assert colors.tone(COLOR_WHITE, 0.5) == colors.Color(191, 191, 191)
-    assert colors.tone(COLOR_BLACK, 0.5) == colors.Color(63, 63, 63)
+    assert colors.tone(COLOR_WHITE, 0.5) == colors.Color((191, 191, 191))
+    assert colors.tone(COLOR_BLACK, 0.5) == colors.Color((63, 63, 63))
     assert colors.tone(COLOR_BLACK, 1) == COLOR_GRAY

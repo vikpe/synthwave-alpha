@@ -1,5 +1,6 @@
 import colorsys
 from collections import namedtuple
+import attr
 
 # formats
 RGB = namedtuple("RGB", ["r", "g", "b"])
@@ -9,15 +10,23 @@ YIQ = namedtuple("YIQ", ["y", "i", "q"])
 CMYK = namedtuple("CMYK", ["c", "m", "y", "k"])
 
 
+# parse
+def parse_hex(_hex) -> str:
+    result = _hex.lstrip("#")
+    if 3 == len(result):
+        return "".join(c * 2 for c in result)
+    else:
+        return result
+
+
 # classes
-class Color(RGB):
+@attr.s
+class Color(object):
+    rgb = attr.ib()
+
     @classmethod
     def from_hex(cls, _hex):
-        return cls(*hex_to_rgb(_hex))
-
-    @property
-    def rgb(self):
-        return RGB(*self)
+        return cls(hex_to_rgb(_hex))
 
     @property
     def hex(self):
@@ -38,15 +47,6 @@ class Color(RGB):
     @property
     def yiq(self):
         return rgb_to_yiq(self.rgb)
-
-
-# parse
-def parse_hex(_hex) -> str:
-    result = _hex.lstrip("#")
-    if 3 == len(result):
-        return "".join(c * 2 for c in result)
-    else:
-        return result
 
 
 # conversion
@@ -134,23 +134,23 @@ def lerp(v1: float, v2: float, factor: float) -> float:
 
 
 def blend(color1: Color, color2: Color, factor: float = 0.5) -> Color:
-    r = lerp(color1.r, color2.r, factor)
-    g = lerp(color1.g, color2.g, factor)
-    b = lerp(color1.b, color2.b, factor)
+    r = lerp(color1.rgb.r, color2.rgb.r, factor)
+    g = lerp(color1.rgb.g, color2.rgb.g, factor)
+    b = lerp(color1.rgb.b, color2.rgb.b, factor)
 
-    return Color(int(r), int(g), int(b))
+    return Color((int(r), int(g), int(b)))
 
 
 def shade(color: Color, factor: float) -> Color:
-    return blend(color, Color(0, 0, 0), factor=factor)
+    return blend(color, Color(RGB(0, 0, 0)), factor=factor)
 
 
 def tone(color: Color, factor: float) -> Color:
-    return blend(color, Color(127, 127, 127), factor=factor)
+    return blend(color, Color(RGB(127, 127, 127)), factor=factor)
 
 
 def tint(color: Color, factor: float) -> Color:
-    return blend(color, Color(255, 255, 255), factor=factor)
+    return blend(color, Color(RGB(255, 255, 255)), factor=factor)
 
 
 """
