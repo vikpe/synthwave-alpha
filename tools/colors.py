@@ -11,6 +11,10 @@ CMYK = namedtuple("CMYK", ["c", "m", "y", "k"])
 
 # classes
 class Color(RGB):
+    @classmethod
+    def from_hex(cls, _hex):
+        return cls(*hex_to_rgb(_hex))
+
     @property
     def rgb(self):
         return RGB(*self)
