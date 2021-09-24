@@ -30,7 +30,7 @@ def palette_to_image(palette: list, size=48):
             x1 = x0 + size
             y0 = row_index * size
             y1 = y0 + size
-            draw.rectangle([x0, y0, x1, y1], fill=f"#{color}")
+            draw.rectangle([x0, y0, x1, y1], fill=f"#{color.hex}")
 
     return im
 
@@ -59,7 +59,7 @@ def palette_to_table(palette: list, placeholder_size=20):
     for shades in palette:
         row = []
         for color in shades:
-            row += [placeholder(color, size=placeholder_size), f"`{color}`"]
+            row += [placeholder(color.hex, size=placeholder_size), f"`{color.hex}`"]
 
         body_rows.append(row)
 

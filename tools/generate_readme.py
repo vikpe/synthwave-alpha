@@ -1,3 +1,4 @@
+from colors import blend, shade, tint, Color
 from sa_functions import (
     save_palette_as_image,
     placeholder,
@@ -7,13 +8,11 @@ from sa_functions import (
     class_as_dict,
 )
 
-from colors import blend, shade, tint, hex_to_color as h2c
-
+"""
 shades = [x * 0.1 for x in range(0, 11)]
-print(shades)
-p_tints = [tint(h2c("e80c72"), s).hex for s in shades]
-p_shades = [shade(h2c("e80c72"), s).hex for s in shades]
-p_blend = [blend(h2c("f9f972"), h2c("55a7fb"), s).hex for s in shades]
+p_tints = [tint(Color.from_hex("e80c72"), s) for s in shades]
+p_shades = [shade(Color.from_hex("e80c72"), s) for s in shades]
+p_blend = [blend(Color.from_hex("f9f972"), Color.from_hex("55a7fb"), s) for s in shades]
 
 print(p_tints)
 save_palette_as_image([p_tints], "p_tints.png")
@@ -23,56 +22,55 @@ save_palette_as_image([p_shades], "p_shades.png")
 
 print(p_tints)
 save_palette_as_image([p_blend], "p_blend.png")
-
-C_BLACK = h2c("241b30")
+"""
 
 
 # colors
 class C:
-    WHITE_LIGHT = "f9f9f1"
-    WHITE = "f2f2e3"
-    WHITE_DARK = "b9b1bb"
-    WHITE_DARKER = "7f6f93"
+    WHITE_LIGHT = Color.from_hex("f9f9f1")
+    WHITE = Color.from_hex("f2f2e3")
+    WHITE_DARK = Color.from_hex("b9b1bb")
+    WHITE_DARKER = Color.from_hex("7f6f93")
 
-    BLACK = "241b30"
-    BLACK_LIGHT = "312541"
-    BLACK_DARK = "1d1627"
-    BLACK_DARKER = "140f1a"
+    BLACK = Color.from_hex("241b30")
+    BLACK_LIGHT = Color.from_hex("312541")
+    BLACK_DARK = Color.from_hex("1d1627")
+    BLACK_DARKER = Color.from_hex("140f1a")
 
-    YELLOW = "f9f972"
-    YELLOW_DARK = "adad3e"
-    YELLOW_DARKER = blend(h2c(YELLOW_DARK), C_BLACK).hex
-    YELLOW_DARKEST = blend(h2c(YELLOW_DARKER), C_BLACK).hex
+    YELLOW = Color.from_hex("f9f972")
+    YELLOW_DARK = Color.from_hex("adad3e")
+    YELLOW_DARKER = blend(YELLOW_DARK, BLACK)
+    YELLOW_DARKEST = blend(YELLOW_DARKER, BLACK)
 
-    RED = "e80c72"
-    RED_DARK = "9c044b"
-    RED_DARKER = blend(h2c(RED_DARK), C_BLACK).hex
-    RED_DARKEST = blend(h2c(RED_DARKER), C_BLACK).hex
+    RED = Color.from_hex("e80c72")
+    RED_DARK = Color.from_hex("9c044b")
+    RED_DARKER = blend(RED_DARK, BLACK)
+    RED_DARKEST = blend(RED_DARKER, BLACK)
 
-    MAGENTA = "ff00f6"
-    MAGENTA_DARK = "b312ad"
-    MAGENTA_DARKER = blend(h2c(MAGENTA_DARK), C_BLACK).hex
-    MAGENTA_DARKEST = blend(h2c(MAGENTA_DARKER), C_BLACK).hex
+    MAGENTA = Color.from_hex("ff00f6")
+    MAGENTA_DARK = Color.from_hex("b312ad")
+    MAGENTA_DARKER = blend(MAGENTA_DARK, BLACK)
+    MAGENTA_DARKEST = blend(MAGENTA_DARKER, BLACK)
 
-    PURPLE = "aa54f8"
-    PURPLE_DARK = "6c29ab"
-    PURPLE_DARKER = blend(h2c(PURPLE_DARK), C_BLACK).hex
-    PURPLE_DARKEST = blend(h2c(PURPLE_DARKER), C_BLACK).hex
+    PURPLE = Color.from_hex("aa54f8")
+    PURPLE_DARK = Color.from_hex("6c29ab")
+    PURPLE_DARKER = blend(PURPLE_DARK, BLACK)
+    PURPLE_DARKEST = blend(PURPLE_DARKER, BLACK)
 
-    BLUE = "55a7fb"
-    BLUE_DARK = "2a6cad"
-    BLUE_DARKER = blend(h2c(BLUE_DARK), C_BLACK).hex
-    BLUE_DARKEST = blend(h2c(BLUE_DARKER), C_BLACK).hex
+    BLUE = Color.from_hex("55a7fb")
+    BLUE_DARK = Color.from_hex("2a6cad")
+    BLUE_DARKER = blend(BLUE_DARK, BLACK)
+    BLUE_DARKEST = blend(BLUE_DARKER, BLACK)
 
-    CYAN = "00fbfd"
-    CYAN_DARK = "00b0b0"
-    CYAN_DARKER = blend(h2c(CYAN_DARK), C_BLACK).hex
-    CYAN_DARKEST = blend(h2c(CYAN_DARKER), C_BLACK).hex
+    CYAN = Color.from_hex("00fbfd")
+    CYAN_DARK = Color.from_hex("00b0b0")
+    CYAN_DARKER = blend(CYAN_DARK, BLACK)
+    CYAN_DARKEST = blend(CYAN_DARKER, BLACK)
 
-    GREEN = "0be6a8"
-    GREEN_DARK = "04996f"
-    GREEN_DARKER = blend(h2c(GREEN_DARK), C_BLACK).hex
-    GREEN_DARKEST = blend(h2c(GREEN_DARKER), C_BLACK).hex
+    GREEN = Color.from_hex("0be6a8")
+    GREEN_DARK = Color.from_hex("04996f")
+    GREEN_DARKER = blend(GREEN_DARK, BLACK)
+    GREEN_DARKEST = blend(GREEN_DARKER, BLACK)
 
 
 # palettes
@@ -188,13 +186,13 @@ readme = f"""
 
 **Default**
 
-{placeholder(C.WHITE)}
-{placeholder(C.BLACK)}
+{placeholder(C.WHITE.hex)}
+{placeholder(C.BLACK.hex)}
 
 **Highlight**
 
-{placeholder(C.BLACK)}
-{placeholder(C.GREEN)}
+{placeholder(C.BLACK.hex)}
+{placeholder(C.GREEN.hex)}
 
 **Palette**
 
