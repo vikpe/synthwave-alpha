@@ -160,4 +160,7 @@ def saturate(color: Color, factor: float) -> Color:
 
 def desaturate(color: Color, factor: float) -> Color:
     pass
+    
+def grayscale(color: Color, factor: float) -> Color:
+    pass
 """
