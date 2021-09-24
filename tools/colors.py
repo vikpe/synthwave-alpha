@@ -124,18 +124,6 @@ def hex_to_rgb(_hex):
     return tuple(hex_to_int(result[i : i + pairs]) for i in range(0, hlen, pairs))
 
 
-def color_to_hex(color: Color) -> str:
-    return "".join(map(int_to_hex, color.rgb))
-
-
-def hex_to_color(_hex: str) -> Color:
-    _int = hex_to_int(_hex)
-    r = _int >> 16
-    g = _int >> 8 & 0x00FF
-    b = _int & 0x0000FF
-    return Color(r, g, b)
-
-
 # operations
 def lerp(v1: float, v2: float, factor: float) -> float:
     return v1 + ((v2 - v1) * factor)
