@@ -139,7 +139,7 @@ def blend(color1: Color, color2: Color, factor: float = 0.5) -> Color:
     g = lerp(color1.rgb.g, color2.rgb.g, factor)
     b = lerp(color1.rgb.b, color2.rgb.b, factor)
 
-    return Color((int(r), int(g), int(b)))
+    return Color(RGB(int(r), int(g), int(b)))
 
 
 def shade(color: Color, factor: float) -> Color:
