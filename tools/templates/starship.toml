@@ -1,20 +1,20 @@
 [character]
-success_symbol = "[❯](bold {C_GREEN})"
-error_symbol = "[❯](bold {C_RED})"
+success_symbol = "[❯](bold {GREEN.hex})"
+error_symbol = "[❯](bold {RED.hex})"
 
 [cmd_duration]
-format = "[took $duration](#{C_WHITE_DARKER}) "
+format = "[took $duration](#{WHITE_DARKER.hex}) "
 
 [directory]
 read_only = " "
-style = "#{C_CYAN} bold"
+style = "#{CYAN.hex} bold"
 
 [git_branch]
-format = "[on](#{C_WHITE_DARKER}) [ $branch](#{C_MAGENTA}) "
+format = "[on](#{WHITE_DARKER.hex}) [ $branch](#{MAGENTA.hex}) "
 
 [package]
 style = ""
-format = "[is](#{C_WHITE_DARKER}) [$version](#{C_WHITE}) "
+format = "[is](#{WHITE_DARKER.hex}) [$version](#{WHITE.hex}) "
 
 [nodejs]
-format = "[<node $version>](#{C_YELLOW}) "
+format = "[<node $version>](#{YELLOW.hex}) "

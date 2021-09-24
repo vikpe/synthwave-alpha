@@ -1,6 +1,6 @@
 export FZF_DEFAULT_OPTS='
---color=fg:#{C_WHITE_DARKER},bg:#{C_BLACK},hl:#{C_WHITE_DARK}
---color=fg+:#{C_GREEN},bg+:#{C_BLACK_DARK},hl+:#{C_GREEN}
---color=info:#55a7fb,prompt:#{C_GREEN},pointer:#{C_MAGENTA}
---color=marker:#{C_GREEN},spinner:#{C_BLUE},header:#{C_CYAN}
+--color=fg:#{WHITE_DARKER.hex},bg:#{BLACK.hex},hl:#{WHITE_DARK.hex}
+--color=fg+:#{GREEN.hex},bg+:#{BLACK_DARK.hex},hl+:#{GREEN.hex}
+--color=info:#55a7fb,prompt:#{GREEN.hex},pointer:#{MAGENTA.hex}
+--color=marker:#{GREEN.hex},spinner:#{BLUE.hex},header:#{CYAN.hex}
 '
