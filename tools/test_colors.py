@@ -33,6 +33,7 @@ COLOR_BLUE = colors.Color(*RGB_BLUE)
 # classes
 def test_color():
     color = colors.Color(*RGB_RED)
+    assert color == colors.Color.from_hex(HEX_RED)
     assert color == RGB_RED
     assert color.rgb == RGB_RED
     assert color.hex == HEX_RED
