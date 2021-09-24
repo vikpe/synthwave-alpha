@@ -125,7 +125,8 @@ def hex_to_rgb(_hex):
     result = parse_hex(_hex)
     hlen = len(result)
     pairs = hlen // 3
-    return tuple(hex_to_int(result[i : i + pairs]) for i in range(0, hlen, pairs))
+    r, g, b = [hex_to_int(result[i: i + pairs]) for i in range(0, hlen, pairs)]
+    return RGB(r, g, b)
 
 
 # operations
