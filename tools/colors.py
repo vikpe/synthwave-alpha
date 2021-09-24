@@ -2,12 +2,48 @@ import colorsys
 from collections import namedtuple
 import attr
 
+
 # formats
-RGB = namedtuple("RGB", ["r", "g", "b"])
-HLS = namedtuple("HLS", ["h", "l", "s"])
-HSV = namedtuple("HSV", ["h", "s", "v"])
-YIQ = namedtuple("YIQ", ["y", "i", "q"])
-CMYK = namedtuple("CMYK", ["c", "m", "y", "k"])
+class ColorSpace(object):
+    def __iter__(self):
+        for val in self.__dict__.values():
+            yield val
+
+
+@attr.s
+class RGB(ColorSpace):
+    r = attr.ib(default=0, converter=int)
+    g = attr.ib(default=0, converter=int)
+    b = attr.ib(default=0, converter=int)
+
+
+@attr.s
+class HLS(ColorSpace):
+    h = attr.ib(default=0, converter=float)
+    l = attr.ib(default=0, converter=float)
+    s = attr.ib(default=0, converter=float)
+
+
+@attr.s
+class HSV(ColorSpace):
+    h = attr.ib(default=0, converter=float)
+    s = attr.ib(default=0, converter=float)
+    v = attr.ib(default=0, converter=float)
+
+
+@attr.s
+class YIQ(ColorSpace):
+    y = attr.ib(default=0, converter=float)
+    i = attr.ib(default=0, converter=float)
+    q = attr.ib(default=0, converter=float)
+
+
+@attr.s
+class CMYK(ColorSpace):
+    c = attr.ib(default=0, converter=float)
+    m = attr.ib(default=0, converter=float)
+    y = attr.ib(default=0, converter=float)
+    k = attr.ib(default=0, converter=float)
 
 
 # parse
@@ -19,10 +55,14 @@ def parse_hex(_hex) -> str:
         return result
 
 
+def parse_rgb(args) -> RGB:
+    return RGB(*args)
+
+
 # classes
 @attr.s
 class Color(object):
-    rgb = attr.ib()
+    rgb = attr.ib(converter=parse_rgb)
 
     @classmethod
     def from_hex(cls, _hex):
@@ -50,27 +90,27 @@ class Color(object):
 
 
 # conversion
-def rgb_to_yiq(rgb):
+def rgb_to_yiq(rgb) -> YIQ:
     return YIQ(*colorsys.rgb_to_yiq(*rgb))
 
 
-def yiq_to_rgb(yiq):
+def yiq_to_rgb(yiq) -> RGB:
     return RGB(*colorsys.yiq_to_rgb(*yiq))
 
 
-def rgb_to_hls(rgb):
+def rgb_to_hls(rgb) -> HLS:
     return HLS(*colorsys.rgb_to_hls(*rgb))
 
 
-def hls_to_rgb(hls):
+def hls_to_rgb(hls) -> RGB:
     return RGB(*colorsys.hls_to_rgb(*hls))
 
 
-def rgb_to_hsv(rgb):
+def rgb_to_hsv(rgb) -> HSV:
     return HSV(*colorsys.rgb_to_hsv(*rgb))
 
 
-def hsv_to_rgb(hsv):
+def hsv_to_rgb(hsv) -> RGB:
     return RGB(*colorsys.hsv_to_rgb(*hsv))
 
 
@@ -78,11 +118,11 @@ RGB_SCALE = 255.0
 CMYK_SCALE = 100.0
 
 
-def rgb_to_cmyk(rgb: tuple) -> tuple:
+def rgb_to_cmyk(rgb) -> CMYK:
     r, g, b = rgb
 
     if (r == 0) and (g == 0) and (b == 0):
-        return 0, 0, 0, CMYK_SCALE  # black
+        return CMYK(0, 0, 0, CMYK_SCALE)  # black
 
     # rgb [0,255] -> cmy [0,1]
     c = 1 - r / RGB_SCALE
@@ -100,12 +140,12 @@ def rgb_to_cmyk(rgb: tuple) -> tuple:
     return CMYK(*[c * CMYK_SCALE, m * CMYK_SCALE, y * CMYK_SCALE, k * CMYK_SCALE])
 
 
-def cmyk_to_rgb(cmyk: tuple) -> tuple:
+def cmyk_to_rgb(cmyk) -> RGB:
     c, m, y, k = cmyk
     r = RGB_SCALE * (1.0 - (c + k) / CMYK_SCALE)
     g = RGB_SCALE * (1.0 - (m + k) / CMYK_SCALE)
     b = RGB_SCALE * (1.0 - (y + k) / CMYK_SCALE)
-    return tuple(map(int, [r, g, b]))
+    return RGB(r, g, b)
 
 
 def int_to_hex(_int: int) -> str:
@@ -117,11 +157,11 @@ def hex_to_int(_hex: str) -> int:
     return int(_hex, 16)
 
 
-def rgb_to_hex(rgb: tuple) -> str:
+def rgb_to_hex(rgb) -> str:
     return "".join(map(int_to_hex, rgb))
 
 
-def hex_to_rgb(_hex):
+def hex_to_rgb(_hex) -> RGB:
     result = parse_hex(_hex)
     hlen = len(result)
     pairs = hlen // 3
@@ -139,7 +179,7 @@ def blend(color1: Color, color2: Color, factor: float = 0.5) -> Color:
     g = lerp(color1.rgb.g, color2.rgb.g, factor)
     b = lerp(color1.rgb.b, color2.rgb.b, factor)
 
-    return Color(RGB(int(r), int(g), int(b)))
+    return Color(RGB(r, g, b))
 
 
 def shade(color: Color, factor: float) -> Color:
