@@ -10,22 +10,6 @@ from sa_functions import (
     dark_color_variant,
 )
 
-"""
-shades = [x * 0.1 for x in range(0, 11)]
-p_tints = [tint(Color.from_hex("e80c72"), s) for s in shades]
-p_shades = [shade(Color.from_hex("e80c72"), s) for s in shades]
-p_blend = [blend(Color.from_hex("f9f972"), Color.from_hex("55a7fb"), s) for s in shades]
-
-print(p_tints)
-save_palette_as_image([p_tints], "p_tints.png")
-
-print(p_shades)
-save_palette_as_image([p_shades], "p_shades.png")
-
-print(p_tints)
-save_palette_as_image([p_blend], "p_blend.png")
-"""
-
 RGB_YELLOW = Color.from_hex("ffff00")
 
 WHITE = Color.from_hex("f2f2e3")
