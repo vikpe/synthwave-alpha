@@ -38,8 +38,8 @@ YELLOW = blend(WHITE, RGB_YELLOW)
 
 saturation_shift = -0.05
 value_shift = -23
-RED = hsv_mod(MAGENTA, 30 / 360, saturation_shift, value_shift)  # prev: e80c72
-GREEN = hsv_mod(CYAN, -18 / 360, saturation_shift, value_shift)  # prev: 0be6a8
+RED = hsv_mod(MAGENTA, 30 / 360, saturation_shift, value_shift)
+GREEN = hsv_mod(CYAN, -18 / 360, saturation_shift, value_shift)
 
 
 # colors
@@ -55,37 +55,37 @@ class C:
     BLACK_DARKER = Color.from_hex("140f1a")
 
     CYAN = CYAN
-    CYAN_DARK = dark_color_variant(CYAN)  # prev: 00b0b0
+    CYAN_DARK = dark_color_variant(CYAN)
     CYAN_DARKER = blend(CYAN_DARK, BLACK)
     CYAN_DARKEST = blend(CYAN_DARKER, BLACK)
 
     MAGENTA = MAGENTA
-    MAGENTA_DARK = dark_color_variant(MAGENTA)  # prev: b312ad
+    MAGENTA_DARK = dark_color_variant(MAGENTA)
     MAGENTA_DARKER = blend(MAGENTA_DARK, BLACK)
     MAGENTA_DARKEST = blend(MAGENTA_DARKER, BLACK)
 
     PURPLE = PURPLE
-    PURPLE_DARK = dark_color_variant(PURPLE)  # prev: 6c29ab
+    PURPLE_DARK = dark_color_variant(PURPLE)
     PURPLE_DARKER = blend(PURPLE_DARK, BLACK)
     PURPLE_DARKEST = blend(PURPLE_DARKER, BLACK)
 
     BLUE = BLUE
-    BLUE_DARK = dark_color_variant(BLUE)  # prev: 2a6cad
+    BLUE_DARK = dark_color_variant(BLUE)
     BLUE_DARKER = blend(BLUE_DARK, BLACK)
     BLUE_DARKEST = blend(BLUE_DARKER, BLACK)
 
     YELLOW = YELLOW
-    YELLOW_DARK = dark_color_variant(YELLOW)  # prev: adad3e
+    YELLOW_DARK = dark_color_variant(YELLOW)
     YELLOW_DARKER = blend(YELLOW_DARK, BLACK)
     YELLOW_DARKEST = blend(YELLOW_DARKER, BLACK)
 
     RED = RED
-    RED_DARK = dark_color_variant(RED)  # prev: 9c044b
+    RED_DARK = dark_color_variant(RED)
     RED_DARKER = blend(RED_DARK, BLACK)
     RED_DARKEST = blend(RED_DARKER, BLACK)
 
     GREEN = GREEN
-    GREEN_DARK = dark_color_variant(GREEN)  # prev: 04996f
+    GREEN_DARK = dark_color_variant(GREEN)
     GREEN_DARKER = blend(GREEN_DARK, BLACK)
     GREEN_DARKEST = blend(GREEN_DARKER, BLACK)
 
