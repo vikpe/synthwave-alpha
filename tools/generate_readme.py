@@ -24,22 +24,49 @@ print(p_tints)
 save_palette_as_image([p_blend], "p_blend.png")
 """
 
-COLOR_YELLOW = Color.from_hex("ffff00")
+RGB_YELLOW = Color.from_hex("ffff00")
+
+WHITE = Color.from_hex("f2f2e3")
+BLACK = Color.from_hex("241b30")
+CYAN = Color.from_hex("00fbfd")
+MAGENTA = Color.from_hex("ff00f6")
+BLUE = blend(CYAN, MAGENTA, 1 / 3)
+PURPLE = blend(CYAN, MAGENTA, 2 / 3)
 
 
 # colors
 class C:
     WHITE_LIGHT = Color.from_hex("f9f9f1")
-    WHITE = Color.from_hex("f2f2e3")
+    WHITE = WHITE
     WHITE_DARK = Color.from_hex("b9b1bb")
     WHITE_DARKER = Color.from_hex("7f6f93")
 
-    BLACK = Color.from_hex("241b30")
+    BLACK = BLACK
     BLACK_LIGHT = Color.from_hex("312541")
     BLACK_DARK = Color.from_hex("1d1627")
     BLACK_DARKER = Color.from_hex("140f1a")
 
-    YELLOW = blend(WHITE, COLOR_YELLOW)
+    CYAN = CYAN
+    CYAN_DARK = Color.from_hex("00b0b0")
+    CYAN_DARKER = blend(CYAN_DARK, BLACK)
+    CYAN_DARKEST = blend(CYAN_DARKER, BLACK)
+
+    MAGENTA = MAGENTA
+    MAGENTA_DARK = Color.from_hex("b312ad")
+    MAGENTA_DARKER = blend(MAGENTA_DARK, BLACK)
+    MAGENTA_DARKEST = blend(MAGENTA_DARKER, BLACK)
+
+    PURPLE = PURPLE
+    PURPLE_DARK = Color.from_hex("6c29ab")
+    PURPLE_DARKER = blend(PURPLE_DARK, BLACK)
+    PURPLE_DARKEST = blend(PURPLE_DARKER, BLACK)
+
+    BLUE = BLUE
+    BLUE_DARK = Color.from_hex("2a6cad")
+    BLUE_DARKER = blend(BLUE_DARK, BLACK)
+    BLUE_DARKEST = blend(BLUE_DARKER, BLACK)
+
+    YELLOW = blend(WHITE, RGB_YELLOW)
     YELLOW_DARK = Color.from_hex("adad3e")
     YELLOW_DARKER = blend(YELLOW_DARK, BLACK)
     YELLOW_DARKEST = blend(YELLOW_DARKER, BLACK)
@@ -48,26 +75,6 @@ class C:
     RED_DARK = Color.from_hex("9c044b")
     RED_DARKER = blend(RED_DARK, BLACK)
     RED_DARKEST = blend(RED_DARKER, BLACK)
-
-    MAGENTA = Color.from_hex("ff00f6")
-    MAGENTA_DARK = Color.from_hex("b312ad")
-    MAGENTA_DARKER = blend(MAGENTA_DARK, BLACK)
-    MAGENTA_DARKEST = blend(MAGENTA_DARKER, BLACK)
-
-    PURPLE = Color.from_hex("aa54f8")
-    PURPLE_DARK = Color.from_hex("6c29ab")
-    PURPLE_DARKER = blend(PURPLE_DARK, BLACK)
-    PURPLE_DARKEST = blend(PURPLE_DARKER, BLACK)
-
-    BLUE = Color.from_hex("55a7fb")
-    BLUE_DARK = Color.from_hex("2a6cad")
-    BLUE_DARKER = blend(BLUE_DARK, BLACK)
-    BLUE_DARKEST = blend(BLUE_DARKER, BLACK)
-
-    CYAN = Color.from_hex("00fbfd")
-    CYAN_DARK = Color.from_hex("00b0b0")
-    CYAN_DARKER = blend(CYAN_DARK, BLACK)
-    CYAN_DARKEST = blend(CYAN_DARKER, BLACK)
 
     GREEN = Color.from_hex("0be6a8")
     GREEN_DARK = Color.from_hex("04996f")

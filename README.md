@@ -12,11 +12,11 @@
 
 C | HEX | C | HEX | C | HEX | C | HEX
 --- | --- | --- | --- | --- | --- | --- | ---
-![](https://via.placeholder.com/20/f9f972/?text=+) | `f9f972` | ![](https://via.placeholder.com/20/adad3e/?text=+) | `adad3e` | ![](https://via.placeholder.com/20/686437/?text=+) | `686437` | ![](https://via.placeholder.com/20/463f33/?text=+) | `463f33`
+![](https://via.placeholder.com/20/f8f871/?text=+) | `f8f871` | ![](https://via.placeholder.com/20/adad3e/?text=+) | `adad3e` | ![](https://via.placeholder.com/20/686437/?text=+) | `686437` | ![](https://via.placeholder.com/20/463f33/?text=+) | `463f33`
 ![](https://via.placeholder.com/20/e80c72/?text=+) | `e80c72` | ![](https://via.placeholder.com/20/9c044b/?text=+) | `9c044b` | ![](https://via.placeholder.com/20/600f3d/?text=+) | `600f3d` | ![](https://via.placeholder.com/20/421536/?text=+) | `421536`
 ![](https://via.placeholder.com/20/ff00f6/?text=+) | `ff00f6` | ![](https://via.placeholder.com/20/b312ad/?text=+) | `b312ad` | ![](https://via.placeholder.com/20/6b166e/?text=+) | `6b166e` | ![](https://via.placeholder.com/20/47184f/?text=+) | `47184f`
-![](https://via.placeholder.com/20/aa54f8/?text=+) | `aa54f8` | ![](https://via.placeholder.com/20/6c29ab/?text=+) | `6c29ab` | ![](https://via.placeholder.com/20/48226d/?text=+) | `48226d` | ![](https://via.placeholder.com/20/361e4e/?text=+) | `361e4e`
-![](https://via.placeholder.com/20/55a7fb/?text=+) | `55a7fb` | ![](https://via.placeholder.com/20/2a6cad/?text=+) | `2a6cad` | ![](https://via.placeholder.com/20/27436e/?text=+) | `27436e` | ![](https://via.placeholder.com/20/252f4f/?text=+) | `252f4f`
+![](https://via.placeholder.com/20/aa53f8/?text=+) | `aa53f8` | ![](https://via.placeholder.com/20/6c29ab/?text=+) | `6c29ab` | ![](https://via.placeholder.com/20/48226d/?text=+) | `48226d` | ![](https://via.placeholder.com/20/361e4e/?text=+) | `361e4e`
+![](https://via.placeholder.com/20/55a7fa/?text=+) | `55a7fa` | ![](https://via.placeholder.com/20/2a6cad/?text=+) | `2a6cad` | ![](https://via.placeholder.com/20/27436e/?text=+) | `27436e` | ![](https://via.placeholder.com/20/252f4f/?text=+) | `252f4f`
 ![](https://via.placeholder.com/20/00fbfd/?text=+) | `00fbfd` | ![](https://via.placeholder.com/20/00b0b0/?text=+) | `00b0b0` | ![](https://via.placeholder.com/20/126570/?text=+) | `126570` | ![](https://via.placeholder.com/20/1b4050/?text=+) | `1b4050`
 ![](https://via.placeholder.com/20/0be6a8/?text=+) | `0be6a8` | ![](https://via.placeholder.com/20/04996f/?text=+) | `04996f` | ![](https://via.placeholder.com/20/145a4f/?text=+) | `145a4f` | ![](https://via.placeholder.com/20/1c3a3f/?text=+) | `1c3a3f`
 ![](https://via.placeholder.com/20/f9f9f1/?text=+) | `f9f9f1` | ![](https://via.placeholder.com/20/f2f2e3/?text=+) | `f2f2e3` | ![](https://via.placeholder.com/20/b9b1bb/?text=+) | `b9b1bb` | ![](https://via.placeholder.com/20/7f6f93/?text=+) | `7f6f93`
@@ -51,13 +51,13 @@ set -U fish_color_normal b9b1bb # default color
 set -U fish_color_command ff00f6 # commands like echo
 set -U fish_color_keyword ff00f6 # keywords like if - this falls back on the command color if unset
 set -U fish_color_quote 00fbfd # quoted text like "abc"
-set -U fish_color_redirection f9f972 # IO redirections like >/dev/null
-set -U fish_color_end f9f972 # process separators like ';' and '&'
+set -U fish_color_redirection f8f871 # IO redirections like >/dev/null
+set -U fish_color_end f8f871 # process separators like ';' and '&'
 set -U fish_color_error b9b1bb # syntax errors
 set -U fish_color_param f2f2e3 # ordinary command parameters
 set -U fish_color_comment 00fbfd # comments like '# important'
 set -U fish_color_selection normal # selected text in vi visual mode
-set -U fish_color_operator f9f972 # parameter expansion operators like '*' and '~'
+set -U fish_color_operator f8f871 # parameter expansion operators like '*' and '~'
 set -U fish_color_escape 04996f # character escapes like 'n' and 'x70'
 set -U fish_color_autosuggestion 7f6f93 # autosuggestions (the proposed rest of a command)
 set -U fish_color_cwd normal # the current working directory in the default prompt
@@ -89,7 +89,7 @@ export FZF_DEFAULT_OPTS='
 --color=fg:#7f6f93,bg:#241b30,hl:#b9b1bb
 --color=fg+:#0be6a8,bg+:#1d1627,hl+:#0be6a8
 --color=info:#55a7fb,prompt:#0be6a8,pointer:#ff00f6
---color=marker:#0be6a8,spinner:#55a7fb,header:#00fbfd
+--color=marker:#0be6a8,spinner:#55a7fa,header:#00fbfd
 '
 
 ```
@@ -119,7 +119,7 @@ style = ""
 format = "[is](#7f6f93) [$version](#f2f2e3) "
 
 [nodejs]
-format = "[<node $version>](#f9f972) "
+format = "[<node $version>](#f8f871) "
 
 ```
 
