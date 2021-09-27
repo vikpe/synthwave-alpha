@@ -1,5 +1,6 @@
-from colors import blend, shade, tint, Color
+from colors import blend, Color
 from sa_functions import (
+    analogous,
     save_palette_as_image,
     placeholder,
     from_template,
@@ -32,6 +33,13 @@ CYAN = Color.from_hex("00fbfd")
 MAGENTA = Color.from_hex("ff00f6")
 BLUE = blend(CYAN, MAGENTA, 1 / 3)
 PURPLE = blend(CYAN, MAGENTA, 2 / 3)
+YELLOW = blend(WHITE, RGB_YELLOW)
+
+saturation_shift = -0.05
+value_shift = -(255 / 10)
+
+RED = analogous(MAGENTA, 1 / 16, saturation_shift, value_shift)  # prev: e80c72
+GREEN = analogous(CYAN, -1 / 16, saturation_shift, value_shift)  # prev: 0be6a8
 
 
 # colors
@@ -66,17 +74,17 @@ class C:
     BLUE_DARKER = blend(BLUE_DARK, BLACK)
     BLUE_DARKEST = blend(BLUE_DARKER, BLACK)
 
-    YELLOW = blend(WHITE, RGB_YELLOW)
+    YELLOW = YELLOW
     YELLOW_DARK = Color.from_hex("adad3e")
     YELLOW_DARKER = blend(YELLOW_DARK, BLACK)
     YELLOW_DARKEST = blend(YELLOW_DARKER, BLACK)
 
-    RED = Color.from_hex("e80c72")
+    RED = RED
     RED_DARK = Color.from_hex("9c044b")
     RED_DARKER = blend(RED_DARK, BLACK)
     RED_DARKEST = blend(RED_DARKER, BLACK)
 
-    GREEN = Color.from_hex("0be6a8")
+    GREEN = GREEN
     GREEN_DARK = Color.from_hex("04996f")
     GREEN_DARKER = blend(GREEN_DARK, BLACK)
     GREEN_DARKEST = blend(GREEN_DARKER, BLACK)

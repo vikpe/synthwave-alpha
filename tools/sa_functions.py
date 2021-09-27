@@ -1,5 +1,7 @@
 from PIL import Image, ImageDraw
 
+from colors import Color, HSV, hsv_to_rgb
+
 
 def class_as_dict(cls):
     return {k: v for k, v in cls.__dict__.items() if not k.startswith("__")}
@@ -64,3 +66,13 @@ def palette_to_table(palette: list, placeholder_size=20):
         body_rows.append(row)
 
     return md_table([header_row] + body_rows)
+
+
+def analogous(source_color: Color, hue_shift, saturation_shift, value_shift):
+    source_hsv = source_color.hsv
+    result_hsv = HSV(
+        h=source_hsv.h + hue_shift,
+        s=source_hsv.s + saturation_shift,
+        v=source_hsv.v + value_shift,
+    )
+    return Color(hsv_to_rgb(result_hsv))

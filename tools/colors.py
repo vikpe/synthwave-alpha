@@ -1,5 +1,5 @@
 import colorsys
-from collections import namedtuple
+
 import attr
 
 
