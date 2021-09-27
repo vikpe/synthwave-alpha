@@ -35,11 +35,8 @@ MAGENTA = Color.from_hex("ff00f6")
 BLUE = blend(CYAN, MAGENTA, 1 / 3)
 PURPLE = blend(CYAN, MAGENTA, 2 / 3)
 YELLOW = blend(WHITE, RGB_YELLOW)
-
-saturation_shift = -0.05
-value_shift = -23
-RED = hsv_mod(MAGENTA, 30 / 360, saturation_shift, value_shift)
-GREEN = hsv_mod(CYAN, -18 / 360, saturation_shift, value_shift)
+RED = hsv_mod(MAGENTA, 30 / 360, -0.05, -23)
+GREEN = hsv_mod(CYAN, -18 / 360, -0.05, -23)
 
 
 # colors
