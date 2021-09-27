@@ -24,6 +24,8 @@ print(p_tints)
 save_palette_as_image([p_blend], "p_blend.png")
 """
 
+COLOR_YELLOW = Color.from_hex("ffff00")
+
 
 # colors
 class C:
@@ -37,7 +39,7 @@ class C:
     BLACK_DARK = Color.from_hex("1d1627")
     BLACK_DARKER = Color.from_hex("140f1a")
 
-    YELLOW = Color.from_hex("f9f972")
+    YELLOW = blend(WHITE, COLOR_YELLOW)
     YELLOW_DARK = Color.from_hex("adad3e")
     YELLOW_DARKER = blend(YELLOW_DARK, BLACK)
     YELLOW_DARKEST = blend(YELLOW_DARKER, BLACK)
