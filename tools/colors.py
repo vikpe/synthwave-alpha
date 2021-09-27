@@ -165,7 +165,7 @@ def hex_to_rgb(_hex) -> RGB:
     result = parse_hex(_hex)
     hlen = len(result)
     pairs = hlen // 3
-    r, g, b = [hex_to_int(result[i: i + pairs]) for i in range(0, hlen, pairs)]
+    r, g, b = [hex_to_int(result[i : i + pairs]) for i in range(0, hlen, pairs)]
     return RGB(r, g, b)
 
 
