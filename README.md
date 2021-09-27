@@ -12,13 +12,13 @@
 
 C | HEX | C | HEX | C | HEX | C | HEX
 --- | --- | --- | --- | --- | --- | --- | ---
-![](https://via.placeholder.com/20/f8f871/?text=+) | `f8f871` | ![](https://via.placeholder.com/20/adad3e/?text=+) | `adad3e` | ![](https://via.placeholder.com/20/686437/?text=+) | `686437` | ![](https://via.placeholder.com/20/463f33/?text=+) | `463f33`
-![](https://via.placeholder.com/20/e50b8c/?text=+) | `e50b8c` | ![](https://via.placeholder.com/20/9c044b/?text=+) | `9c044b` | ![](https://via.placeholder.com/20/600f3d/?text=+) | `600f3d` | ![](https://via.placeholder.com/20/421536/?text=+) | `421536`
-![](https://via.placeholder.com/20/ff00f6/?text=+) | `ff00f6` | ![](https://via.placeholder.com/20/b312ad/?text=+) | `b312ad` | ![](https://via.placeholder.com/20/6b166e/?text=+) | `6b166e` | ![](https://via.placeholder.com/20/47184f/?text=+) | `47184f`
-![](https://via.placeholder.com/20/aa53f8/?text=+) | `aa53f8` | ![](https://via.placeholder.com/20/6c29ab/?text=+) | `6c29ab` | ![](https://via.placeholder.com/20/48226d/?text=+) | `48226d` | ![](https://via.placeholder.com/20/361e4e/?text=+) | `361e4e`
-![](https://via.placeholder.com/20/55a7fa/?text=+) | `55a7fa` | ![](https://via.placeholder.com/20/2a6cad/?text=+) | `2a6cad` | ![](https://via.placeholder.com/20/27436e/?text=+) | `27436e` | ![](https://via.placeholder.com/20/252f4f/?text=+) | `252f4f`
-![](https://via.placeholder.com/20/00fbfd/?text=+) | `00fbfd` | ![](https://via.placeholder.com/20/00b0b0/?text=+) | `00b0b0` | ![](https://via.placeholder.com/20/126570/?text=+) | `126570` | ![](https://via.placeholder.com/20/1b4050/?text=+) | `1b4050`
-![](https://via.placeholder.com/20/0be394/?text=+) | `0be394` | ![](https://via.placeholder.com/20/04996f/?text=+) | `04996f` | ![](https://via.placeholder.com/20/145a4f/?text=+) | `145a4f` | ![](https://via.placeholder.com/20/1c3a3f/?text=+) | `1c3a3f`
+![](https://via.placeholder.com/20/f8f871/?text=+) | `f8f871` | ![](https://via.placeholder.com/20/abab3c/?text=+) | `abab3c` | ![](https://via.placeholder.com/20/676336/?text=+) | `676336` | ![](https://via.placeholder.com/20/453f33/?text=+) | `453f33`
+![](https://via.placeholder.com/20/e50b8c/?text=+) | `e50b8c` | ![](https://via.placeholder.com/20/98005a/?text=+) | `98005a` | ![](https://via.placeholder.com/20/5e0d45/?text=+) | `5e0d45` | ![](https://via.placeholder.com/20/41143a/?text=+) | `41143a`
+![](https://via.placeholder.com/20/ff00f6/?text=+) | `ff00f6` | ![](https://via.placeholder.com/20/b200ac/?text=+) | `b200ac` | ![](https://via.placeholder.com/20/6b0d6e/?text=+) | `6b0d6e` | ![](https://via.placeholder.com/20/47144f/?text=+) | `47144f`
+![](https://via.placeholder.com/20/aa53f8/?text=+) | `aa53f8` | ![](https://via.placeholder.com/20/6d28ab/?text=+) | `6d28ab` | ![](https://via.placeholder.com/20/48216d/?text=+) | `48216d` | ![](https://via.placeholder.com/20/361e4e/?text=+) | `361e4e`
+![](https://via.placeholder.com/20/55a7fa/?text=+) | `55a7fa` | ![](https://via.placeholder.com/20/296bad/?text=+) | `296bad` | ![](https://via.placeholder.com/20/26436e/?text=+) | `26436e` | ![](https://via.placeholder.com/20/252f4f/?text=+) | `252f4f`
+![](https://via.placeholder.com/20/00fbfd/?text=+) | `00fbfd` | ![](https://via.placeholder.com/20/00afb0/?text=+) | `00afb0` | ![](https://via.placeholder.com/20/126570/?text=+) | `126570` | ![](https://via.placeholder.com/20/1b4050/?text=+) | `1b4050`
+![](https://via.placeholder.com/20/0be394/?text=+) | `0be394` | ![](https://via.placeholder.com/20/00965f/?text=+) | `00965f` | ![](https://via.placeholder.com/20/125847/?text=+) | `125847` | ![](https://via.placeholder.com/20/1b393b/?text=+) | `1b393b`
 ![](https://via.placeholder.com/20/f9f9f1/?text=+) | `f9f9f1` | ![](https://via.placeholder.com/20/f2f2e3/?text=+) | `f2f2e3` | ![](https://via.placeholder.com/20/b9b1bb/?text=+) | `b9b1bb` | ![](https://via.placeholder.com/20/7f6f93/?text=+) | `7f6f93`
 ![](https://via.placeholder.com/20/312541/?text=+) | `312541` | ![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/1d1627/?text=+) | `1d1627` | ![](https://via.placeholder.com/20/140f1a/?text=+) | `140f1a`
 
@@ -58,7 +58,7 @@ set -U fish_color_param f2f2e3 # ordinary command parameters
 set -U fish_color_comment 00fbfd # comments like '# important'
 set -U fish_color_selection normal # selected text in vi visual mode
 set -U fish_color_operator f8f871 # parameter expansion operators like '*' and '~'
-set -U fish_color_escape 04996f # character escapes like 'n' and 'x70'
+set -U fish_color_escape 00965f # character escapes like 'n' and 'x70'
 set -U fish_color_autosuggestion 7f6f93 # autosuggestions (the proposed rest of a command)
 set -U fish_color_cwd normal # the current working directory in the default prompt
 set -U fish_color_user normal # the username in the default prompt
