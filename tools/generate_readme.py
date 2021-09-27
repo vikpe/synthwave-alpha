@@ -37,10 +37,9 @@ PURPLE = blend(CYAN, MAGENTA, 2 / 3)
 YELLOW = blend(WHITE, RGB_YELLOW)
 
 saturation_shift = -0.05
-value_shift = -(255 / 10)
-hue_shift = 1 / 16
-RED = hsv_mod(MAGENTA, hue_shift, saturation_shift, value_shift)  # prev: e80c72
-GREEN = hsv_mod(CYAN, -1 / 16, saturation_shift, value_shift)  # prev: 0be6a8
+value_shift = -23
+RED = hsv_mod(MAGENTA, 30 / 360, saturation_shift, value_shift)  # prev: e80c72
+GREEN = hsv_mod(CYAN, -18 / 360, saturation_shift, value_shift)  # prev: 0be6a8
 
 
 # colors
