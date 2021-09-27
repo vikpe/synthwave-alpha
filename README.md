@@ -19,7 +19,7 @@ C | HEX | C | HEX | C | HEX | C | HEX
 ![](https://via.placeholder.com/20/55a7fa/?text=+) | `55a7fa` | ![](https://via.placeholder.com/20/296bad/?text=+) | `296bad` | ![](https://via.placeholder.com/20/26436e/?text=+) | `26436e` | ![](https://via.placeholder.com/20/252f4f/?text=+) | `252f4f`
 ![](https://via.placeholder.com/20/00fbfd/?text=+) | `00fbfd` | ![](https://via.placeholder.com/20/00afb0/?text=+) | `00afb0` | ![](https://via.placeholder.com/20/126570/?text=+) | `126570` | ![](https://via.placeholder.com/20/1b4050/?text=+) | `1b4050`
 ![](https://via.placeholder.com/20/0be6a6/?text=+) | `0be6a6` | ![](https://via.placeholder.com/20/00996c/?text=+) | `00996c` | ![](https://via.placeholder.com/20/125a4e/?text=+) | `125a4e` | ![](https://via.placeholder.com/20/1b3a3f/?text=+) | `1b3a3f`
-![](https://via.placeholder.com/20/f9f9f1/?text=+) | `f9f9f1` | ![](https://via.placeholder.com/20/f2f2e3/?text=+) | `f2f2e3` | ![](https://via.placeholder.com/20/b9b1bb/?text=+) | `b9b1bb` | ![](https://via.placeholder.com/20/7f6f93/?text=+) | `7f6f93`
+![](https://via.placeholder.com/20/f8f8f1/?text=+) | `f8f8f1` | ![](https://via.placeholder.com/20/f2f2e3/?text=+) | `f2f2e3` | ![](https://via.placeholder.com/20/b9b1bb/?text=+) | `b9b1bb` | ![](https://via.placeholder.com/20/7f6f93/?text=+) | `7f6f93`
 ![](https://via.placeholder.com/20/312541/?text=+) | `312541` | ![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/1d1627/?text=+) | `1d1627` | ![](https://via.placeholder.com/20/140f1a/?text=+) | `140f1a`
 
 

@@ -1,14 +1,15 @@
 from colors import Color, blend
 from sa_functions import dark_color_variant, hsv_mod
 
+RGB_YELLOW = Color.from_hex("ffff00")
+RGB_WHITE = Color.from_hex("ffffff")
+
 WHITE = Color.from_hex("f2f2e3")
 BLACK = Color.from_hex("241b30")
 CYAN = Color.from_hex("00fbfd")
 MAGENTA = Color.from_hex("ff00f6")
 BLUE = blend(CYAN, MAGENTA, 1 / 3)
 PURPLE = blend(CYAN, MAGENTA, 2 / 3)
-
-RGB_YELLOW = Color.from_hex("ffff00")
 YELLOW = blend(WHITE, RGB_YELLOW)
 
 RED = hsv_mod(MAGENTA, 30 / 360, -0.05, -23)
@@ -16,7 +17,7 @@ GREEN = hsv_mod(CYAN, -18 / 360, -0.05, -23)
 
 
 class Colors:
-    WHITE_LIGHT = Color.from_hex("f9f9f1")
+    WHITE_LIGHT = blend(WHITE, RGB_WHITE)
     WHITE = WHITE
     WHITE_DARK = Color.from_hex("b9b1bb")
     WHITE_DARKER = Color.from_hex("7f6f93")
