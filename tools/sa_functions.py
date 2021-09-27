@@ -71,9 +71,9 @@ def palette_to_table(palette: list, placeholder_size=20):
 def hsv_mod(source_color: Color, hue_shift=0.0, saturation_shift=0.0, value_shift=0.0):
     source_hsv = source_color.hsv
     result_hsv = HSV(
-        h=min(1, source_hsv.h + hue_shift),
-        s=min(1, source_hsv.s + saturation_shift),
-        v=min(255, source_hsv.v + value_shift),
+        h=max(0, min(1, source_hsv.h + hue_shift)),
+        s=max(0, min(1, source_hsv.s + saturation_shift)),
+        v=max(0, min(255, source_hsv.v + value_shift)),
     )
     return Color(hsv_to_rgb(result_hsv))
 

@@ -1,4 +1,4 @@
-from colors import Color, blend
+from colors import Color, blend, shade, tint
 from sa_functions import dark_color_variant, hsv_mod
 
 RGB_YELLOW = Color.from_hex("ffff00")
@@ -23,9 +23,9 @@ class Colors:
     WHITE_DARK = blend(WHITE_DARKER, WHITE)
 
     BLACK = BLACK
-    BLACK_LIGHT = Color.from_hex("312541")
-    BLACK_DARK = Color.from_hex("1d1627")
-    BLACK_DARKER = Color.from_hex("140f1a")
+    BLACK_LIGHT = tint(BLACK, 0.1)
+    BLACK_DARK = shade(BLACK, 0.3)
+    BLACK_DARKER = shade(BLACK, 0.6)
 
     CYAN = CYAN
     CYAN_DARK = dark_color_variant(CYAN)

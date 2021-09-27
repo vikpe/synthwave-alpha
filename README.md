@@ -20,7 +20,7 @@ C | HEX | C | HEX | C | HEX | C | HEX
 ![](https://via.placeholder.com/20/00fbfd/?text=+) | `00fbfd` | ![](https://via.placeholder.com/20/00afb0/?text=+) | `00afb0` | ![](https://via.placeholder.com/20/126570/?text=+) | `126570` | ![](https://via.placeholder.com/20/1b4050/?text=+) | `1b4050`
 ![](https://via.placeholder.com/20/0be6a6/?text=+) | `0be6a6` | ![](https://via.placeholder.com/20/00996c/?text=+) | `00996c` | ![](https://via.placeholder.com/20/125a4e/?text=+) | `125a4e` | ![](https://via.placeholder.com/20/1b3a3f/?text=+) | `1b3a3f`
 ![](https://via.placeholder.com/20/f8f8f1/?text=+) | `f8f8f1` | ![](https://via.placeholder.com/20/f2f2e3/?text=+) | `f2f2e3` | ![](https://via.placeholder.com/20/b8b1bb/?text=+) | `b8b1bb` | ![](https://via.placeholder.com/20/7f7094/?text=+) | `7f7094`
-![](https://via.placeholder.com/20/312541/?text=+) | `312541` | ![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/1d1627/?text=+) | `1d1627` | ![](https://via.placeholder.com/20/140f1a/?text=+) | `140f1a`
+![](https://via.placeholder.com/20/393144/?text=+) | `393144` | ![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/191221/?text=+) | `191221` | ![](https://via.placeholder.com/20/0e0a13/?text=+) | `0e0a13`
 
 
 ## Implementations
@@ -71,7 +71,7 @@ set -U fish_pager_color_background --background=normal # the background color of
 set -U fish_pager_color_prefix b8b1bb --underline # the prefix string, i.e. the string that is to be completed
 set -U fish_pager_color_completion 7f7094 # the completion itself, i.e. the proposed rest of the string
 set -U fish_pager_color_description 7f7094 # the completion description
-set -U fish_pager_color_selected_background --background=1d1627 # background of the selected completion
+set -U fish_pager_color_selected_background --background=191221 # background of the selected completion
 set -U fish_pager_color_selected_prefix 0be6a8 --bold --underline # prefix of the selected completion
 set -U fish_pager_color_selected_completion 0be6a6 # suffix of the selected completion
 set -U fish_pager_color_selected_description b8b1bb # description of the selected completion
@@ -87,7 +87,7 @@ set -U fish_pager_color_secondary_description 7f7094 # description of every seco
 ```sh
 export FZF_DEFAULT_OPTS='
 --color=fg:#7f7094,bg:#241b30,hl:#b8b1bb
---color=fg+:#0be6a6,bg+:#1d1627,hl+:#0be6a6
+--color=fg+:#0be6a6,bg+:#191221,hl+:#0be6a6
 --color=info:#55a7fb,prompt:#0be6a6,pointer:#ff00f6
 --color=marker:#0be6a6,spinner:#55a7fa,header:#00fbfd
 '
