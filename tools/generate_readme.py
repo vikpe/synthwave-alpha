@@ -1,162 +1,17 @@
-from colors import blend, Color
+from sa import Colors, Palettes
 from sa_functions import (
-    hsv_mod,
     save_palette_as_image,
     placeholder,
     from_template,
     palette_to_table,
     array_transpose,
     class_as_dict,
-    dark_color_variant,
 )
 
-RGB_YELLOW = Color.from_hex("ffff00")
-
-WHITE = Color.from_hex("f2f2e3")
-BLACK = Color.from_hex("241b30")
-CYAN = Color.from_hex("00fbfd")
-MAGENTA = Color.from_hex("ff00f6")
-BLUE = blend(CYAN, MAGENTA, 1 / 3)
-PURPLE = blend(CYAN, MAGENTA, 2 / 3)
-YELLOW = blend(WHITE, RGB_YELLOW)
-RED = hsv_mod(MAGENTA, 30 / 360, -0.05, -23)
-GREEN = hsv_mod(CYAN, -18 / 360, -0.05, -23)
-
-
-# colors
-class C:
-    WHITE_LIGHT = Color.from_hex("f9f9f1")
-    WHITE = WHITE
-    WHITE_DARK = Color.from_hex("b9b1bb")
-    WHITE_DARKER = Color.from_hex("7f6f93")
-
-    BLACK = BLACK
-    BLACK_LIGHT = Color.from_hex("312541")
-    BLACK_DARK = Color.from_hex("1d1627")
-    BLACK_DARKER = Color.from_hex("140f1a")
-
-    CYAN = CYAN
-    CYAN_DARK = dark_color_variant(CYAN)
-    CYAN_DARKER = blend(CYAN_DARK, BLACK)
-    CYAN_DARKEST = blend(CYAN_DARKER, BLACK)
-
-    MAGENTA = MAGENTA
-    MAGENTA_DARK = dark_color_variant(MAGENTA)
-    MAGENTA_DARKER = blend(MAGENTA_DARK, BLACK)
-    MAGENTA_DARKEST = blend(MAGENTA_DARKER, BLACK)
-
-    PURPLE = PURPLE
-    PURPLE_DARK = dark_color_variant(PURPLE)
-    PURPLE_DARKER = blend(PURPLE_DARK, BLACK)
-    PURPLE_DARKEST = blend(PURPLE_DARKER, BLACK)
-
-    BLUE = BLUE
-    BLUE_DARK = dark_color_variant(BLUE)
-    BLUE_DARKER = blend(BLUE_DARK, BLACK)
-    BLUE_DARKEST = blend(BLUE_DARKER, BLACK)
-
-    YELLOW = YELLOW
-    YELLOW_DARK = dark_color_variant(YELLOW)
-    YELLOW_DARKER = blend(YELLOW_DARK, BLACK)
-    YELLOW_DARKEST = blend(YELLOW_DARKER, BLACK)
-
-    RED = RED
-    RED_DARK = dark_color_variant(RED)
-    RED_DARKER = blend(RED_DARK, BLACK)
-    RED_DARKEST = blend(RED_DARKER, BLACK)
-
-    GREEN = GREEN
-    GREEN_DARK = dark_color_variant(GREEN)
-    GREEN_DARKER = blend(GREEN_DARK, BLACK)
-    GREEN_DARKEST = blend(GREEN_DARKER, BLACK)
-
-
-# palettes
-p_base = [
-    [
-        C.YELLOW,
-        C.MAGENTA,
-        C.PURPLE,
-        C.BLUE,
-        C.CYAN,
-        C.BLACK,
-    ]
-]
-
-p_extended = [
-    [
-        C.YELLOW,
-        C.RED,
-        C.MAGENTA,
-        C.PURPLE,
-        C.BLUE,
-        C.CYAN,
-        C.GREEN,
-        C.WHITE_LIGHT,
-        C.BLACK_LIGHT,
-    ],
-    [
-        C.YELLOW_DARK,
-        C.RED_DARK,
-        C.MAGENTA_DARK,
-        C.PURPLE_DARK,
-        C.BLUE_DARK,
-        C.CYAN_DARK,
-        C.GREEN_DARK,
-        C.WHITE,
-        C.BLACK,
-    ],
-    [
-        C.YELLOW_DARKER,
-        C.RED_DARKER,
-        C.MAGENTA_DARKER,
-        C.PURPLE_DARKER,
-        C.BLUE_DARKER,
-        C.CYAN_DARKER,
-        C.GREEN_DARKER,
-        C.WHITE_DARK,
-        C.BLACK_DARK,
-    ],
-    [
-        C.YELLOW_DARKEST,
-        C.RED_DARKEST,
-        C.MAGENTA_DARKEST,
-        C.PURPLE_DARKEST,
-        C.BLUE_DARKEST,
-        C.CYAN_DARKEST,
-        C.GREEN_DARKEST,
-        C.WHITE_DARKER,
-        C.BLACK_DARKER,
-    ],
-]
-
-p_terminal = [
-    [
-        C.BLACK,
-        C.RED_DARK,
-        C.GREEN_DARK,
-        C.YELLOW_DARK,
-        C.BLUE_DARK,
-        C.MAGENTA_DARK,
-        C.CYAN_DARK,
-        C.WHITE_DARK,
-    ],
-    [
-        C.WHITE_DARKER,
-        C.RED,
-        C.GREEN,
-        C.YELLOW,
-        C.BLUE,
-        C.MAGENTA,
-        C.CYAN,
-        C.WHITE,
-    ],
-]
-
 assets_dir = "../assets"
-save_palette_as_image(p_base, f"{assets_dir}/palette_base.png", size=64)
-save_palette_as_image(p_extended, f"{assets_dir}/palette_extended.png")
-save_palette_as_image(p_terminal, f"{assets_dir}/palette_terminal.png")
+save_palette_as_image(Palettes.BASE, f"{assets_dir}/palette_base.png", size=64)
+save_palette_as_image(Palettes.EXTENDED, f"{assets_dir}/palette_extended.png")
+save_palette_as_image(Palettes.TERMINAL, f"{assets_dir}/palette_terminal.png")
 
 # script
 screenshot_placeholder = placeholder("dddddd", text="screenshot", size="640x240")
@@ -173,7 +28,7 @@ readme = f"""
 ### Extended
 ![](./assets/palette_extended.png)
 
-{palette_to_table(array_transpose(p_extended))}
+{palette_to_table(array_transpose(Palettes.EXTENDED))}
 
 ## Implementations
 
@@ -182,13 +37,13 @@ readme = f"""
 
 **Default**
 
-{placeholder(C.WHITE.hex)}
-{placeholder(C.BLACK.hex)}
+{placeholder(Colors.WHITE.hex)}
+{placeholder(Colors.BLACK.hex)}
 
 **Highlight**
 
-{placeholder(C.BLACK.hex)}
-{placeholder(C.GREEN.hex)}
+{placeholder(Colors.BLACK.hex)}
+{placeholder(Colors.GREEN.hex)}
 
 **Palette**
 
@@ -229,4 +84,4 @@ Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
 Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
 """
 
-print(readme.format(**class_as_dict(C)))
+print(readme.format(**class_as_dict(Colors)))
