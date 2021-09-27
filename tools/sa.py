@@ -19,8 +19,8 @@ GREEN = hsv_mod(CYAN, -18 / 360, -0.05, -23)
 class Colors:
     WHITE_LIGHT = blend(WHITE, RGB_WHITE)
     WHITE = WHITE
-    WHITE_DARK = Color.from_hex("b9b1bb")
-    WHITE_DARKER = Color.from_hex("7f6f93")
+    WHITE_DARKER = hsv_mod(BLACK, 0, -0.2, 100)
+    WHITE_DARK = blend(WHITE_DARKER, WHITE)
 
     BLACK = BLACK
     BLACK_LIGHT = Color.from_hex("312541")
