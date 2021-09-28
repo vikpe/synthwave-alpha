@@ -74,14 +74,14 @@ Using a [Nerd Font](https://www.nerdfonts.com/)
 
 Status | C | Hex
 --- | --- | ---
-Added gutter  | ![](https://via.placeholder.com/24/145a50/?text=+) | #145a50
-Added background | ![](https://via.placeholder.com/24/1c3b40/?text=+) | #1c3b40
-Deleted gutter  | ![](https://via.placeholder.com/24/60103E/?text=+) | #60103E
-Deleted background | ![](https://via.placeholder.com/24/421637/?text=+) | #421637
-Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f
-Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050
-Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
-Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
+Added gutter | {placeholder(Colors.GREEN_DARKER.hex, size=24)} | #{Colors.GREEN_DARKER.hex}
+Added background | {placeholder(Colors.GREEN_DARKEST.hex, size=24)} | #{Colors.GREEN_DARKEST.hex}
+Deleted gutter | {placeholder(Colors.RED_DARKER.hex, size=24)} | #{Colors.RED_DARKER.hex}
+Deleted background | {placeholder(Colors.RED_DARKEST.hex, size=24)} | #{Colors.RED_DARKEST.hex}
+Modified gutter | {placeholder(Colors.BLUE_DARKER.hex, size=24)} | #{Colors.BLUE_DARKER.hex}
+Modified background | {placeholder(Colors.BLUE_DARKEST.hex, size=24)} | #{Colors.BLUE_DARKEST.hex}
+Conflict gutter | {placeholder(Colors.YELLOW_DARKER.hex, size=24)} | #{Colors.YELLOW_DARKER.hex}
+Conflict background | {placeholder(Colors.YELLOW_DARKEST.hex, size=24)} | #{Colors.YELLOW_DARKEST.hex}
 """
 
 print(readme.format(**class_as_dict(Colors)))

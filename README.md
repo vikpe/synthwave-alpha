@@ -127,12 +127,12 @@ format = "[<node $version>](#f8f871) "
 
 Status | C | Hex
 --- | --- | ---
-Added gutter  | ![](https://via.placeholder.com/24/145a50/?text=+) | #145a50
-Added background | ![](https://via.placeholder.com/24/1c3b40/?text=+) | #1c3b40
-Deleted gutter  | ![](https://via.placeholder.com/24/60103E/?text=+) | #60103E
-Deleted background | ![](https://via.placeholder.com/24/421637/?text=+) | #421637
-Modified gutter  | ![](https://via.placeholder.com/24/27446f/?text=+) | #27446f
-Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050
-Conflict gutter  | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
-Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
+Added gutter | ![](https://via.placeholder.com/24/125a4e/?text=+) | #125a4e
+Added background | ![](https://via.placeholder.com/24/1b3a3f/?text=+) | #1b3a3f
+Deleted gutter | ![](https://via.placeholder.com/24/5f0d3c/?text=+) | #5f0d3c
+Deleted background | ![](https://via.placeholder.com/24/411436/?text=+) | #411436
+Modified gutter | ![](https://via.placeholder.com/24/26436e/?text=+) | #26436e
+Modified background | ![](https://via.placeholder.com/24/252f4f/?text=+) | #252f4f
+Conflict gutter | ![](https://via.placeholder.com/24/676336/?text=+) | #676336
+Conflict background | ![](https://via.placeholder.com/24/453f33/?text=+) | #453f33
 
