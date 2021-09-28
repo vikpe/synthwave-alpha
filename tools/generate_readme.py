@@ -25,6 +25,9 @@ readme = f"""
 ### Base
 ![](./assets/palette_base.png)
 
+### Terminal
+![](./assets/palette_terminal.png)
+
 ### Extended
 ![](./assets/palette_extended.png)
 
@@ -33,30 +36,16 @@ readme = f"""
 ## Implementations
 
 ### Terminal
-{screenshot_placeholder}
-
-**Default**
-
-{placeholder(Colors.WHITE.hex)}
-{placeholder(Colors.BLACK.hex)}
-
-**Highlight**
-
-{placeholder(Colors.BLACK.hex)}
-{placeholder(Colors.GREEN.hex)}
-
-**Palette**
-
-![](./assets/palette_terminal.png)
+![](./assets/screenshot_terminal.png)
 
 ## Fish
-{screenshot_placeholder}
+![](./assets/screenshot_fish.png)
 ```sh
 {from_template('fish.sh')}
 ```
 
 ## FZF
-{screenshot_placeholder}
+![](./assets/screenshot_fzf.png)
 ```sh
 {from_template('fzf.sh')}
 ```

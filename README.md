@@ -7,6 +7,9 @@
 ### Base
 ![](./assets/palette_base.png)
 
+### Terminal
+![](./assets/palette_terminal.png)
+
 ### Extended
 ![](./assets/palette_extended.png)
 
@@ -26,24 +29,10 @@ C | HEX | C | HEX | C | HEX | C | HEX
 ## Implementations
 
 ### Terminal
-![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
-
-**Default**
-
-![](https://via.placeholder.com/48/f2f2e3/?text=+)
-![](https://via.placeholder.com/48/241b30/?text=+)
-
-**Highlight**
-
-![](https://via.placeholder.com/48/241b30/?text=+)
-![](https://via.placeholder.com/48/0be6a6/?text=+)
-
-**Palette**
-
-![](./assets/palette_terminal.png)
+![](./assets/screenshot_terminal.png)
 
 ## Fish
-![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
+![](./assets/screenshot_fish.png)
 ```sh
 # https://fishshell.com/docs/current/cmds/set_color.html#cmd-set-color
 
@@ -83,7 +72,7 @@ set -U fish_pager_color_secondary_description 7f7094 # description of every seco
 ```
 
 ## FZF
-![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
+![](./assets/screenshot_fzf.png)
 ```sh
 export FZF_DEFAULT_OPTS='
 --color=fg:#7f7094,bg:#241b30,hl:#b8b1bb
