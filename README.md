@@ -7,7 +7,7 @@
 ### Base
 ![](./assets/palette_base.png)
 
-### Terminal
+### Terminal / 16 color
 ![](./assets/palette_terminal.png)
 
 ### Extended
