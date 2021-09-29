@@ -13,6 +13,9 @@
 ### Extended
 ![](./assets/palette_extended.png)
 
+
+## Color values
+
 C | HEX | C | HEX | C | HEX | C | HEX
 --- | --- | --- | --- | --- | --- | --- | ---
 ![](https://via.placeholder.com/20/f8f871/?text=+) | `f8f871` | ![](https://via.placeholder.com/20/abab3c/?text=+) | `abab3c` | ![](https://via.placeholder.com/20/676336/?text=+) | `676336` | ![](https://via.placeholder.com/20/453f33/?text=+) | `453f33`
