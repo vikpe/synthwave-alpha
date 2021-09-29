@@ -77,7 +77,7 @@ set -U fish_pager_color_secondary_description BRBLACK # description of every sec
 export FZF_DEFAULT_OPTS='
 --color=fg:#b8b1bb,bg:-1,hl:#7f7094
 --color=fg+:#0be6a6,bg+:#241b30,hl+:#00996c
---color=info:#7f7094,prompt:#0be6a6,pointer:#241b30
+--color=info:#aa53f8,prompt:#0be6a6,pointer:#241b30
 --color=marker:#0be6a6,spinner:#aa53f8,header:#f8f871
 '
 
