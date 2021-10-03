@@ -74,6 +74,8 @@ set -U fish_pager_color_secondary_description BRBLACK # description of every sec
 ## FZF
 ![](./assets/screenshot_fzf.png)
 ```sh
+# https://github.com/junegunn/fzf/wiki/Color-schemes
+
 export FZF_DEFAULT_OPTS='
 --layout=reverse
 --color=fg:#7f7094,bg:-1,hl:#b8b1bb
