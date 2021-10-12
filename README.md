@@ -15,15 +15,15 @@
 
 C | HEX | C | HEX | C | HEX | C | HEX
 --- | --- | --- | --- | --- | --- | --- | ---
-![](https://via.placeholder.com/20/f8f871/?text=+) | `f8f871` | ![](https://via.placeholder.com/20/abab3c/?text=+) | `abab3c` | ![](https://via.placeholder.com/20/676336/?text=+) | `676336` | ![](https://via.placeholder.com/20/453f33/?text=+) | `453f33`
-![](https://via.placeholder.com/20/e80b72/?text=+) | `e80b72` | ![](https://via.placeholder.com/20/9b0048/?text=+) | `9b0048` | ![](https://via.placeholder.com/20/5f0d3c/?text=+) | `5f0d3c` | ![](https://via.placeholder.com/20/411436/?text=+) | `411436`
-![](https://via.placeholder.com/20/ff00f6/?text=+) | `ff00f6` | ![](https://via.placeholder.com/20/b200ac/?text=+) | `b200ac` | ![](https://via.placeholder.com/20/6b0d6e/?text=+) | `6b0d6e` | ![](https://via.placeholder.com/20/47144f/?text=+) | `47144f`
-![](https://via.placeholder.com/20/aa53f8/?text=+) | `aa53f8` | ![](https://via.placeholder.com/20/6d28ab/?text=+) | `6d28ab` | ![](https://via.placeholder.com/20/48216d/?text=+) | `48216d` | ![](https://via.placeholder.com/20/361e4e/?text=+) | `361e4e`
-![](https://via.placeholder.com/20/55a7fa/?text=+) | `55a7fa` | ![](https://via.placeholder.com/20/296bad/?text=+) | `296bad` | ![](https://via.placeholder.com/20/26436e/?text=+) | `26436e` | ![](https://via.placeholder.com/20/252f4f/?text=+) | `252f4f`
-![](https://via.placeholder.com/20/00fbfd/?text=+) | `00fbfd` | ![](https://via.placeholder.com/20/00afb0/?text=+) | `00afb0` | ![](https://via.placeholder.com/20/126570/?text=+) | `126570` | ![](https://via.placeholder.com/20/1b4050/?text=+) | `1b4050`
-![](https://via.placeholder.com/20/0be6a6/?text=+) | `0be6a6` | ![](https://via.placeholder.com/20/00996c/?text=+) | `00996c` | ![](https://via.placeholder.com/20/125a4e/?text=+) | `125a4e` | ![](https://via.placeholder.com/20/1b3a3f/?text=+) | `1b3a3f`
-![](https://via.placeholder.com/20/f8f8f1/?text=+) | `f8f8f1` | ![](https://via.placeholder.com/20/f2f2e3/?text=+) | `f2f2e3` | ![](https://via.placeholder.com/20/b8b1bb/?text=+) | `b8b1bb` | ![](https://via.placeholder.com/20/7f7094/?text=+) | `7f7094`
-![](https://via.placeholder.com/20/393144/?text=+) | `393144` | ![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/191221/?text=+) | `191221` | ![](https://via.placeholder.com/20/0e0a13/?text=+) | `0e0a13`
+![](https://via.placeholder.com/20/f9f972/?text=+) | `f9f972` | ![](https://via.placeholder.com/20/adad3e/?text=+) | `adad3e` | ![](https://via.placeholder.com/20/696437/?text=+) | `696437` | ![](https://via.placeholder.com/20/474034/?text=+) | `474034`
+![](https://via.placeholder.com/20/e60a70/?text=+) | `e60a70` | ![](https://via.placeholder.com/20/9a0048/?text=+) | `9a0048` | ![](https://via.placeholder.com/20/5f0e3c/?text=+) | `5f0e3c` | ![](https://via.placeholder.com/20/421536/?text=+) | `421536`
+![](https://via.placeholder.com/20/ff00f6/?text=+) | `ff00f6` | ![](https://via.placeholder.com/20/b300ad/?text=+) | `b300ad` | ![](https://via.placeholder.com/20/6c0e6f/?text=+) | `6c0e6f` | ![](https://via.placeholder.com/20/481550/?text=+) | `481550`
+![](https://via.placeholder.com/20/aa54f9/?text=+) | `aa54f9` | ![](https://via.placeholder.com/20/6e29ad/?text=+) | `6e29ad` | ![](https://via.placeholder.com/20/49226f/?text=+) | `49226f` | ![](https://via.placeholder.com/20/371f50/?text=+) | `371f50`
+![](https://via.placeholder.com/20/55a8fb/?text=+) | `55a8fb` | ![](https://via.placeholder.com/20/2a6daf/?text=+) | `2a6daf` | ![](https://via.placeholder.com/20/274470/?text=+) | `274470` | ![](https://via.placeholder.com/20/263050/?text=+) | `263050`
+![](https://via.placeholder.com/20/00fbfd/?text=+) | `00fbfd` | ![](https://via.placeholder.com/20/00b0b1/?text=+) | `00b0b1` | ![](https://via.placeholder.com/20/126671/?text=+) | `126671` | ![](https://via.placeholder.com/20/1b4151/?text=+) | `1b4151`
+![](https://via.placeholder.com/20/0ae4a4/?text=+) | `0ae4a4` | ![](https://via.placeholder.com/20/00986c/?text=+) | `00986c` | ![](https://via.placeholder.com/20/125a4e/?text=+) | `125a4e` | ![](https://via.placeholder.com/20/1b3b3f/?text=+) | `1b3b3f`
+![](https://via.placeholder.com/20/f9f9f1/?text=+) | `f9f9f1` | ![](https://via.placeholder.com/20/f2f2e3/?text=+) | `f2f2e3` | ![](https://via.placeholder.com/20/b9b1bc/?text=+) | `b9b1bc` | ![](https://via.placeholder.com/20/7f7094/?text=+) | `7f7094`
+![](https://via.placeholder.com/20/3a3245/?text=+) | `3a3245` | ![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/1a1322/?text=+) | `1a1322` | ![](https://via.placeholder.com/20/0f0b14/?text=+) | `0f0b14`
 
 
 ## Implementations
@@ -74,14 +74,12 @@ set -U fish_pager_color_secondary_description BRBLACK # description of every sec
 ## FZF
 ![](./assets/screenshot_fzf.png)
 ```sh
-# https://github.com/junegunn/fzf/wiki/Color-schemes
-
 export FZF_DEFAULT_OPTS='
 --layout=reverse
---color=fg:#7f7094,bg:-1,hl:#b8b1bb
---color=fg+:#00996c,bg+:#241b30,hl+:#0be6a6
---color=info:#aa53f8,prompt:#0be6a6,pointer:#241b30
---color=marker:#0be6a6,spinner:#aa53f8,header:#f8f871
+--color=fg:#7f7094,bg:-1,hl:#b9b1bc
+--color=fg+:#00986c,bg+:#241b30,hl+:#0ae4a4
+--color=info:#aa54f9,prompt:#0ae4a4,pointer:#241b30
+--color=marker:#0ae4a4,spinner:#aa54f9,header:#f9f972
 '
 
 ```
@@ -93,8 +91,8 @@ Using a [Nerd Font](https://www.nerdfonts.com/)
 
 ```toml
 [character]
-success_symbol = "[❯](bold 0be6a6)"
-error_symbol = "[❯](bold e80b72)"
+success_symbol = "[❯](bold 0ae4a4)"
+error_symbol = "[❯](bold e60a70)"
 
 [cmd_duration]
 format = "[took $duration](#7f7094) "
@@ -111,7 +109,7 @@ style = ""
 format = "[is](#7f7094) [$version](#f2f2e3) "
 
 [nodejs]
-format = "[<node $version>](#f8f871) "
+format = "[<node $version>](#f9f972) "
 
 ```
 
@@ -120,11 +118,11 @@ format = "[<node $version>](#f8f871) "
 Status | C | Hex
 --- | --- | ---
 Added gutter | ![](https://via.placeholder.com/24/125a4e/?text=+) | #125a4e
-Added background | ![](https://via.placeholder.com/24/1b3a3f/?text=+) | #1b3a3f
-Deleted gutter | ![](https://via.placeholder.com/24/5f0d3c/?text=+) | #5f0d3c
-Deleted background | ![](https://via.placeholder.com/24/411436/?text=+) | #411436
-Modified gutter | ![](https://via.placeholder.com/24/26436e/?text=+) | #26436e
-Modified background | ![](https://via.placeholder.com/24/252f4f/?text=+) | #252f4f
-Conflict gutter | ![](https://via.placeholder.com/24/676336/?text=+) | #676336
-Conflict background | ![](https://via.placeholder.com/24/453f33/?text=+) | #453f33
+Added background | ![](https://via.placeholder.com/24/1b3b3f/?text=+) | #1b3b3f
+Deleted gutter | ![](https://via.placeholder.com/24/5f0e3c/?text=+) | #5f0e3c
+Deleted background | ![](https://via.placeholder.com/24/421536/?text=+) | #421536
+Modified gutter | ![](https://via.placeholder.com/24/274470/?text=+) | #274470
+Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050
+Conflict gutter | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
+Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
 

@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw
-
-from colors import Color, HSV, hsv_to_rgb
+from chromato.convert import hsv_to_rgb
+from chromato.spaces import Color, HSV
 
 
 def class_as_dict(cls):
@@ -71,15 +71,15 @@ def palette_to_table(palette: list, placeholder_size=20):
 def hsv_mod(source_color: Color, hue_shift=0.0, saturation_shift=0.0, value_shift=0.0):
     source_hsv = source_color.hsv
     result_hsv = HSV(
-        h=max(0, min(1, source_hsv.h + hue_shift)),
-        s=max(0, min(1, source_hsv.s + saturation_shift)),
-        v=max(0, min(255, source_hsv.v + value_shift)),
+        max(0, min(1, source_hsv.h + hue_shift)),
+        max(0, min(1, source_hsv.s + saturation_shift)),
+        max(0, min(1, source_hsv.v + value_shift)),
     )
     return Color(hsv_to_rgb(result_hsv))
 
 
 def dark_color_variant(source_color: Color) -> Color:
-    value_shift = -(255 * 0.3)
+    value_shift = -0.3
     saturation_shift = 0.1
     return hsv_mod(
         source_color, value_shift=value_shift, saturation_shift=saturation_shift

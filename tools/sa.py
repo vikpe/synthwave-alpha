@@ -1,4 +1,6 @@
-from colors import Color, blend, shade, tint
+from chromato.operations import blend, shade, tint
+from chromato.spaces import Color
+
 from sa_functions import dark_color_variant, hsv_mod
 
 RGB_YELLOW = Color.from_hex("ffff00")
@@ -12,14 +14,14 @@ BLUE = blend(CYAN, MAGENTA, 1 / 3)
 PURPLE = blend(CYAN, MAGENTA, 2 / 3)
 YELLOW = blend(WHITE, RGB_YELLOW)
 
-RED = hsv_mod(MAGENTA, 30 / 360, -0.05, -23)
-GREEN = hsv_mod(CYAN, -18 / 360, -0.05, -23)
+RED = hsv_mod(MAGENTA, 30 / 360, -0.04, -0.1)
+GREEN = hsv_mod(CYAN, -18 / 360, -0.04, -0.1)
 
 
 class Colors:
     WHITE_LIGHT = blend(WHITE, RGB_WHITE)
     WHITE = WHITE
-    WHITE_DARKER = hsv_mod(BLACK, 0, -0.2, 100)
+    WHITE_DARKER = hsv_mod(BLACK, 0, -0.191, 0.39)
     WHITE_DARK = blend(WHITE_DARKER, WHITE)
 
     BLACK = BLACK
