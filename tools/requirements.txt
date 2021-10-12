@@ -1,5 +1,6 @@
 attrs
 black
+chromato
 pillow
 pytest
 pytest-cov
