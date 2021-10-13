@@ -1,3 +1,5 @@
+# https://github.com/junegunn/fzf/wiki/Color-schemes
+
 export FZF_DEFAULT_OPTS='
 --layout=reverse
 --color=fg:#{WHITE_DARKER.hex},bg:-1,hl:#{WHITE_DARK.hex}
