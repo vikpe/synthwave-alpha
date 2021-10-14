@@ -20,22 +20,22 @@ readme = f"""
 ![]({'./assets/synthwave_alpha_logo.png'})
 > {'Synthwave inspired color palette'}
 
-## Palette
+# Palette
 
-### Base
+## Base
 ![](./assets/palette_base.png)
 
-### Terminal
+## Terminal
 ![](./assets/palette_terminal.png)
 
-### Extended
+## Extended
 ![](./assets/palette_extended.png)
 
 {palette_to_table(array_transpose(Palettes.EXTENDED))}
 
-## Implementations
+# Implementations
 
-### Terminal
+## Terminal
 ![](./assets/screenshot_terminal.png)
 
 ### Fish
