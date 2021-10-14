@@ -38,19 +38,19 @@ readme = f"""
 ### Terminal
 ![](./assets/screenshot_terminal.png)
 
-## Fish
+### Fish
 ![](./assets/screenshot_fish.png)
 ```sh
 {from_template('fish.sh')}
 ```
 
-## FZF
+### FZF
 ![](./assets/screenshot_fzf.png)
 ```sh
 {from_template('fzf.sh')}
 ```
 
-## Starship
+### Starship
 Using a [Nerd Font](https://www.nerdfonts.com/)
 
 {screenshot_placeholder}

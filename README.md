@@ -31,7 +31,7 @@ C | HEX | C | HEX | C | HEX | C | HEX
 ### Terminal
 ![](./assets/screenshot_terminal.png)
 
-## Fish
+### Fish
 ![](./assets/screenshot_fish.png)
 ```sh
 # https://fishshell.com/docs/current/cmds/set_color.html#cmd-set-color
@@ -71,7 +71,7 @@ set -U fish_pager_color_secondary_description 7f7094 # description of every seco
 
 ```
 
-## FZF
+### FZF
 ![](./assets/screenshot_fzf.png)
 ```sh
 # https://github.com/junegunn/fzf/wiki/Color-schemes
@@ -85,7 +85,7 @@ export FZF_DEFAULT_OPTS='
 
 ```
 
-## Starship
+### Starship
 Using a [Nerd Font](https://www.nerdfonts.com/)
 
 ![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
