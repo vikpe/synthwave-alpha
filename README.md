@@ -26,7 +26,9 @@ C | HEX | C | HEX | C | HEX | C | HEX
 ![](https://via.placeholder.com/20/3a3245/?text=+) | `3a3245` | ![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/1a1322/?text=+) | `1a1322` | ![](https://via.placeholder.com/20/0f0b14/?text=+) | `0f0b14`
 
 
-## Terminal
+## Sample implementations
+
+### Terminal
 ![](./assets/screenshot_terminal.png)
 
 ### Fish

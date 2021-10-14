@@ -31,7 +31,9 @@ readme = f"""
 
 {palette_to_table(array_transpose(Palettes.EXTENDED))}
 
-## Terminal
+## Sample implementations
+
+### Terminal
 ![](./assets/screenshot_terminal.png)
 
 ### Fish
