@@ -1,5 +1,5 @@
 from chromato.operations import blend, shade, tint
-from chromato.spaces import Color
+from chromato.spaces import Color, HLS
 
 from sa_functions import dark_color_variant, hsv_mod
 
@@ -21,7 +21,7 @@ GREEN = hsv_mod(CYAN, -18 / 360, -0.04, -0.1)
 class Colors:
     WHITE_LIGHT = blend(WHITE, RGB_WHITE)
     WHITE = WHITE
-    WHITE_DARKER = hsv_mod(BLACK, 0, -0.191, 0.39)
+    WHITE_DARKER = Color("7f7094")
     WHITE_DARK = blend(WHITE_DARKER, WHITE)
 
     BLACK = BLACK
