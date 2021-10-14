@@ -20,20 +20,18 @@ readme = f"""
 ![]({'./assets/synthwave_alpha_logo.png'})
 > {'Synthwave inspired color palette'}
 
-# Palette
+## Palette
 
-## Base
+### Base
 ![](./assets/palette_base.png)
 
-## Terminal
+### Terminal
 ![](./assets/palette_terminal.png)
 
-## Extended
+### Extended
 ![](./assets/palette_extended.png)
 
 {palette_to_table(array_transpose(Palettes.EXTENDED))}
-
-# Implementations
 
 ## Terminal
 ![](./assets/screenshot_terminal.png)
@@ -59,6 +57,7 @@ Using a [Nerd Font](https://www.nerdfonts.com/)
 {from_template('starship.toml')}
 ```
 
+<!--
 ## VCS / Diff
 
 Status | C | Hex
@@ -71,6 +70,7 @@ Modified gutter | {placeholder(Colors.BLUE_DARKER.hex, size=24)} | #{Colors.BLUE
 Modified background | {placeholder(Colors.BLUE_DARKEST.hex, size=24)} | #{Colors.BLUE_DARKEST.hex}
 Conflict gutter | {placeholder(Colors.YELLOW_DARKER.hex, size=24)} | #{Colors.YELLOW_DARKER.hex}
 Conflict background | {placeholder(Colors.YELLOW_DARKEST.hex, size=24)} | #{Colors.YELLOW_DARKEST.hex}
+--!>
 """
 
 print(readme.format(**class_as_dict(Colors)))

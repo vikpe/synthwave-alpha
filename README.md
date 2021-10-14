@@ -2,15 +2,15 @@
 ![](./assets/synthwave_alpha_logo.png)
 > Synthwave inspired color palette
 
-# Palette
+## Palette
 
-## Base
+### Base
 ![](./assets/palette_base.png)
 
-## Terminal
+### Terminal
 ![](./assets/palette_terminal.png)
 
-## Extended
+### Extended
 ![](./assets/palette_extended.png)
 
 C | HEX | C | HEX | C | HEX | C | HEX
@@ -25,8 +25,6 @@ C | HEX | C | HEX | C | HEX | C | HEX
 ![](https://via.placeholder.com/20/f9f9f1/?text=+) | `f9f9f1` | ![](https://via.placeholder.com/20/f2f2e3/?text=+) | `f2f2e3` | ![](https://via.placeholder.com/20/b9b1bc/?text=+) | `b9b1bc` | ![](https://via.placeholder.com/20/7f7094/?text=+) | `7f7094`
 ![](https://via.placeholder.com/20/3a3245/?text=+) | `3a3245` | ![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/1a1322/?text=+) | `1a1322` | ![](https://via.placeholder.com/20/0f0b14/?text=+) | `0f0b14`
 
-
-# Implementations
 
 ## Terminal
 ![](./assets/screenshot_terminal.png)
@@ -114,6 +112,7 @@ format = "[<node $version>](#f9f972) "
 
 ```
 
+<!--
 ## VCS / Diff
 
 Status | C | Hex
@@ -126,4 +125,5 @@ Modified gutter | ![](https://via.placeholder.com/24/274470/?text=+) | #274470
 Modified background | ![](https://via.placeholder.com/24/263050/?text=+) | #263050
 Conflict gutter | ![](https://via.placeholder.com/24/696437/?text=+) | #696437
 Conflict background | ![](https://via.placeholder.com/24/474034/?text=+) | #474034
+--!>
 
