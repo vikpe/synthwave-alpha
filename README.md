@@ -2,15 +2,15 @@
 ![](./assets/synthwave_alpha_logo.png)
 > Synthwave inspired color palette
 
-## Palette
+# Palette
 
-### Base
+## Base
 ![](./assets/palette_base.png)
 
-### Terminal
+## Terminal
 ![](./assets/palette_terminal.png)
 
-### Extended
+## Extended
 ![](./assets/palette_extended.png)
 
 C | HEX | C | HEX | C | HEX | C | HEX
@@ -26,9 +26,9 @@ C | HEX | C | HEX | C | HEX | C | HEX
 ![](https://via.placeholder.com/20/3a3245/?text=+) | `3a3245` | ![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/1a1322/?text=+) | `1a1322` | ![](https://via.placeholder.com/20/0f0b14/?text=+) | `0f0b14`
 
 
-## Implementations
+# Implementations
 
-### Terminal
+## Terminal
 ![](./assets/screenshot_terminal.png)
 
 ### Fish
