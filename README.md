@@ -69,24 +69,8 @@ set -U fish_pager_color_secondary_description 7f7094 # description of every seco
 
 ```
 
-### FZF
-![](./assets/screenshot_fzf.png)
-```sh
-# https://github.com/junegunn/fzf/wiki/Color-schemes
-
-export FZF_DEFAULT_OPTS='
---color=fg:#7f7094,bg:-1,hl:#b9b1bc
---color=fg+:#00986c,bg+:#241b30,hl+:#0ae4a4
---color=info:#aa54f9,prompt:#0ae4a4,pointer:#241b30
---color=marker:#ff00f6,spinner:#aa54f9,header:#f9f972
-'
-
-```
-
-### Starship
-Using a [Nerd Font](https://www.nerdfonts.com/)
-
-![](https://via.placeholder.com/640x240/dddddd/?text=screenshot)
+### Fish + Starship
+![](./assets/screenshot_fish_starship.png)
 
 ```toml
 [character]
@@ -109,6 +93,20 @@ format = "[is](#7f7094) [$version](#f2f2e3) "
 
 [nodejs]
 format = "[<node $version>](#f9f972) "
+
+```
+
+### FZF
+![](./assets/screenshot_fzf.png)
+```sh
+# https://github.com/junegunn/fzf/wiki/Color-schemes
+
+export FZF_DEFAULT_OPTS='
+--color=fg:#7f7094,bg:-1,hl:#b9b1bc
+--color=fg+:#00986c,bg+:#241b30,hl+:#0ae4a4
+--color=info:#aa54f9,prompt:#0ae4a4,pointer:#241b30
+--color=marker:#ff00f6,spinner:#aa54f9,header:#f9f972
+'
 
 ```
 

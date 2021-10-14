@@ -14,8 +14,6 @@ save_palette_as_image(Palettes.EXTENDED, f"{assets_dir}/palette_extended.png")
 save_palette_as_image(Palettes.TERMINAL, f"{assets_dir}/palette_terminal.png")
 
 # script
-screenshot_placeholder = placeholder("dddddd", text="screenshot", size="640x240")
-
 readme = f"""
 ![]({'./assets/synthwave_alpha_logo.png'})
 > {'Synthwave inspired color palette'}
@@ -42,19 +40,17 @@ readme = f"""
 {from_template('fish.sh')}
 ```
 
+### Fish + Starship
+![](./assets/screenshot_fish_starship.png)
+
+```toml
+{from_template('starship.toml')}
+```
+
 ### FZF
 ![](./assets/screenshot_fzf.png)
 ```sh
 {from_template('fzf.sh')}
-```
-
-### Starship
-Using a [Nerd Font](https://www.nerdfonts.com/)
-
-{screenshot_placeholder}
-
-```toml
-{from_template('starship.toml')}
 ```
 
 <!--
