@@ -1,0 +1,22 @@
+# https://starship.rs/config/
+
+[character]
+success_symbol = "[❯](bold 0ae4a4)"
+error_symbol = "[❯](bold e60a70)"
+
+[cmd_duration]
+format = "[took $duration](#7f7094) "
+
+[directory]
+read_only = " "
+style = "#00fbfd bold"
+
+[git_branch]
+format = "[on](#7f7094) [ $branch](#ff00f6) "
+
+[package]
+style = ""
+format = "[is](#7f7094) [$version](#f2f2e3) "
+
+[nodejs]
+format = "[<node $version>](#f9f972) "

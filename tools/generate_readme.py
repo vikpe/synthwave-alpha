@@ -2,10 +2,10 @@ from sa import Colors, Palettes
 from sa_functions import (
     save_palette_as_image,
     placeholder,
-    from_template,
+    read_template,
     palette_to_table,
     array_transpose,
-    class_as_dict,
+    template_to_file, replace_colors_in_string,
 )
 
 assets_dir = "../.github/assets"
@@ -38,26 +38,24 @@ readme = f"""
 ## Sample implementations
 
 ### Terminal
+> Open terminal settings and set colors according to [the terminal / 16-color table](#terminal--16-color).
+
 ![](./.github/assets/screenshot_terminal.png)
 
 ### [Fish](https://fishshell.com/)
+> See [fish.sh](./implementations/fish.sh) for instructions/setup.
+
 ![](./.github/assets/screenshot_fish.png)
-```sh
-{from_template('fish.sh')}
-```
 
 ### [Starship](https://starship.rs/)
+> See [starship.toml](./implementations/starship.toml) for instructions/setup.
+
 ![](./.github/assets/screenshot_starship.png)
 
-```toml
-{from_template('starship.toml')}
-```
-
 ### [FZF](https://github.com/junegunn/fzf)
+> See [fzf.sh](./implementations/fzf.sh) for instructions/setup.
+
 ![](./.github/assets/screenshot_fzf.png)
-```sh
-{from_template('fzf.sh')}
-```
 
 <!--
 ## VCS / Diff
@@ -72,7 +70,12 @@ Modified gutter | {placeholder(Colors.BLUE_DARKER.hex, size=24)} | #{Colors.BLUE
 Modified background | {placeholder(Colors.BLUE_DARKEST.hex, size=24)} | #{Colors.BLUE_DARKEST.hex}
 Conflict gutter | {placeholder(Colors.YELLOW_DARKER.hex, size=24)} | #{Colors.YELLOW_DARKER.hex}
 Conflict background | {placeholder(Colors.YELLOW_DARKEST.hex, size=24)} | #{Colors.YELLOW_DARKEST.hex}
---!>
+-->
 """
 
-print(readme.format(**class_as_dict(Colors)))
+print(replace_colors_in_string(readme, Colors))
+
+templates = ["fish.sh", "fzf.sh", "starship.toml"]
+
+for filename in templates:
+    template_to_file(filename, Colors, f"../implementations/{filename}")

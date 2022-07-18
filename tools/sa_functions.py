@@ -7,7 +7,7 @@ def class_as_dict(cls):
     return {k: v for k, v in cls.__dict__.items() if not k.startswith("__")}
 
 
-def from_template(filename) -> str:
+def read_template(filename) -> str:
     with open(f"templates/{filename}") as fp:
         return fp.read()
 
@@ -74,3 +74,15 @@ def dark_color_variant(source_color: Color) -> Color:
     return hsv_mod(
         source_color, value_shift=value_shift, saturation_shift=saturation_shift
     )
+
+
+def replace_colors_in_string(value: str, colors) -> str:
+    return value.format(**class_as_dict(colors))
+
+
+def template_to_file(template_path: str, colors, filename_path: str) -> None:
+    template = read_template(template_path)
+    content = replace_colors_in_string(template, colors)
+
+    with open(filename_path, "w") as fh:
+        fh.write(content)
