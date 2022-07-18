@@ -8,49 +8,53 @@ from sa_functions import (
     class_as_dict,
 )
 
-assets_dir = "../assets"
+assets_dir = "../.github/assets"
 save_palette_as_image(Palettes.BASE, f"{assets_dir}/palette_base.png", size=64)
 save_palette_as_image(Palettes.EXTENDED, f"{assets_dir}/palette_extended.png")
 save_palette_as_image(Palettes.TERMINAL, f"{assets_dir}/palette_terminal.png")
 
 # script
 readme = f"""
-![]({'./assets/synthwave_alpha_logo.png'})
+![]({'./.github/assets/synthwave_alpha_logo.png'})
 > {'Synthwave inspired color palette'}
 
 ## Palette
 
 ### Base
-![](./assets/palette_base.png)
+![](./.github/assets/palette_base.png)
 
-### Terminal
-![](./assets/palette_terminal.png)
+{palette_to_table(array_transpose(Palettes.BASE))}
+
+### Terminal / 16-color
+![](./.github/assets/palette_terminal.png)
+
+{palette_to_table(array_transpose(Palettes.TERMINAL))}
 
 ### Extended
-![](./assets/palette_extended.png)
+![](./.github/assets/palette_extended.png)
 
 {palette_to_table(array_transpose(Palettes.EXTENDED))}
 
 ## Sample implementations
 
 ### Terminal
-![](./assets/screenshot_terminal.png)
+![](./.github/assets/screenshot_terminal.png)
 
 ### Fish
-![](./assets/screenshot_fish.png)
+![](./.github/assets/screenshot_fish.png)
 ```sh
 {from_template('fish.sh')}
 ```
 
 ### Fish + Starship
-![](./assets/screenshot_fish_starship.png)
+![](./.github/assets/screenshot_fish_starship.png)
 
 ```toml
 {from_template('starship.toml')}
 ```
 
 ### FZF
-![](./assets/screenshot_fzf.png)
+![](./.github/assets/screenshot_fzf.png)
 ```sh
 {from_template('fzf.sh')}
 ```
