@@ -1,7 +1,7 @@
-from chromato.operations import blend, shade, tint
-from chromato.spaces import Color, HLS
+from chromato.operations import blend, shade, tint, hsv_mod
+from chromato.spaces import Color
 
-from sa_functions import dark_color_variant, hsv_mod
+from sa_functions import dark_color_variant
 
 RGB_YELLOW = Color("ffff00")
 RGB_WHITE = Color("ffffff")

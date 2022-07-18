@@ -1,19 +1,41 @@
 
-![](./assets/synthwave_alpha_logo.png)
+![](./.github/assets/synthwave_alpha_logo.png)
 > Synthwave inspired color palette
 
 ## Palette
 
 ### Base
-![](./assets/palette_base.png)
+![](./.github/assets/palette_base.png)
 
-### Terminal
-![](./assets/palette_terminal.png)
+&nbsp; | HEX
+--- | ---
+![](https://via.placeholder.com/20/f9f972/?text=+) | `f9f972`
+![](https://via.placeholder.com/20/ff00f6/?text=+) | `ff00f6`
+![](https://via.placeholder.com/20/aa54f9/?text=+) | `aa54f9`
+![](https://via.placeholder.com/20/55a8fb/?text=+) | `55a8fb`
+![](https://via.placeholder.com/20/00fbfd/?text=+) | `00fbfd`
+![](https://via.placeholder.com/20/241b30/?text=+) | `241b30`
+
+
+### Terminal / 16-color
+![](./.github/assets/palette_terminal.png)
+
+&nbsp; | HEX | &nbsp; | HEX
+--- | --- | --- | ---
+![](https://via.placeholder.com/20/241b30/?text=+) | `241b30` | ![](https://via.placeholder.com/20/7f7094/?text=+) | `7f7094`
+![](https://via.placeholder.com/20/9a0048/?text=+) | `9a0048` | ![](https://via.placeholder.com/20/e60a70/?text=+) | `e60a70`
+![](https://via.placeholder.com/20/00986c/?text=+) | `00986c` | ![](https://via.placeholder.com/20/0ae4a4/?text=+) | `0ae4a4`
+![](https://via.placeholder.com/20/adad3e/?text=+) | `adad3e` | ![](https://via.placeholder.com/20/f9f972/?text=+) | `f9f972`
+![](https://via.placeholder.com/20/6e29ad/?text=+) | `6e29ad` | ![](https://via.placeholder.com/20/aa54f9/?text=+) | `aa54f9`
+![](https://via.placeholder.com/20/b300ad/?text=+) | `b300ad` | ![](https://via.placeholder.com/20/ff00f6/?text=+) | `ff00f6`
+![](https://via.placeholder.com/20/00b0b1/?text=+) | `00b0b1` | ![](https://via.placeholder.com/20/00fbfd/?text=+) | `00fbfd`
+![](https://via.placeholder.com/20/b9b1bc/?text=+) | `b9b1bc` | ![](https://via.placeholder.com/20/f2f2e3/?text=+) | `f2f2e3`
+
 
 ### Extended
-![](./assets/palette_extended.png)
+![](./.github/assets/palette_extended.png)
 
-C | HEX | C | HEX | C | HEX | C | HEX
+&nbsp; | HEX | &nbsp; | HEX | &nbsp; | HEX | &nbsp; | HEX
 --- | --- | --- | --- | --- | --- | --- | ---
 ![](https://via.placeholder.com/20/f9f972/?text=+) | `f9f972` | ![](https://via.placeholder.com/20/adad3e/?text=+) | `adad3e` | ![](https://via.placeholder.com/20/696437/?text=+) | `696437` | ![](https://via.placeholder.com/20/474034/?text=+) | `474034`
 ![](https://via.placeholder.com/20/e60a70/?text=+) | `e60a70` | ![](https://via.placeholder.com/20/9a0048/?text=+) | `9a0048` | ![](https://via.placeholder.com/20/5f0e3c/?text=+) | `5f0e3c` | ![](https://via.placeholder.com/20/421536/?text=+) | `421536`
@@ -29,10 +51,10 @@ C | HEX | C | HEX | C | HEX | C | HEX
 ## Sample implementations
 
 ### Terminal
-![](./assets/screenshot_terminal.png)
+![](./.github/assets/screenshot_terminal.png)
 
 ### Fish
-![](./assets/screenshot_fish.png)
+![](./.github/assets/screenshot_fish.png)
 ```sh
 # https://fishshell.com/docs/current/cmds/set_color.html#cmd-set-color
 
@@ -72,7 +94,7 @@ set -U fish_pager_color_secondary_description 7f7094 # description of every seco
 ```
 
 ### Fish + Starship
-![](./assets/screenshot_fish_starship.png)
+![](./.github/assets/screenshot_fish_starship.png)
 
 ```toml
 [character]
@@ -99,7 +121,7 @@ format = "[<node $version>](#f9f972) "
 ```
 
 ### FZF
-![](./assets/screenshot_fzf.png)
+![](./.github/assets/screenshot_fzf.png)
 ```sh
 # https://github.com/junegunn/fzf/wiki/Color-schemes
 

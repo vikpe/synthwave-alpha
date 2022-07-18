@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw
-from chromato.convert import hsv_to_rgb
-from chromato.spaces import Color, HSV
+from chromato.operations import hsv_mod
+from chromato.spaces import Color
 
 
 def class_as_dict(cls):
@@ -44,18 +44,18 @@ def save_palette_as_image(palette: list, filename: str, size=48):
 
 
 def md_table(rows: list) -> str:
-    HEADER_ROW_DELIMITER = "---"
-    CELL_DELIMITER = " | "
+    header_row_delimiter = "---"
+    cell_delimiter = " | "
 
     header_row = rows[0]
-    header_separator_row = [HEADER_ROW_DELIMITER] * len(header_row)
+    header_separator_row = [header_row_delimiter] * len(header_row)
     all_rows = [header_row] + [header_separator_row] + rows[1:]
 
-    return "\n".join(CELL_DELIMITER.join(row) for row in all_rows) + "\n"
+    return "\n".join(cell_delimiter.join(row) for row in all_rows) + "\n"
 
 
 def palette_to_table(palette: list, placeholder_size=20):
-    header_row = ["C", "HEX"] * len(palette[0])
+    header_row = ["&nbsp;", "HEX"] * len(palette[0])
     body_rows = []
 
     for shades in palette:
@@ -66,16 +66,6 @@ def palette_to_table(palette: list, placeholder_size=20):
         body_rows.append(row)
 
     return md_table([header_row] + body_rows)
-
-
-def hsv_mod(source_color: Color, hue_shift=0.0, saturation_shift=0.0, value_shift=0.0):
-    source_hsv = source_color.hsv
-    result_hsv = HSV(
-        max(0, min(1, source_hsv.h + hue_shift)),
-        max(0, min(1, source_hsv.s + saturation_shift)),
-        max(0, min(1, source_hsv.v + value_shift)),
-    )
-    return Color(hsv_to_rgb(result_hsv))
 
 
 def dark_color_variant(source_color: Color) -> Color:
