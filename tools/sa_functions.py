@@ -17,7 +17,7 @@ def array_transpose(arr: list) -> list:
 
 
 def placeholder(_hex, text="+", size=48):
-    return f"![](https://via.placeholder.com/{size}/{_hex}/?text={text})"
+    return f"![](https://dummyimage.com/{size}x{size}/{_hex}/fff.png)"
 
 
 def palette_to_image(palette: list, size=48):
