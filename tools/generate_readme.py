@@ -40,20 +40,20 @@ readme = f"""
 ### Terminal
 ![](./.github/assets/screenshot_terminal.png)
 
-### Fish
+### [Fish](https://fishshell.com/)
 ![](./.github/assets/screenshot_fish.png)
 ```sh
 {from_template('fish.sh')}
 ```
 
-### Fish + Starship
-![](./.github/assets/screenshot_fish_starship.png)
+### [Starship](https://starship.rs/)
+![](./.github/assets/screenshot_starship.png)
 
 ```toml
 {from_template('starship.toml')}
 ```
 
-### FZF
+### [FZF](https://github.com/junegunn/fzf)
 ![](./.github/assets/screenshot_fzf.png)
 ```sh
 {from_template('fzf.sh')}

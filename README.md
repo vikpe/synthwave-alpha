@@ -53,7 +53,7 @@
 ### Terminal
 ![](./.github/assets/screenshot_terminal.png)
 
-### Fish
+### [Fish](https://fishshell.com/)
 ![](./.github/assets/screenshot_fish.png)
 ```sh
 # https://fishshell.com/docs/current/cmds/set_color.html#cmd-set-color
@@ -93,10 +93,12 @@ set -U fish_pager_color_secondary_description 7f7094 # description of every seco
 
 ```
 
-### Fish + Starship
-![](./.github/assets/screenshot_fish_starship.png)
+### [Starship](https://starship.rs/)
+![](./.github/assets/screenshot_starship.png)
 
 ```toml
+# https://starship.rs/config/
+
 [character]
 success_symbol = "[❯](bold 0ae4a4)"
 error_symbol = "[❯](bold e60a70)"
@@ -120,7 +122,7 @@ format = "[<node $version>](#f9f972) "
 
 ```
 
-### FZF
+### [FZF](https://github.com/junegunn/fzf)
 ![](./.github/assets/screenshot_fzf.png)
 ```sh
 # https://github.com/junegunn/fzf/wiki/Color-schemes
