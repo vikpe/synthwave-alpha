@@ -76,10 +76,6 @@ def dark_color_variant(source_color: Color) -> Color:
     )
 
 
-def light_color_variant(source_color: Color) -> Color:
-    return tint(source_color, 0.3)
-
-
 def replace_colors_in_string(value: str, colors) -> str:
     return value.format(**class_as_dict(colors))
 

@@ -1,7 +1,7 @@
 from chromato.operations import blend, shade, tint, hsv_mod
 from chromato.spaces import Color
 
-from sa_functions import dark_color_variant, light_color_variant
+from sa_functions import dark_color_variant
 
 RGB_YELLOW = Color("ffff00")
 RGB_WHITE = Color("ffffff")
@@ -34,43 +34,43 @@ class Colors:
     BLACK_DARKER = shade(BLACK, 0.6)
 
     CYAN = CYAN
-    CYAN_LIGHT = light_color_variant(CYAN)
+    CYAN_LIGHT = tint(CYAN, 0.5)
     CYAN_DARK = dark_color_variant(CYAN)
     CYAN_DARKER = blend(CYAN_DARK, BLACK)
     CYAN_DARKEST = blend(CYAN_DARKER, BLACK)
 
     MAGENTA = MAGENTA
-    MAGENTA_LIGHT = light_color_variant(MAGENTA)
+    MAGENTA_LIGHT = tint(MAGENTA, 0.4)
     MAGENTA_DARK = dark_color_variant(MAGENTA)
     MAGENTA_DARKER = blend(MAGENTA_DARK, BLACK)
     MAGENTA_DARKEST = blend(MAGENTA_DARKER, BLACK)
 
     PURPLE = PURPLE
-    PURPLE_LIGHT = light_color_variant(PURPLE)
+    PURPLE_LIGHT = tint(PURPLE, 0.3)
     PURPLE_DARK = dark_color_variant(PURPLE)
     PURPLE_DARKER = blend(PURPLE_DARK, BLACK)
     PURPLE_DARKEST = blend(PURPLE_DARKER, BLACK)
 
     BLUE = BLUE
-    BLUE_LIGHT = light_color_variant(BLUE)
+    BLUE_LIGHT = tint(BLUE, 0.3)
     BLUE_DARK = dark_color_variant(BLUE)
     BLUE_DARKER = blend(BLUE_DARK, BLACK)
     BLUE_DARKEST = blend(BLUE_DARKER, BLACK)
 
     YELLOW = YELLOW
-    YELLOW_LIGHT = light_color_variant(YELLOW)
+    YELLOW_LIGHT = tint(YELLOW, 0.5)
     YELLOW_DARK = dark_color_variant(YELLOW)
     YELLOW_DARKER = blend(YELLOW_DARK, BLACK)
     YELLOW_DARKEST = blend(YELLOW_DARKER, BLACK)
 
     RED = RED
-    RED_LIGHT = light_color_variant(RED)
+    RED_LIGHT = tint(RED, 0.3)
     RED_DARK = dark_color_variant(RED)
     RED_DARKER = blend(RED_DARK, BLACK)
     RED_DARKEST = blend(RED_DARKER, BLACK)
 
     GREEN = GREEN
-    GREEN_LIGHT = light_color_variant(GREEN)
+    GREEN_LIGHT = tint(GREEN, 0.3)
     GREEN_DARK = dark_color_variant(GREEN)
     GREEN_DARKER = blend(GREEN_DARK, BLACK)
     GREEN_DARKEST = blend(GREEN_DARKER, BLACK)
