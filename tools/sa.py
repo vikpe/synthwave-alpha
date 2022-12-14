@@ -1,7 +1,7 @@
 from chromato.operations import blend, shade, tint, hsv_mod
 from chromato.spaces import Color
 
-from sa_functions import dark_color_variant
+from sa_functions import dark_color_variant, light_color_variant
 
 RGB_YELLOW = Color("ffff00")
 RGB_WHITE = Color("ffffff")
@@ -17,49 +17,60 @@ YELLOW = blend(WHITE, RGB_YELLOW)
 RED = hsv_mod(MAGENTA, 30 / 360, -0.04, -0.1)
 GREEN = hsv_mod(CYAN, -18 / 360, -0.04, -0.1)
 
+COLOR_LIGHT_TINT = 0.
+
 
 class Colors:
-    WHITE_LIGHT = blend(WHITE, RGB_WHITE)
     WHITE = WHITE
+    WHITE_LIGHT = tint(WHITE, 0.6)
+    WHITE_LIGHTER = tint(WHITE, 0.8)
     WHITE_DARKER = Color("7f7094")
     WHITE_DARK = blend(WHITE_DARKER, WHITE)
 
     BLACK = BLACK
     BLACK_LIGHT = tint(BLACK, 0.1)
+    BLACK_LIGHTER = tint(BLACK, 0.2)
     BLACK_DARK = shade(BLACK, 0.3)
     BLACK_DARKER = shade(BLACK, 0.6)
 
     CYAN = CYAN
+    CYAN_LIGHT = light_color_variant(CYAN)
     CYAN_DARK = dark_color_variant(CYAN)
     CYAN_DARKER = blend(CYAN_DARK, BLACK)
     CYAN_DARKEST = blend(CYAN_DARKER, BLACK)
 
     MAGENTA = MAGENTA
+    MAGENTA_LIGHT = light_color_variant(MAGENTA)
     MAGENTA_DARK = dark_color_variant(MAGENTA)
     MAGENTA_DARKER = blend(MAGENTA_DARK, BLACK)
     MAGENTA_DARKEST = blend(MAGENTA_DARKER, BLACK)
 
     PURPLE = PURPLE
+    PURPLE_LIGHT = light_color_variant(PURPLE)
     PURPLE_DARK = dark_color_variant(PURPLE)
     PURPLE_DARKER = blend(PURPLE_DARK, BLACK)
     PURPLE_DARKEST = blend(PURPLE_DARKER, BLACK)
 
     BLUE = BLUE
+    BLUE_LIGHT = light_color_variant(BLUE)
     BLUE_DARK = dark_color_variant(BLUE)
     BLUE_DARKER = blend(BLUE_DARK, BLACK)
     BLUE_DARKEST = blend(BLUE_DARKER, BLACK)
 
     YELLOW = YELLOW
+    YELLOW_LIGHT = light_color_variant(YELLOW)
     YELLOW_DARK = dark_color_variant(YELLOW)
     YELLOW_DARKER = blend(YELLOW_DARK, BLACK)
     YELLOW_DARKEST = blend(YELLOW_DARKER, BLACK)
 
     RED = RED
+    RED_LIGHT = light_color_variant(RED)
     RED_DARK = dark_color_variant(RED)
     RED_DARKER = blend(RED_DARK, BLACK)
     RED_DARKEST = blend(RED_DARKER, BLACK)
 
     GREEN = GREEN
+    GREEN_LIGHT = light_color_variant(GREEN)
     GREEN_DARK = dark_color_variant(GREEN)
     GREEN_DARKER = blend(GREEN_DARK, BLACK)
     GREEN_DARKEST = blend(GREEN_DARKER, BLACK)
@@ -79,6 +90,17 @@ class Palettes:
     ]
 
     EXTENDED = [
+        [
+            Colors.YELLOW_LIGHT,
+            Colors.RED_LIGHT,
+            Colors.MAGENTA_LIGHT,
+            Colors.PURPLE_LIGHT,
+            Colors.BLUE_LIGHT,
+            Colors.CYAN_LIGHT,
+            Colors.GREEN_LIGHT,
+            Colors.WHITE_LIGHTER,
+            Colors.BLACK_LIGHTER,
+        ],
         [
             Colors.YELLOW,
             Colors.RED,

@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw
-from chromato.operations import hsv_mod
+from chromato.operations import hsv_mod, tint
 from chromato.spaces import Color
 
 
@@ -74,6 +74,10 @@ def dark_color_variant(source_color: Color) -> Color:
     return hsv_mod(
         source_color, value_shift=value_shift, saturation_shift=saturation_shift
     )
+
+
+def light_color_variant(source_color: Color) -> Color:
+    return tint(source_color, 0.3)
 
 
 def replace_colors_in_string(value: str, colors) -> str:
