@@ -1,8 +1,8 @@
 # https://starship.rs/config/
 
 [character]
-success_symbol = "[❯](bold 0ae4a4)"
-error_symbol = "[❯](bold e60a70)"
+success_symbol = "[❯](bold #0ae4a4)"
+error_symbol = "[❯](bold #e60a70)"
 
 [cmd_duration]
 format = "[took $duration](#7f7094) "
