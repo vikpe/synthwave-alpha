@@ -50,9 +50,11 @@
 ## Sample implementations
 
 ### Terminal
-> Open terminal settings and set colors according to [the terminal / 16-color table](#terminal--16-color).
+> Open terminal settings and set colors according to [the terminal / 16-color table](#terminal--16-color) (or install via [Gogh](https://github.com/Gogh-Co/Gogh)).
 
 ![](./.github/assets/screenshot_terminal.png)
+
+![image](https://github.com/vikpe/synthwave-alpha/assets/1616817/8bd8365b-d686-45ef-9f07-79baf20dd90b)
 
 ### [Fish](https://fishshell.com/)
 > See [fish.sh](./implementations/fish.sh) for instructions/setup.
@@ -79,3 +81,6 @@ Installation
 4. Click on Import
 5. Select [SynthwaveAlpha.itermcolors](https://raw.githubusercontent.com/vikpe/synthwave-alpha/main/implementations/SynthwaveAlpha.itermcolors)
 6. Click on Load Presets and choose a color scheme
+
+### [Gogh](https://github.com/Gogh-Co/Gogh)
+* Synthwave Alpha is available via [Gogh](https://github.com/Gogh-Co/Gogh)
