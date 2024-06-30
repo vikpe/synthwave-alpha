@@ -1,4 +1,4 @@
-
+![image](https://github.com/vikpe/synthwave-alpha/assets/1616817/22d84b70-fbb8-4ca9-9edc-eb72bdaa9828)
 ![](./.github/assets/synthwave_alpha_logo.png)
 > Synthwave inspired color palette
 
@@ -70,18 +70,13 @@
 
 ![](./.github/assets/screenshot_fzf.png)
 
-<!--
-## VCS / Diff
+### [iTerm2](https://github.com/gnachman/iTerm2)
+![image](https://github.com/vikpe/synthwave-alpha/assets/1616817/9d15432b-a79c-44a0-b0d1-602eb8b9107d)
 
-Status | C | Hex
---- | --- | ---
-Added gutter | ![](https://dummyimage.com/24x24/125a4e/125a4e.png&text=) | #125a4e
-Added background | ![](https://dummyimage.com/24x24/1b3b3f/1b3b3f.png&text=) | #1b3b3f
-Deleted gutter | ![](https://dummyimage.com/24x24/5f0e3c/5f0e3c.png&text=) | #5f0e3c
-Deleted background | ![](https://dummyimage.com/24x24/421536/421536.png&text=) | #421536
-Modified gutter | ![](https://dummyimage.com/24x24/274470/274470.png&text=) | #274470
-Modified background | ![](https://dummyimage.com/24x24/263050/263050.png&text=) | #263050
-Conflict gutter | ![](https://dummyimage.com/24x24/696437/696437.png&text=) | #696437
-Conflict background | ![](https://dummyimage.com/24x24/474034/474034.png&text=) | #474034
--->
-
+Installation
+1. Type CMD+i
+2. Navigate to Colors tab
+3. Click on Load Presets
+4. Click on Import
+5. Select [SynthwaveAlpha.itermcolors](https://raw.githubusercontent.com/vikpe/synthwave-alpha/main/implementations/SynthwaveAlpha.itermcolors)
+6. Click on Load Presets and choose a color scheme
