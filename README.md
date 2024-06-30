@@ -1,4 +1,3 @@
-![image](https://github.com/vikpe/synthwave-alpha/assets/1616817/22d84b70-fbb8-4ca9-9edc-eb72bdaa9828)
 ![](./.github/assets/synthwave_alpha_logo.png)
 > Synthwave inspired color palette
 
