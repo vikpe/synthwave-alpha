@@ -57,12 +57,10 @@
 ![image](https://github.com/vikpe/synthwave-alpha/assets/1616817/8bd8365b-d686-45ef-9f07-79baf20dd90b)
 
 ## Visual Studio Code
-* [Synthwave Alpha in Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=vikpe.synthwave-alpha)
+> See [Synthwave Alpha - VS Code Theme](https://github.com/vikpe/synthwave-alpha-vscode)
 
-or press CTRL+P and enter
-```
-ext install vikpe.synthwave-alpha
-```
+![](https://raw.githubusercontent.com/vikpe/synthwave-alpha-vscode/main/screenshots/editor.png)
+
 
 ### [Fish](https://fishshell.com/)
 > See [fish.sh](./implementations/fish.sh) for instructions/setup.
