@@ -56,6 +56,12 @@
 
 ![image](https://github.com/vikpe/synthwave-alpha/assets/1616817/8bd8365b-d686-45ef-9f07-79baf20dd90b)
 
+
+## Zed
+> See [Synthwave Alpha - Zed Theme](https://github.com/vikpe/synthwave-alpha-zed)
+
+![](https://raw.githubusercontent.com/vikpe/synthwave-alpha-zed/main/.github/screenshot.png)
+
 ## Visual Studio Code
 > See [Synthwave Alpha - VS Code Theme](https://github.com/vikpe/synthwave-alpha-vscode)
 
